@@ -15,7 +15,7 @@ function Public.toggle_window(player)
 	flow = GuiCommon.new_window(player, window_name)
 	flow.caption = { "roc-gui.info-window-heading" }
 
-	flow2 = flow.add({ type = "label", caption = storage.info_window_1_text or { "roc-gui.info-window-body-1" } })
+	flow2 = flow.add({ type = "label", caption = { "roc-gui.info-window-body-1" } })
 	flow2.style.font_color = GuiCommon.friendly_font_color
 	flow2.style.single_line = false
 	flow2.style.font = "default-large"
@@ -23,7 +23,11 @@ function Public.toggle_window(player)
 	flow2.style.bottom_margin = 10
 	flow2.style.right_margin = -10
 
-	flow2 = flow.add({ type = "label", caption = storage.info_window_2_text or { "roc-gui.info-window-body-2" } })
+	flow2 = flow.add({
+		type = "label",
+		caption =
+		"[font=scenario-message-dialog]Space Age: Hardcore Mode is a collection of Vanilla+ mods & tweaks that tighten the gameplay of Space Age, removing certain [color=orange]shortcuts[/color] and adding interesting challenge.\n\n[color=orange]Cargo drops[/color] on planets require a new cargo pod item made from materials native to that planet in the platform's hub.\n\nEach planet has slightly tweaked gameplay. Certain research, such as [color=orange]Logistic System[/color], are delayed until Aquilo.[/font]"
+	})
 	flow2.style.font_color = GuiCommon.friendly_font_color
 	flow2.style.single_line = false
 	flow2.style.bottom_margin = 1
@@ -54,7 +58,8 @@ function Public.toggle_window(player)
 
 	flow5 = flow4.add({
 		type = "label",
-		caption = storage.info_window_3_text or { "roc-gui.info-window-body-3" },
+		caption =
+		"[font=scenario-message-dialog]Suggestions welcome on Discord (follow QR or link on mod portal).[/font]",
 	})
 	flow5.style.single_line = false
 	flow5.style.vertical_align = "center"
