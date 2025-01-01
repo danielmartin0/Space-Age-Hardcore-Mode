@@ -1,0 +1,72 @@
+{
+    "version": "2.0.0",
+    "inputs": [
+        {
+            "id": "modName",
+            "type": "pickString",
+            "description": "Which mod to publish?",
+            "options": [
+                "Space-Age-Hardcore-Mode",
+                "Rocs-Hardcore-Cargo-Drops",
+                "Rocs-Hardcore-Delayed-Tech-Tree",
+                "Rocs-Hardcore-Demolishers",
+                "Rocs-Hardcore-Fulgora",
+                "Rocs-Hardcore-Gleba",
+                "Rocs-Hardcore-Aquilo",
+                "Rocs-Hardcore-Lightning-Storms",
+                "Rocs-Hardcore-Probabilistic-Farming",
+                "Rocs-Hardcore-Space-Tweaks",
+                "Rocs-Improved-Platform-Drag",
+                "Expensive-Mode",
+                "Better-Melting-Ice",
+                "Planetary-Distance-Adjustments",
+                "Rocs-Rusting-Iron",
+                "Fulgora-Nuclear-Overhaul",
+                "Surfaces-Have-Temperature",
+                "Tiered-Solar-System",
+                "No-Qualitycycling",
+                "Cerys-Moon-of-Fulgora",
+                "PlanetsLib"
+            ]
+        }
+    ],
+    "tasks": [
+        {
+            "label": "Publish Mod Without Git",
+            "type": "shell",
+            "command": "/bin/zsh",
+            "args": [
+                "-i",
+                "-c",
+                "source ~/.zshrc && MOD_VERSION=$(jq -r .version info.json) && MOD_NAME=$(jq -r .name info.json) && fmtk datestamp && fmtk package && fmtk upload \"${MOD_NAME}_${MOD_VERSION}.zip\" && fmtk version"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/${input:modName}"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Publish Mod With Own Repo",
+            "type": "shell",
+            "command": "/bin/zsh",
+            "args": [
+                "-i",
+                "-c",
+                // For specified mods, we commit in their repo first. We also have some special handling if there's nothing to commit or if the tag already exists (upload was canceled.)
+                "if [ \"${input:modName}\" = \"Cerys-Moon-of-Fulgora\" ] || [ \"${input:modName}\" = \"PlanetsLib\" ]; then git add . && git commit -m \"see changelog.txt\" || true; fi && MOD_VERSION=$(jq -r .version info.json) && git tag -d \"$MOD_VERSION\" 2>/dev/null || true && fmtk publish"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/${input:modName}"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

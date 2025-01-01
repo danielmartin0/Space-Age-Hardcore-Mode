@@ -1,0 +1,58 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.12
+Date: ????
+  Info:
+    - Description update.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.11
+Date: 2024-11-28
+  Changes:
+    - Less expensive recipes on Gleba.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.10
+Date: 2024-11-27
+  Changes:
+    - Fixed space platform foundation needing copper plates instead of copper cables.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.9
+Date: 2024-11-27
+  Changes:
+    - Readme fix.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.8
+Date: 2024-11-27
+  Changes:
+    - Backslash fix in readme.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.7
+Date: 2024-11-27
+  Info:
+    - Readme update.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.6
+Date: 2024-11-27
+  Info:
+    - Description update.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.5
+Date: 2024-11-26
+  Bugfixes:
+    - Lessened ingredients for recycler.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.4
+  Bugfixes:
+    - Fixed the fact that recycling didn't respect the ingredient increases in this mod. 1 iron gear wheel now recycles to 1 iron plate.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+  Features:
+    - First 'full version' of this mod for Expensive Mode.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+  Changes:
+    - Thumbnail added.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 17.11.2024
+  Features:
+    - Brings the original Expensive Mode back to Factorio.
+    - First version of a Space Age Expensive Mode.

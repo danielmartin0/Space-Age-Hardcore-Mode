@@ -1,0 +1,60 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.19
+Date: ????
+  Changes:
+---------------------------------------------------------------------------------------------------
+Version: 1.0.18
+Date: 2024-11-30
+  Changes:
+    - Information update.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.17
+Date: 2024-11-29
+  Bugfixes:
+    - Appropriate migrations for infinite technologies included.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.16
+Date: 2024-11-29
+  Info:
+    - Tooltip update.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.15
+Date: 2024-11-29
+  Features:
+    - The 'Push back infinite research' setting now converts each infinite research technology into a single technology with a new infinite descendent requiring cryogenic science packs.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.14
+Date: 2024-11-26
+  Changes:
+    - Removed unused option
+---------------------------------------------------------------------------------------------------
+Version: 1.0.13
+Date: 2024-11-26
+  Info:
+    - Infinite tech pushed back past Aquilo so one can't grind infinite resources to get there.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.12
+Date: 25.11.2024
+  Info:
+    - New thumbnail.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.10
+Date: 24.11.2024
+  Info:
+    - Heating tower and lightning rod changes move to their respective 'hardcore' planet mods.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.7
+Date: 23.11.2024
+  Info:
+    - Lightning rods are now behind a technology by default.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 18.11.2024
+  Features:
+    - Repair pack pushed back to require logistic science packs.
+    - Landfill pushed back to require Agriculture.
+    - Logistic system pushed back to require metallurgic, electromagnetic and agricultural science packs.
+    - Cliff explosives pushed back to require metallurgic, military, electromagnetic and agricultural science packs.
+    - Kovarex enrichment pushed back to require agricultural and electromagnetic science packs.
+    - Atomic bomb pushed back to require agricultural and electromagnetic science packs.
+    - Heating tower pushed back to require (only)agricultural science packs.

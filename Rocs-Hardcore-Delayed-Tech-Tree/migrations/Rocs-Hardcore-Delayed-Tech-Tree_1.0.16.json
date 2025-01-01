@@ -1,0 +1,16 @@
+{
+  "technology": [
+    ["asteroid-productivity", "asteroid-productivity-1"],
+    [
+      "low-density-structure-productivity",
+      "low-density-structure-productivity-1"
+    ],
+    ["plastic-bar-productivity", "plastic-bar-productivity-1"],
+    ["processing-unit-productivity", "processing-unit-productivity-1"],
+    ["research-productivity", "research-productivity-1"],
+    ["rocket-fuel-productivity", "rocket-fuel-productivity-1"],
+    ["rocket-part-productivity", "rocket-part-productivity-1"],
+    ["scrap-recycling-productivity", "scrap-recycling-productivity-1"],
+    ["steel-plate-productivity", "steel-plate-productivity-1"]
+  ]
+}

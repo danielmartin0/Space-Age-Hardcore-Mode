@@ -1,0 +1,6 @@
+-- -- == Debug: Unhide all recipes that end in '-recycling' ==--
+-- for _, recipe in pairs(data.raw.recipe) do
+-- 	if string.sub(recipe.name, -10) == "-recycling" then
+-- 		recipe.hidden = false
+-- 	end
+-- end

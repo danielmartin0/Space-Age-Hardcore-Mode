@@ -1,0 +1,11 @@
+{
+  "name": "Expensive-Mode",
+  "version": "1.0.12",
+  "factorio_version": "2.0",
+  "title": "Expensive Mode",
+  "author": "thesixthroc",
+  "description": "The official Expensive Mode from Factorio 1.1. If Space Age is installed, additional tweaks to Space Age are made more expensive in line with the same philosophy as vanilla Expensive Mode.\n\nExpensive crafting means more ore used and pollution generated, so you may wish to adjust map settings accordingly.",
+  "homepage": "https://mods.factorio.com/mod/Expensive-Mode",
+  "contact": "Discord: https://discord.gg/VuVhYUBbWE",
+  "dependencies": ["base >= 2.0.0", "? space-age >= 2.0.0"]
+}
