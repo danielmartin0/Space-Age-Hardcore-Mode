@@ -1,0 +1,50 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.12
+Date: ????
+  Changes:
+---------------------------------------------------------------------------------------------------
+Version: 1.0.11
+Date: 2024-12-14
+  Changes:
+    - Now only functions on Aquilo, not all surfaces that require heating.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.10
+Date: 2024-12-05
+  Bugfixes:
+    - Fixed crash with melting ice far from any player's camera.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.9
+Date: 2024-12-02
+  Info:
+    - 'Freezing required' flag added.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.8
+Date: 2024-11-30
+  Changes:
+    - Information update.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.7
+Date: 2024-11-28
+  Changes:
+    - Setting added to enable/disable the mod for use by Space Age: Hardcore Mode players.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.6
+Date: 2024-11-28
+  Changes:
+    - Improved behavior of ice melting far from any player's camera.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Date: 20. 11. 2024
+  Bugfixes:
+    - Fix missing frozen_variant entries
+    - Script lag fix.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 20. 11. 2024
+  Info:
+    - 'Freezing' feature flag turned off in info.json, as the use cases for feature flag markers in this context isn't clear.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 20. 11. 2024
+  Features:
+    - Buildings can be placed upon meltable ice, but collapse when the ice melts.

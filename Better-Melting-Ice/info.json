@@ -1,0 +1,11 @@
+{
+  "name": "Better-Melting-Ice",
+  "version": "1.0.12",
+  "title": "Better Melting Ice",
+  "description": "Buildings can be placed upon meltable ice, but collapse when the ice melts.",
+  "factorio_version": "2.0",
+  "dependencies": ["base >= 2.0.0", "space-age >= 2.0.0"],
+  "author": "thesixthroc",
+  "contact": "factorio@danielgmartin.com",
+  "freezing_required": true
+}
