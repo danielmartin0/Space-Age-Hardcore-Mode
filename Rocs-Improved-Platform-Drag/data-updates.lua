@@ -1,6 +1,6 @@
 --== Space Age 2.0.19 formula: ==--
 -- data.raw["utility-constants"]["default"]["space_platform_acceleration_expression"] =
--- "(thrust / (1 + weight / 10000000) - ((1500 * speed * speed + 1500 * abs(speed)) * (((weight / 250) ^ 0.5) * 0.5) + 10000) * sign(speed)) / weight / 60"
+-- "(thrust / (1 + weight / 10000000) - ((1500 * speed * speed + 1500 * abs(speed)) * (width * 0.5) + 10000) * sign(speed)) / weight / 60"
 
 --== New formula: ==--
 

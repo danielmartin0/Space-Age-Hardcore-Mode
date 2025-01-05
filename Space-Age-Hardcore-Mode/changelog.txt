@@ -1,7 +1,20 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.66
+Version: 1.0.68
 Date: ????
   Changes:
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: ????
+  Changes:
+    - Removed darker nights on Nauvis. Instead, Diurnal Dynamics is now a mandatory dependency.
+    - Simpler Platform Drag is now an optional dependency.
+    - Distant Misfires, Fire Lights, Explosive Biters and Toxic Biters added as optional dependencies.
+    - Organized Solar System removed as an optional dependency. It's still compatible.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.66
+Date: 2025-01-04
+  Bugfixes:
+    - Removed ineffectual spoilage time multiplier setting from Hardcore Mode (it was moved to Hardcore Gleba).
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.65
 Date: 2025-01-02
