@@ -19,7 +19,6 @@ script.on_event(defines.events.on_player_joined_game, function(event)
 	end
 
 	Common.init_tech(player.force)
-	Common.update_nauvis_night()
 
 	-- player.force.set_ammo_damage_modifier(
 	-- 	"shotgun-shell",
@@ -29,7 +28,6 @@ end)
 
 script.on_event(defines.events.on_runtime_mod_setting_changed, function(event)
 	Gui.update_top_bar(game.players[event.player_index])
-	Common.update_nauvis_night()
 end)
 
 script.on_event(defines.events.on_force_created, function(event)
@@ -44,8 +42,6 @@ script.on_configuration_changed(function()
 	for _, player in pairs(game.connected_players) do
 		Gui.update_top_bar(player)
 	end
-
-	Common.update_nauvis_night()
 end)
 
 -- script.on_event(defines.events.on_player_respawned, function(event)

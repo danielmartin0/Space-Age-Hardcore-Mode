@@ -7,12 +7,6 @@ data:extend({
 	},
 	{
 		type = "bool-setting",
-		name = "rocs-hardcore-nauvis-darker-nights",
-		setting_type = "runtime-global",
-		default_value = true,
-	},
-	{
-		type = "bool-setting",
 		name = "rocs-hardcore-a-enable-info-gui",
 		setting_type = "runtime-per-user",
 		default_value = true,
@@ -38,14 +32,6 @@ data:extend({
 		name = "rocs-hardcore-expensive-utility-science",
 		setting_type = "startup",
 		default_value = true,
-	},
-	{
-		type = "double-setting",
-		name = "rocs-hardcore-gleba-spoilage-time-multiplier",
-		setting_type = "startup",
-		default_value = 0.5,
-		minimum_value = 0.0001,
-		maximum_value = 10000,
 	},
 	{
 		type = "bool-setting",

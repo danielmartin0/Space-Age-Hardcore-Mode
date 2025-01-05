@@ -1,10 +1,10 @@
 {
-  "name": "Rocs-Improved-Platform-Drag",
-  "version": "1.0.9",
-  "factorio_version": "2.0",
-  "title": "Better Platform Drag",
-  "author": "thesixthroc",
-  "description": "Adjusts the drag force on space platforms such that only the ship's weight affects its drag force and top speed, not its shape.",
-  "contact": "factorio@danielgmartin.com",
-  "dependencies": ["base >= 2.0.0", "space-age >= 2.0.0"]
+    "name": "Rocs-Improved-Platform-Drag",
+    "version": "1.0.11",
+    "factorio_version": "2.0",
+    "title": "Simpler Platform Drag",
+    "author": "thesixthroc",
+    "description": "Adjusts the drag force on space platforms such that only the ship's weight affects its drag force and top speed, not its shape.",
+    "contact": "factorio@danielgmartin.com",
+    "dependencies": ["base >= 2.0.0", "space-age >= 2.0.0"]
 }
