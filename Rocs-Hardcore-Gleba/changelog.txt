@@ -1,7 +1,13 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.1.10
+Version: 0.2.1
 Date: ????
   Changes:
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 2025-01-05
+  Changes:
+    - For purposes of producing handheld rocket launcher ammo, coal synthesis is now unlocked at the same time as the recipe to produce carbon from burnt spoilage.
+    - Rocketry is now a prerequisite for discovering Gleba.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.9
 Date: 2025-01-02

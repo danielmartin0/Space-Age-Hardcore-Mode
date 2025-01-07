@@ -1,10 +1,11 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.68
+Version: 1.1.1
 Date: ????
   Changes:
+    - Flat physical resistance of medium asteroids reduced from 10 to 7.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.0
-Date: ????
+Date: 2025-01-04
   Changes:
     - Removed darker nights on Nauvis. Instead, Diurnal Dynamics is now a mandatory dependency.
     - Simpler Platform Drag is now an optional dependency.

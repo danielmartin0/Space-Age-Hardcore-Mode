@@ -87,7 +87,7 @@ data:extend({
 		type = "int-setting",
 		name = "rocs-hardcore-spacec-medium-asteroid-extra-physical-resistance",
 		setting_type = "startup",
-		default_value = 10,
+		default_value = 7,
 		minimum_value = 0,
 		maximum_value = 10000,
 	},

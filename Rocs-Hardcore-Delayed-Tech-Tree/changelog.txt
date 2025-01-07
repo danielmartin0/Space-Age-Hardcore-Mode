@@ -1,7 +1,13 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.20
+Version: 1.1.1
 Date: ????
   Changes:
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 2025-01-05
+  Changes:
+    - The Logistic system technology now requires Gleba's science packs, rather than those of all three planets. This gives an incentive to complete Gleba before other planets.
+    - Requester chests and buffer chests now require carbon fiber to produce.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.19
 Date: 2025-01-02

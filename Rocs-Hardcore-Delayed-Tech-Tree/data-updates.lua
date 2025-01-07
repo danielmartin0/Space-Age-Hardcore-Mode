@@ -12,10 +12,7 @@ end
 
 if settings.startup["rocs-hardcore-push-back-logistic-system"].value then
 	data.raw.technology["logistic-system"].prerequisites = {
-		"utility-science-pack",
-		"metallurgic-science-pack",
-		"electromagnetic-science-pack",
-		"agricultural-science-pack",
+		"carbon-fiber",
 	}
 	data.raw.technology["logistic-system"].unit.count = 5000
 	data.raw.technology["logistic-system"].unit.ingredients = {
@@ -24,10 +21,26 @@ if settings.startup["rocs-hardcore-push-back-logistic-system"].value then
 		{ "chemical-science-pack", 1 },
 		{ "utility-science-pack", 1 },
 		{ "space-science-pack", 1 },
-		{ "metallurgic-science-pack", 1 },
-		{ "electromagnetic-science-pack", 1 },
 		{ "agricultural-science-pack", 1 },
 	}
+
+	if data.raw.recipe["requester-chest"] then
+		data.raw.recipe["requester-chest"].ingredients = {
+			{ type = "item", name = "steel-chest", amount = 1 },
+			{ type = "item", name = "electronic-circuit", amount = 3 },
+			{ type = "item", name = "advanced-circuit", amount = 1 },
+			{ type = "item", name = "carbon-fiber", amount = 1 },
+		}
+	end
+
+	if data.raw.recipe["buffer-chest"] then
+		data.raw.recipe["buffer-chest"].ingredients = {
+			{ type = "item", name = "steel-chest", amount = 1 },
+			{ type = "item", name = "electronic-circuit", amount = 3 },
+			{ type = "item", name = "advanced-circuit", amount = 1 },
+			{ type = "item", name = "carbon-fiber", amount = 1 },
+		}
+	end
 end
 
 if settings.startup["rocs-hardcore-push-back-cliff-explosives"].value then

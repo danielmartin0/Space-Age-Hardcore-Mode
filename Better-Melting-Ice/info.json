@@ -1,6 +1,6 @@
 {
     "name": "Better-Melting-Ice",
-    "version": "1.0.13",
+    "version": "1.1.2",
     "title": "Buildable Melting Ice",
     "description": "Buildings can be placed upon meltable ice, but collapse when the ice melts.",
     "factorio_version": "2.0",

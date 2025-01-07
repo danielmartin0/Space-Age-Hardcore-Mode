@@ -14,3 +14,19 @@ if settings.startup["rocs-hardcore-gleba-push-back-heating-tower"].value then
 		time = 60,
 	}
 end
+
+if settings.startup["rocs-hardcore-gleba-move-forward-coal-synthesis"].value then
+	for i, effect in ipairs(data.raw.technology["rocket-turret"].effects) do
+		if effect.recipe == "coal-synthesis" then
+			table.remove(data.raw.technology["rocket-turret"].effects, i)
+			break
+		end
+	end
+
+	table.insert(data.raw.technology["biochamber"].effects, { type = "unlock-recipe", recipe = "coal-synthesis" })
+end
+
+local discovery_tech = data.raw.technology["planet-discovery-gleba"]
+if discovery_tech then
+	table.insert(discovery_tech.prerequisites, "rocketry")
+end

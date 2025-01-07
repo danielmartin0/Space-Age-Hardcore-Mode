@@ -1,7 +1,7 @@
 local Public = {}
 
 local PLAYER_CHECK_INTERVAL = 70
-local SURFACE_CHECK_FACTOR = 60 * 30
+local SURFACE_CHECK_FACTOR = 30
 
 script.on_nth_tick(PLAYER_CHECK_INTERVAL, function()
 	if not settings.startup["better-melting-ice-enable-mod"].value then
@@ -89,11 +89,48 @@ function Public.handle_melting_effects(surface, pos)
 	})
 
 	for _, entity in pairs(colliding_entities) do
-		entity.die()
+		if entity and entity.valid then
+			if entity.type ~= "offshore-pump" and entity.prototype.create_ghost_on_death then
+				Public.place_ghost_concrete_under_entity(surface, entity)
+			end
+
+			entity.die()
+		end
 	end
 
 	surface.create_entity({
 		name = "water-splash",
 		position = { x = pos.x + 0.5, y = pos.y + 0.5 },
 	})
+end
+
+function Public.place_ghost_concrete_under_entity(surface, entity)
+	for i = -entity.tile_width / 2 + 0.5, entity.tile_width / 2 - 0.5 do
+		for j = -entity.tile_height / 2 + 0.5, entity.tile_height / 2 - 0.5 do
+			local tile = surface.get_tile(entity.position.x + i, entity.position.y + j)
+
+			if tile and tile.valid then
+				local ghosts = tile.get_tile_ghosts()
+
+				local has_floor_layer = false
+				for _, ghost in pairs(ghosts) do
+					local prototype = ghost.ghost_prototype
+					local layers = prototype.collision_mask.layers
+
+					if layers and layers.floor then
+						has_floor_layer = true
+					end
+				end
+
+				if not has_floor_layer then
+					surface.create_entity({
+						force = entity.force,
+						name = "tile-ghost",
+						position = { x = entity.position.x + i, y = entity.position.y + j },
+						ghost_name = "concrete",
+					})
+				end
+			end
+		end
+	end
 end

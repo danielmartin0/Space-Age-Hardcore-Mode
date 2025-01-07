@@ -13,4 +13,10 @@ data:extend({
 		setting_type = "startup",
 		default_value = true,
 	},
+	{
+		type = "bool-setting",
+		name = "rocs-hardcore-gleba-move-forward-coal-synthesis",
+		setting_type = "startup",
+		default_value = true,
+	},
 })
