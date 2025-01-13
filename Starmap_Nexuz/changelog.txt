@@ -1,0 +1,83 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.9.0
+Date: 2024-12-30
+  Info:
+    - Add compatibility with Intercontinental Rocketry Forked.
+---------------------------------------------------------------------------------------------------
+Version: 0.8.0
+Date: 2024-12-30
+  Info:
+    - Add compatibility with Factorio and Conquer: Tiberian Dawn.
+---------------------------------------------------------------------------------------------------
+Version: 0.7.2
+Date: 2024-12-29
+  Info:
+    - Removed the Fulgora-Maraxsis route when the star system route is activated (can be disabled).
+---------------------------------------------------------------------------------------------------
+Version: 0.7.1
+Date: 2024-12-24
+  Info:
+    - Fix compatibility with Factorissimo 3.
+---------------------------------------------------------------------------------------------------
+Version: 0.7.0
+Date: 2024-12-9
+  Info:
+    - Add an option to enable or disable interstellar travel routes (enabled by default)
+---------------------------------------------------------------------------------------------------
+Version: 0.6.0
+Date: 2024-12-9
+  Info:
+    - Add compatibility with Planet Arrakis(Early Alpha Version).
+---------------------------------------------------------------------------------------------------
+Version: 0.5.3
+Date: 2024-12-8
+  Info:
+    - Fix the factory locations for the Zerg and Protoss planets.
+---------------------------------------------------------------------------------------------------
+Version: 0.5.2
+Date: 2024-12-9
+  Info:
+    - Clean up unnecessary planetary resources
+    - Optimize icons and text
+---------------------------------------------------------------------------------------------------
+Version: 0.5.1
+Date: 2024-12-6
+  Info:
+    - Change the minimum distance to 1.
+---------------------------------------------------------------------------------------------------
+Version: 0.5.0
+Date: 2024-12-6
+  Info:
+    - Add a custom option for the galaxy travel distance.
+---------------------------------------------------------------------------------------------------
+Version: 0.4.2
+Date: 2024-12-6
+  Info:
+    - Shorten the route distance; the current distance is a bit excessive. My apologies.
+---------------------------------------------------------------------------------------------------
+Version: 0.4.1
+Date: 2024-12-5
+  Info:
+    - Update the prerequisites.
+---------------------------------------------------------------------------------------------------
+Version: 0.4.0
+Date: 2024-12-5
+  Info:
+    - Add compatibility with erm_zerg and erm_toss.
+    - Add an interstellar route, requiring travel to each planet via this route to make the starmap clearer.
+---------------------------------------------------------------------------------------------------
+Version: 0.3.0
+Date: 2024-12-2
+  Info:
+    - Adjusted the initial camera angle when opening the star map.
+    - Fixed compatibility with Maraxsis.
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 2024-12-1
+  Info:
+    - Add compatibility with Factorissimo 3
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2024-12-1
+  Info:
+    - Initial release

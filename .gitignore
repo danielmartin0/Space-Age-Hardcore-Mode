@@ -21,3 +21,6 @@
 !.styluaignore
 !.vscode/
 !.vscode/**
+
+
+!/Starmap_Nexuz/**

@@ -1,0 +1,11 @@
+{
+	"name":"Starmap_Nexuz",
+	"author":"Tserup",
+	"version":"0.9.0",
+	"title":"Starmap: Nexuz",
+	"description":"A new star system has been added, incorporating planets from multiple mods.",
+	"contact": "Discord: tserup",
+	"factorio_version":"2.0",
+	"dependencies": ["base >= 2.0.0", "? Better_Starmap_Background >= 0.6.0", "? tenebris", "? maraxsis", "? naufulglebunusilo", "? erm_zerg", "? erm_toss", "? planet-arrakis", "? Factorio-Tiberium", "? intercontinental-rocketry-forked"],
+	"space_travel_required": true
+} 
