@@ -27,6 +27,6 @@ if settings.startup["rocs-hardcore-gleba-move-forward-coal-synthesis"].value the
 end
 
 local discovery_tech = data.raw.technology["planet-discovery-gleba"]
-if discovery_tech then
+if discovery_tech and discovery_tech.prerequisites then
 	table.insert(discovery_tech.prerequisites, "rocketry")
 end
