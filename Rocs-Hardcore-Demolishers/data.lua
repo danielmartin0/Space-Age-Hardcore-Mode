@@ -152,3 +152,19 @@ if settings.startup["rocs-hardcore-advanced-casting-recipe"].value then
 		})
 	end
 end
+
+local vulcanus_cargo_tech =
+	PlanetsLib.cargo_drops_technology_base("vulcanus", "__space-age__/graphics/technology/vulcanus.png", 256)
+vulcanus_cargo_tech.prerequisites = { "metallurgic-science-pack" }
+vulcanus_cargo_tech.unit = {
+	count = 600,
+	time = 60,
+	ingredients = {
+		{ "automation-science-pack", 1 },
+		{ "logistic-science-pack", 1 },
+		{ "chemical-science-pack", 1 },
+		{ "metallurgic-science-pack", 1 },
+	},
+}
+
+data:extend({ vulcanus_cargo_tech })
