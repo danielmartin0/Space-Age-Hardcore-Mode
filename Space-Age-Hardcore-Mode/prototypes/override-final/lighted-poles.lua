@@ -1,14 +1,14 @@
 if settings.startup["rocs-hardcore-disable-lighted-electric-poles"].value then
-	-- Remove all items starting with "lighted-"
-	for name, _ in pairs(data.raw.item) do
-		if name and type(name) == "string" and string.sub(name, 1, 8) == "lighted-" then
-			data.raw.item[name] = nil
-		end
-	end
-
 	-- Remove all recipes starting with "lighted-"
 	for name, _ in pairs(data.raw.recipe) do
 		if name and type(name) == "string" and string.sub(name, 1, 8) == "lighted-" then
+			data.raw.recipe[name] = nil
+		end
+	end
+
+	-- Remove all recipes starting with "item-lighted-"
+	for name, _ in pairs(data.raw.recipe) do
+		if name and type(name) == "string" and string.sub(name, 1, 13) == "item-lighted-" then
 			data.raw.recipe[name] = nil
 		end
 	end
@@ -21,6 +21,20 @@ if settings.startup["rocs-hardcore-disable-lighted-electric-poles"].value then
 					entity_type[name] = nil
 				end
 			end
+		end
+	end
+
+	-- Remove all items starting with "lighted-"
+	for name, _ in pairs(data.raw.item) do
+		if name and type(name) == "string" and string.sub(name, 1, 8) == "lighted-" then
+			data.raw.item[name] = nil
+		end
+	end
+
+	-- Remove all items starting with "lighted-"
+	for name, _ in pairs(data.raw.item) do
+		if name and type(name) == "string" and string.sub(name, 1, 13) == "item-lighted-" then
+			data.raw.item[name] = nil
 		end
 	end
 
