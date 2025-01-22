@@ -93,14 +93,29 @@ if settings.startup["rocs-hardcore-push-back-kovarex-nuclear-fuel-and-atomic-bom
 	}
 end
 
-if settings.startup["rocs-hardcore-z-infinite-tech-needs-cryogenic"].value then
-	local excluded_techs = {
-		["health"] = true,
-	}
+local EXCLUDED_TECH_NAMES = {
+	["health"] = true,
+}
 
+if settings.startup["rocs-hardcore-z-infinite-tech-needs-cryogenic"].value then
 	local techs_to_process = {}
 	for name, tech in pairs(data.raw.technology) do
-		if tech.max_level == "infinite" and not excluded_techs[name] then
+		local allow = true
+
+		if EXCLUDED_TECH_NAMES[name] then
+			allow = false
+		end
+
+		if allow and tech.unit and tech.unit.ingredients then
+			for _, ingredient in pairs(tech.unit.ingredients) do
+				if ingredient[1] == "cerys-science-pack" then
+					allow = false
+					break
+				end
+			end
+		end
+
+		if tech.max_level == "infinite" and allow then
 			table.insert(techs_to_process, name)
 		end
 	end

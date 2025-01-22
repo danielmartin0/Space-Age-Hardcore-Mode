@@ -15,6 +15,7 @@ return {
 		"commands",
 		"rendering",
 		"feature_flags",
+		"remote",
 
 		"util",
 

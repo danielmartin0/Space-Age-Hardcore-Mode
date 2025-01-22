@@ -8,10 +8,17 @@ if settings.startup["rocs-hardcore-advanced-casting-recipe"].value then
 			icon = "__Rocs-Hardcore-Demolishers__/graphics/technology/advanced-casting.png",
 			icon_size = 256,
 			prerequisites = {
-				"automation-science-pack",
-				"logistic-science-pack",
-				"chemical-science-pack",
 				"metallurgic-science-pack",
+			},
+			unit = {
+				count = 100,
+				ingredients = {
+					{ "automation-science-pack", 1 },
+					{ "logistic-science-pack", 1 },
+					{ "chemical-science-pack", 1 },
+					{ "metallurgic-science-pack", 1 },
+				},
+				time = 60,
 			},
 			effects = {
 				{
@@ -86,16 +93,6 @@ if settings.startup["rocs-hardcore-advanced-casting-recipe"].value then
 					type = "unlock-recipe",
 					recipe = "foundry-metallurgy",
 				},
-			},
-			unit = {
-				count = 100,
-				ingredients = {
-					{ "automation-science-pack", 1 },
-					{ "logistic-science-pack", 1 },
-					{ "chemical-science-pack", 1 },
-					{ "metallurgic-science-pack", 1 },
-				},
-				time = 60,
 			},
 		},
 	})

@@ -1,7 +1,18 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.1.2
-Date: ????
+Version: 2.0.0
+Date: 2025-01-22
   Changes:
+    - Cargo drops on Vulcanus, Fulgora and Gleba are now restricted by needing to research a specific technology on each. Burning Cargo Pods will be deprecated.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.3
+Date: 2025-01-21
+  Graphics:
+    - If Lighted Electric Poles are enabled in the mod settings, Hardcore Mod now adds a distinguishing icon to their entity sprite.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.2
+Date: 2025-01-19
+  Changes:
+    - Planet Hopper added as an optional dependency.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.1
 Date: 2025-01-07

@@ -1,6 +1,6 @@
 {
     "name": "Space-Age-Hardcore-Mode",
-    "version": "1.1.2",
+    "version": "2.0.0",
     "factorio_version": "2.0",
     "title": "​Space Age: Hardcore Mode",
     "author": "thesixthroc",
@@ -11,7 +11,6 @@
     "dependencies": [
         "base >= 2.0.0",
         "space-age >= 2.0.0",
-        "Rocs-Hardcore-Cargo-Drops",
         "Rocs-Hardcore-Delayed-Tech-Tree",
         "Rocs-Hardcore-Demolishers",
         "Rocs-Hardcore-Fulgora",
@@ -22,6 +21,7 @@
         "diurnal-dynamics",
         "Lighted-Poles-Plus",
         "Planetary-Distance-Adjustments",
+        "PlanetsLib >= 1.1.31",
         "? distant-misfires",
         "? fire-lights",
         "? Explosive_biters",
@@ -31,6 +31,7 @@
         "? Rocs-Rusting-Iron",
         "? No-Qualitycycling",
         "? call-plumber",
-        "? Rocs-Improved-Platform-Drag"
+        "? Rocs-Improved-Platform-Drag",
+        "? Planet-Hopper"
     ]
 }
