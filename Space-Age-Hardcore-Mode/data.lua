@@ -1,5 +1,3 @@
-require("prototypes.technology")
-
 data:extend({
 	{
 		type = "sprite",
