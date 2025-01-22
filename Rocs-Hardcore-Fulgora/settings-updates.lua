@@ -1,6 +1,12 @@
 data:extend({
 	{
 		type = "bool-setting",
+		name = "rocs-hardcore-fulgora-a-cargo-drops-need-research",
+		setting_type = "startup",
+		default_value = true,
+	},
+	{
+		type = "bool-setting",
 		name = "rocs-hardcore-fulgora-lightning-rods-need-research",
 		setting_type = "startup",
 		default_value = true,

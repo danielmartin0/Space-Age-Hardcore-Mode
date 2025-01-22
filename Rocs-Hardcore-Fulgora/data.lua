@@ -37,18 +37,20 @@ if settings.startup["rocs-hardcore-fulgora-make-ruins-placeable"].value then
 	data:extend({ fulgoran_ruin_attractor })
 end
 
-local fulgora_cargo_tech =
-	PlanetsLib.cargo_drops_technology_base("fulgora", "__space-age__/graphics/technology/fulgora.png", 256)
-fulgora_cargo_tech.prerequisites = { "electromagnetic-science-pack" }
-fulgora_cargo_tech.unit = {
-	count = 600,
-	time = 60,
-	ingredients = {
-		{ "automation-science-pack", 1 },
-		{ "logistic-science-pack", 1 },
-		{ "chemical-science-pack", 1 },
-		{ "electromagnetic-science-pack", 1 },
-	},
-}
+if settings.startup["rocs-hardcore-fulgora-a-cargo-drops-need-research"].value then
+	local fulgora_cargo_tech =
+		PlanetsLib.cargo_drops_technology_base("fulgora", "__space-age__/graphics/technology/fulgora.png", 256)
+	fulgora_cargo_tech.prerequisites = { "electromagnetic-science-pack" }
+	fulgora_cargo_tech.unit = {
+		count = 600,
+		time = 60,
+		ingredients = {
+			{ "automation-science-pack", 1 },
+			{ "logistic-science-pack", 1 },
+			{ "chemical-science-pack", 1 },
+			{ "electromagnetic-science-pack", 1 },
+		},
+	}
 
-data:extend({ fulgora_cargo_tech })
+	data:extend({ fulgora_cargo_tech })
+end
