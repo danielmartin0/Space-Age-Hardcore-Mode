@@ -1,0 +1,218 @@
+local item_sounds = require("__base__.prototypes.item_sounds")
+local merge = require("lib").merge
+local find = require("lib").find
+local cargo_pod_procession_catalogue = require("cargo-pod-catalogue")
+
+data:extend({
+	{
+		type = "recipe",
+		name = "planet-hopper-launcher",
+		enabled = true,
+		ingredients = {
+			{ type = "item", name = "steel-plate", amount = 8 },
+			{ type = "item", name = "electronic-circuit", amount = 8 },
+			{ type = "item", name = "pipe", amount = 3 },
+		},
+		energy_required = 3,
+		results = { { type = "item", name = "planet-hopper-launcher", amount = 1 } },
+		requester_paste_multiplier = 1,
+	},
+	{
+		type = "item",
+		name = "planet-hopper-launcher",
+		icon = "__Planet-Hopper__/graphics/icons/planet-hopper-launcher.png",
+		icon_size = 64,
+		subgroup = "space-interactors",
+		order = "a[rocket-silo]-b[planet-hopper-launcher]",
+		inventory_move_sound = item_sounds.mechanical_inventory_move,
+		pick_sound = item_sounds.mechanical_inventory_pickup,
+		drop_sound = item_sounds.mechanical_inventory_move,
+		place_result = "planet-hopper-launcher",
+		weight = 1 * 1000,
+		stack_size = 1,
+	},
+	{
+		type = "recipe-category",
+		name = "planet-hopper-launcher",
+	},
+	{
+		type = "recipe",
+		name = "planet-hopper-automatic-rocket-parts",
+		category = "planet-hopper-launcher",
+		hidden = true,
+		energy_required = 4,
+		enabled = false,
+		hide_from_player_crafting = true,
+		ingredients = {},
+		results = { { type = "item", name = "rocket-part", amount = 1 } },
+		allow_productivity = true,
+	},
+})
+
+local SCALAR_NAMES = {
+	"volume",
+	"scale",
+	"rocket_render_layer_switch_distance",
+	"full_render_layer_switch_distance",
+	"effects_fade_in_start_distance",
+	"effects_fade_in_end_distance",
+	"shadow_fade_out_start_ratio",
+	"shadow_fade_out_end_ratio",
+	"rocket_visible_distance_from_center",
+	"rocket_above_wires_slice_offset_from_center",
+	"rocket_air_object_slice_offset_from_center",
+}
+local VECTOR_NAMES = {
+	"shift",
+	"rocket_initial_offset",
+	"rocket_rise_offset",
+	"rocket_launch_offset",
+	"cargo_attachment_offset",
+}
+local MATRIX_NAMES = {
+	"collision_box",
+	"selection_box",
+	"hole_clipping_box",
+}
+
+local SCALE_FACTOR = 4 / 9
+
+local function modify(table)
+	local has_filename = false
+	for k, v in pairs(table) do
+		if k == "filename" then
+			has_filename = true
+		end
+		if find(SCALAR_NAMES, k) then
+			table[k] = v * SCALE_FACTOR
+		elseif find(VECTOR_NAMES, k) then
+			if v.x then
+				table[k] = { x = v.x * SCALE_FACTOR, y = v.y * SCALE_FACTOR }
+			else
+				table[k] = { v[1] * SCALE_FACTOR, v[2] * SCALE_FACTOR }
+			end
+		elseif find(MATRIX_NAMES, k) then
+			table[k] = {
+				{ v[1][1] * SCALE_FACTOR, v[1][2] * SCALE_FACTOR },
+				{ v[2][1] * SCALE_FACTOR, v[2][2] * SCALE_FACTOR },
+			}
+		elseif type(v) == "table" then
+			modify(v)
+		end
+	end
+
+	if has_filename then
+		table.tint = { 0.6, 0.85, 0.6, 1 }
+	end
+end
+
+-- local scalar_names_2 = {
+-- 	"flying_speed",
+-- 	"flying_acceleration",
+-- }
+-- local function apply_scale_up(table)
+-- 	for k, v in pairs(table) do
+-- 		if find(scalar_names_2, k) then
+-- 			table[k] = v * 2
+-- 		elseif type(v) == "table" then
+-- 			apply_scale_up(v)
+-- 		end
+-- 	end
+-- end
+
+local silo_2 = merge(data.raw["rocket-silo"]["rocket-silo"], {
+	name = "planet-hopper-launcher",
+	icon = "__Planet-Hopper__/graphics/icons/planet-hopper-launcher.png",
+	crafting_categories = { "planet-hopper-launcher" },
+	icon_size = 64,
+	fast_replaceable_group = "nil",
+	fixed_recipe = "planet-hopper-automatic-rocket-parts",
+	to_be_inserted_to_rocket_inventory_size = 1,
+	rocket_parts_required = 1,
+	logistic_trash_inventory_size = 0,
+	rocket_entity = "planet-hopper",
+	alarm_sound = "nil",
+	quick_alarm_sound = "nil",
+	minable = { mining_time = 1, result = "planet-hopper-launcher" },
+	max_health = 1000,
+	module_slots = 0,
+	energy_usage = "100kW", --energy usage used when crafting the rocket
+	active_energy_usage = "1000kW",
+	times_to_blink = 1,
+	light_blinking_speed = data.raw["rocket-silo"]["rocket-silo"].light_blinking_speed * 2,
+	door_opening_speed = data.raw["rocket-silo"]["rocket-silo"].door_opening_speed * 2,
+})
+modify(silo_2)
+
+local rocket_2 = merge(data.raw["rocket-silo-rocket"]["rocket-silo-rocket"], {
+	name = "planet-hopper",
+	cargo_pod_entity = "planet-hopper-pod",
+	inventory_size = 1,
+	shadow_slave_entity = "planet-hopper-shadow",
+	flying_trigger = {
+		type = "script",
+		effect_id = "planet-hopper-clear-rocket-inventory",
+	},
+	rising_speed = data.raw["rocket-silo-rocket"]["rocket-silo-rocket"].rising_speed * 3,
+	engine_starting_speed = data.raw["rocket-silo-rocket"]["rocket-silo-rocket"].engine_starting_speed * 3,
+	-- rocket_sprite = "nil",
+	-- rocket_shadow_sprite = "nil",
+	-- rocket_glare_overlay_sprite = "nil",
+	-- rocket_smoke_bottom1_animation = "nil",
+	-- rocket_smoke_bottom2_animation = "nil",
+	-- rocket_smoke_top1_animation = "nil",
+	-- rocket_smoke_top2_animation = "nil",
+	-- rocket_smoke_top3_animation = "nil",
+	-- rocket_flame_animation = "nil",
+	-- rocket_flame_left_animation = "nil",
+	-- rocket_flame_right_animation = "nil",
+})
+modify(rocket_2)
+
+local rocket_shadow_2 = merge(data.raw["rocket-silo-rocket-shadow"]["rocket-silo-rocket-shadow"], {
+	name = "planet-hopper-shadow",
+})
+modify(rocket_shadow_2)
+
+local ROCKET_SHIFT = -2.52
+local function apply_shift(table)
+	for _, v in pairs(table) do
+		if v.index and v.index >= 100 and v.index < 200 then
+			if v.sprite then
+				v.sprite.shift = v.sprite.shift or { 0, 0 }
+				v.sprite.shift = { v.sprite.shift[1], v.sprite.shift[2] + ROCKET_SHIFT }
+			end
+
+			if v.animation then
+				v.animation.shift = v.animation.shift or { 0, 0 }
+				v.animation.shift = { v.animation.shift[1], v.animation.shift[2] + ROCKET_SHIFT }
+			end
+		end
+	end
+end
+
+local cargo_pod_2 = merge(data.raw["cargo-pod"]["cargo-pod"], {
+	name = "planet-hopper-pod",
+	inventory_size = 1,
+	procession_graphic_catalogue = cargo_pod_procession_catalogue,
+})
+-- modify(cargo_pod_2)
+-- apply_shift(cargo_pod_2.procession_graphic_catalogue)
+
+data:extend({ silo_2, rocket_2, cargo_pod_2, rocket_shadow_2 })
+
+local function accept_cargo_pod_2(table)
+	for k, v in pairs(table) do
+		if k == "receiving_cargo_units" and find(v, "cargo-pod") and not find(table, "planet-hopper-pod") then
+			v[#v + 1] = "planet-hopper-pod"
+		elseif type(v) == "table" then
+			accept_cargo_pod_2(v)
+		end
+	end
+end
+for _, v in pairs(data.raw["space-platform-hub"]) do
+	accept_cargo_pod_2(v)
+end
+for _, v in pairs(data.raw["cargo-bay"]) do
+	accept_cargo_pod_2(v)
+end
