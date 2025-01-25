@@ -176,7 +176,6 @@ local function apply_shift(table)
 			if v.animation then
 				v.animation.shift = v.animation.shift or { 0, 0 }
 				v.animation.shift = { v.animation.shift[1], v.animation.shift[2] + ROCKET_SHIFT }
-				v.animation.draw_as_glow = true
 			end
 		end
 	end
