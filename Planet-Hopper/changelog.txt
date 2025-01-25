@@ -1,7 +1,20 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.5
+Version: 1.0.7
 Date: ????
   Changes:
+    - Crafting time of launcher reduced.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.6
+Date: 2025-01-25
+  Changes:
+    - Launchers no longer require electricity to function.
+    - Mining time of launcher reduced.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.5
+Date: 2025-01-25
+  Changes:
+    - Planet hoppers now launch on command without any delay.
+    - Launcher recipe tweaked.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.4
 Date: 2025-01-22

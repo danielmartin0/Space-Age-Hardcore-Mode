@@ -8,11 +8,11 @@ data:extend({
 		name = "planet-hopper-launcher",
 		enabled = true,
 		ingredients = {
-			{ type = "item", name = "steel-plate", amount = 8 },
-			{ type = "item", name = "electronic-circuit", amount = 8 },
-			{ type = "item", name = "pipe", amount = 3 },
+			{ type = "item", name = "steel-plate", amount = 10 },
+			{ type = "item", name = "electronic-circuit", amount = 10 },
+			{ type = "item", name = "pipe", amount = 4 },
 		},
-		energy_required = 3,
+		energy_required = 2,
 		results = { { type = "item", name = "planet-hopper-launcher", amount = 1 } },
 		requester_paste_multiplier = 1,
 	},
@@ -39,7 +39,7 @@ data:extend({
 		name = "planet-hopper-automatic-rocket-parts",
 		category = "planet-hopper-launcher",
 		hidden = true,
-		energy_required = 4,
+		energy_required = 3,
 		enabled = false,
 		hide_from_player_crafting = true,
 		ingredients = {},
@@ -134,7 +134,7 @@ local silo_2 = merge(data.raw["rocket-silo"]["rocket-silo"], {
 	rocket_entity = "planet-hopper",
 	alarm_sound = "nil",
 	quick_alarm_sound = "nil",
-	minable = { mining_time = 1, result = "planet-hopper-launcher" },
+	minable = { mining_time = 0.3, result = "planet-hopper-launcher" },
 	max_health = 1000,
 	module_slots = 0,
 	energy_usage = "100kW", --energy usage used when crafting the rocket
@@ -142,6 +142,9 @@ local silo_2 = merge(data.raw["rocket-silo"]["rocket-silo"], {
 	times_to_blink = 1,
 	light_blinking_speed = data.raw["rocket-silo"]["rocket-silo"].light_blinking_speed * 2,
 	door_opening_speed = data.raw["rocket-silo"]["rocket-silo"].door_opening_speed * 2,
+	energy_source = {
+		type = "void",
+	},
 })
 modify(silo_2)
 
