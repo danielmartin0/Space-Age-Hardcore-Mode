@@ -1,7 +1,6 @@
 local item_sounds = require("__base__.prototypes.item_sounds")
 local merge = require("lib").merge
 local find = require("lib").find
-local cargo_pod_procession_catalogue = require("cargo-pod-catalogue")
 
 data:extend({
 	{
@@ -127,6 +126,8 @@ local silo_2 = merge(data.raw["rocket-silo"]["rocket-silo"], {
 	icon_size = 64,
 	fast_replaceable_group = "nil",
 	fixed_recipe = "planet-hopper-automatic-rocket-parts",
+	launch_wait_time = 1,
+	rocket_rising_delay = 1,
 	to_be_inserted_to_rocket_inventory_size = 1,
 	rocket_parts_required = 1,
 	logistic_trash_inventory_size = 0,
@@ -155,17 +156,6 @@ local rocket_2 = merge(data.raw["rocket-silo-rocket"]["rocket-silo-rocket"], {
 	},
 	rising_speed = data.raw["rocket-silo-rocket"]["rocket-silo-rocket"].rising_speed * 3,
 	engine_starting_speed = data.raw["rocket-silo-rocket"]["rocket-silo-rocket"].engine_starting_speed * 3,
-	-- rocket_sprite = "nil",
-	-- rocket_shadow_sprite = "nil",
-	-- rocket_glare_overlay_sprite = "nil",
-	-- rocket_smoke_bottom1_animation = "nil",
-	-- rocket_smoke_bottom2_animation = "nil",
-	-- rocket_smoke_top1_animation = "nil",
-	-- rocket_smoke_top2_animation = "nil",
-	-- rocket_smoke_top3_animation = "nil",
-	-- rocket_flame_animation = "nil",
-	-- rocket_flame_left_animation = "nil",
-	-- rocket_flame_right_animation = "nil",
 })
 modify(rocket_2)
 
@@ -186,6 +176,7 @@ local function apply_shift(table)
 			if v.animation then
 				v.animation.shift = v.animation.shift or { 0, 0 }
 				v.animation.shift = { v.animation.shift[1], v.animation.shift[2] + ROCKET_SHIFT }
+				v.animation.draw_as_glow = true
 			end
 		end
 	end
@@ -194,10 +185,9 @@ end
 local cargo_pod_2 = merge(data.raw["cargo-pod"]["cargo-pod"], {
 	name = "planet-hopper-pod",
 	inventory_size = 1,
-	procession_graphic_catalogue = cargo_pod_procession_catalogue,
 })
--- modify(cargo_pod_2)
--- apply_shift(cargo_pod_2.procession_graphic_catalogue)
+modify(cargo_pod_2)
+apply_shift(cargo_pod_2.procession_graphic_catalogue)
 
 data:extend({ silo_2, rocket_2, cargo_pod_2, rocket_shadow_2 })
 
