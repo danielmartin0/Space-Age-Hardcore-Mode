@@ -29,4 +29,10 @@ data:extend({
 		setting_type = "startup",
 		default_value = false,
 	},
+	{
+		type = "bool-setting",
+		name = "rocs-hardcore-push-back-night-vision-equipment",
+		setting_type = "startup",
+		default_value = true,
+	},
 })
