@@ -145,6 +145,7 @@ local silo_2 = merge(data.raw["rocket-silo"]["rocket-silo"], {
 	energy_source = {
 		type = "void",
 	},
+	surface_conditions = "nil",
 })
 modify(silo_2)
 

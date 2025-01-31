@@ -106,14 +106,14 @@ end
 if settings.startup["rocs-hardcore-push-back-night-vision-equipment"].value then
 	if data.raw.technology["night-vision-equipment"] then
 		data.raw.technology["night-vision-equipment"].prerequisites = {
-			"metallurgic-science-pack",
+			"agricultural-science-pack",
 		}
 		data.raw.technology["night-vision-equipment"].unit.ingredients = {
 			{ "automation-science-pack", 1 },
 			{ "logistic-science-pack", 1 },
 			{ "chemical-science-pack", 1 },
 			{ "space-science-pack", 1 },
-			{ "metallurgic-science-pack", 1 },
+			{ "agricultural-science-pack", 1 },
 		}
 	end
 end
