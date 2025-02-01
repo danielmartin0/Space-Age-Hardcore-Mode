@@ -1,26 +1,20 @@
-if settings.startup["rocs-hardcore-a-cargo-pods-enable-mod"].value then
-	table.insert(data.raw.technology["rocket-silo"].effects, {
-		type = "unlock-recipe",
-		recipe = "cargo-pod-nauvis",
-	})
-
-	table.insert(data.raw.technology["planet-discovery-fulgora"].effects, {
-		type = "unlock-recipe",
-		recipe = "cargo-pod-fulgora",
-	})
-
-	table.insert(data.raw.technology["planet-discovery-vulcanus"].effects, {
-		type = "unlock-recipe",
-		recipe = "cargo-pod-vulcanus",
-	})
-
-	table.insert(data.raw.technology["planet-discovery-gleba"].effects, {
-		type = "unlock-recipe",
-		recipe = "cargo-pod-gleba",
-	})
-
-	table.insert(data.raw.technology["planet-discovery-aquilo"].effects, {
-		type = "unlock-recipe",
-		recipe = "cargo-pod-aquilo",
-	})
+for _, planet in pairs({ "nauvis", "fulgora", "vulcanus", "gleba", "aquilo" }) do
+	if data.raw.technology["planetslib-" .. planet .. "-cargo-drops"] then
+		table.insert(data.raw.technology["planetslib-" .. planet .. "-cargo-drops"].effects, {
+			type = "unlock-recipe",
+			recipe = "cargo-pod-" .. planet,
+		})
+	elseif data.raw.technology["planet-discovery-" .. planet] then
+		table.insert(data.raw.technology["planet-discovery-" .. planet].effects, {
+			type = "unlock-recipe",
+			recipe = "cargo-pod-" .. planet,
+		})
+	elseif data.raw.technology["rocket-silo"] then
+		table.insert(data.raw.technology["rocket-silo"].effects, {
+			type = "unlock-recipe",
+			recipe = "cargo-pod-" .. planet,
+		})
+	else
+		data.raw.item["cargo-pod-" .. planet].enabled = true
+	end
 end

@@ -21,13 +21,6 @@ script.on_event(defines.events.on_gui_opened, function(event)
 		return
 	end
 
-	if not settings.startup["rocs-hardcore-a-cargo-pods-enable-mod"].value then
-		if player.gui.relative[GUI_KEY] then
-			player.gui.relative[GUI_KEY].destroy()
-		end
-		return
-	end
-
 	local relative = player.gui.relative
 	if relative[GUI_KEY] then
 		if (relative[GUI_KEY].tags or {}).mod_version ~= script.active_mods["Rocs-Hardcore-Cargo-Drops"] then

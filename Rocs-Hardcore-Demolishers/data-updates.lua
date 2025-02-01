@@ -88,10 +88,7 @@ if settings.startup["rocs-hardcore-advanced-casting-recipe"].value then
 	data.raw.recipe["express-splitter"].category = "crafting-with-fluid"
 	data.raw.recipe["foundry"].category = "crafting-with-fluid"
 
-	local disabled_by_setting = settings.startup["rocs-hardcore-a-cargo-pods-enable-mod"]
-		and not settings.startup["rocs-hardcore-a-cargo-pods-enable-mod"].value
-
-	if mods["Rocs-Hardcore-Cargo-Drops"] and not disabled_by_setting then
+	if mods["Rocs-Hardcore-Cargo-Drops"] then
 		data.raw.recipe["cargo-pod-vulcanus"].category = "crafting"
 		-- For consistency in the 'crafted in' tooltip":
 		data.raw.recipe["cargo-pod-vulcanus"].localised_name = {

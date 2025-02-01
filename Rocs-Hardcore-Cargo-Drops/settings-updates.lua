@@ -1,12 +1,6 @@
 data:extend({
 	{
 		type = "bool-setting",
-		name = "rocs-hardcore-a-cargo-pods-enable-mod",
-		setting_type = "startup",
-		default_value = true,
-	},
-	{
-		type = "bool-setting",
 		name = "rocs-hardcore-cargo-pods-can-carry-construction-robots",
 		setting_type = "runtime-global",
 		default_value = false,

@@ -128,10 +128,7 @@ if settings.startup["rocs-hardcore-advanced-casting-recipe"].value then
 		data:extend({ recipe })
 	end
 
-	local disabled_by_setting = settings.startup["rocs-hardcore-a-cargo-pods-enable-mod"]
-		and not settings.startup["rocs-hardcore-a-cargo-pods-enable-mod"].value
-
-	if mods["Rocs-Hardcore-Cargo-Drops"] and not disabled_by_setting then
+	if mods["Rocs-Hardcore-Cargo-Drops"] then
 		local recipe = util.table.deepcopy(data.raw.recipe["cargo-pod-vulcanus"])
 		recipe.category = "metallurgy"
 		recipe.enabled = false

@@ -13,10 +13,6 @@ Public.LOCATION_REQUIRED_ITEMS = {
 	default = "cargo-pod-nauvis",
 }
 script.on_nth_tick(10, function()
-	if not settings.startup["rocs-hardcore-a-cargo-pods-enable-mod"].value then
-		return
-	end
-
 	Public.check_cargo_pods()
 end)
 
