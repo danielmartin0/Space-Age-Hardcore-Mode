@@ -1,6 +1,6 @@
 {
     "name": "Rocs-Hardcore-Gleba",
-    "version": "2.0.3",
+    "version": "2.0.4",
     "factorio_version": "2.0",
     "title": "Roc's Hardcore Gleba",
     "author": "thesixthroc",
@@ -11,8 +11,7 @@
         "base >= 2.0.19",
         "space-age >= 2.0.19",
         "Rocs-Hardcore-Probabilistic-Farming",
-        "PlanetsLib >= 1.1.31",
-        "! Rocs-Hardcore-Cargo-Drops"
+        "PlanetsLib >= 1.1.31"
     ],
     "spoiling_required": true
 }

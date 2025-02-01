@@ -1,6 +1,6 @@
 {
     "name": "Space-Age-Hardcore-Mode",
-    "version": "2.0.6",
+    "version": "2.0.7",
     "factorio_version": "2.0",
     "title": "​Space Age: Hardcore Mode",
     "author": "thesixthroc",
@@ -33,7 +33,6 @@
         "? call-plumber",
         "? Rocs-Improved-Platform-Drag",
         "? Planet-Hopper",
-        "(?) Flare Stack",
-        "! Rocs-Hardcore-Cargo-Drops"
+        "(?) Flare Stack"
     ]
 }

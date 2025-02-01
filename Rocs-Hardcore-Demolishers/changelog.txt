@@ -1,7 +1,12 @@
 ---------------------------------------------------------------------------------------------------
-Version: 2.0.3
+Version: 2.0.4
 Date: ????
   Changes:
+---------------------------------------------------------------------------------------------------
+Version: 2.0.3
+Date: 2025-02-01
+  Changes:
+    - Incompatibility with Burning Cargo Pods removed. You may wish to disable the 'Dropping cargo requires technology' checkbox setting if you use it.
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.2
 Date: 2025-01-22

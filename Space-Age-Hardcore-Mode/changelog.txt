@@ -1,7 +1,12 @@
 ---------------------------------------------------------------------------------------------------
-Version: 2.0.6
+Version: 2.0.7
 Date: ????
   Changes:
+---------------------------------------------------------------------------------------------------
+Version: 2.0.6
+Date: 2025-02-01
+  Changes:
+    - Incompatibility with Burning Cargo Pods removed. You may wish to disable the 'Dropping cargo requires technology' checkbox setting on the Gleba, Fulgora and Vulcanus mods if you use it.
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.5
 Date: 2025-01-22

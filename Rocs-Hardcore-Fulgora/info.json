@@ -1,6 +1,6 @@
 {
     "name": "Rocs-Hardcore-Fulgora",
-    "version": "2.0.2",
+    "version": "2.0.3",
     "factorio_version": "2.0",
     "title": "Roc's Hardcore Fulgora",
     "author": "thesixthroc",
@@ -12,7 +12,6 @@
         "space-age >= 2.0.19",
         "Rocs-Hardcore-Lightning-Storms",
         "PlanetsLib >= 1.1.31",
-        "? Electric_flying_enemies",
-        "! Rocs-Hardcore-Cargo-Drops"
+        "? Electric_flying_enemies"
     ]
 }

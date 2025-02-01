@@ -1,6 +1,6 @@
 {
     "name": "Rocs-Hardcore-Demolishers",
-    "version": "2.0.3",
+    "version": "2.0.4",
     "factorio_version": "2.0",
     "title": "Roc's Hardcore Vulcanus",
     "author": "thesixthroc",
@@ -11,8 +11,7 @@
         "base >= 2.0.21",
         "space-age >= 2.0.21",
         "PlanetsLib >= 1.1.31",
-        "? behemoth-enemies",
-        "! Rocs-Hardcore-Cargo-Drops"
+        "? behemoth-enemies"
     ],
     "segmented_units_required": true
 }
