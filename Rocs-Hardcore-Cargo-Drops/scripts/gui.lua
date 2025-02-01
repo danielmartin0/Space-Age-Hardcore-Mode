@@ -281,7 +281,7 @@ script.on_event(defines.events.on_gui_text_changed, function(event)
 		end
 	end
 
-	Public.hub_set_state(entity, number)
+	Public.hub_set_minimum_drop_count(entity, number)
 
 	for _, player2 in pairs(game.connected_players) do
 		if player2.valid and player2.opened and player2.opened.valid and player2.opened == entity then
