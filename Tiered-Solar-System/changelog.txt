@@ -1,0 +1,78 @@
+---------------------------------------------------------------------------------------------------
+Version: 2.0.0
+Date: 2024-02-02
+  Info:
+    - 
+---------------------------------------------------------------------------------------------------
+Version: 1.1.4
+Date: 2025-01-14
+  Info:
+    - Description updated.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.3
+Date: 2024-12-24
+  Changes:
+    - Support for Cerys, Moon of Fulgora.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.2
+Date: 2024-12-14
+  Changes:
+    - Support for Terra Palus.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.1
+Date: 2024-12-14
+  Changes:
+    - Fulgora moved a little closer to Nauvis to emphasize its viability as a second planet, and make it more central in the early system.
+    - Aquilo moved a little closer to the other planets to better reflect its distance from them.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 2024-12-10
+  Changes:
+    - Reorganized planet positions somewhat. Aquilo, Tenebris and Maraxsis have been pushed further back. The presence of certain connections have been adjusted to match the new positions.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.9
+Date: 2024-12-07
+  Modding:
+    - Support for 'erm_zerg' and 'erm_toss' mods.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.8
+Date: 2024-12-06
+  Modding:
+    - Removed optional dependencies so other mods can depend on this mod.
+    - Mod name changed.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.7
+Date: 2024-12-03
+  Info:
+    - Description update.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.6
+Date: 2024-12-03
+  Changes:
+    - Maraxsis distance adjusted in light of 1.0.5.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.5
+Date: 2024-12-03
+  Changes:
+    - Vulcanus and Nauvis position adjusted.
+    - Vulcanus–Fulgora route added.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.4
+Date: 2024-12-03
+  Changes:
+    - Vulcanus and Nauvis positions adjusted.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Date: 2024-12-03
+  Bugfixes:
+    - Circular dependency fixed.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 2024-12-03
+  Features:
+    - Description update to reference the 'Planetary Distance Adjustments' mod.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 17.11.2024
+  Features:
+    - First version.

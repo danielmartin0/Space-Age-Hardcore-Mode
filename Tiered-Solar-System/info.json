@@ -1,0 +1,16 @@
+{
+    "name": "Tiered-Solar-System",
+    "author": "thesixthroc",
+    "version": "2.0.0",
+    "title": "Organized Solar System",
+    "description": "Organizes the positions of solar system planets by 'tier', making it easier for modded planets to indicate where they fit in the Space Age progression.\n\nLengths of routes are unchanged. For route lengths that match the organized map precisely, install 'Planetary Distance Adjustments'.\n\nNOTE: This mod is looking for a collaborator to maintain it. (Please contact thesixthroc on Discord.)",
+    "contact": "Discord: thesixthroc",
+    "factorio_version": "2.0",
+    "dependencies": [
+        "base >= 2.0.0",
+        "space-age >= 2.0.0",
+        "Redrawn-Space-Connections",
+        "PlanetsLib >= 1.1.42"
+    ],
+    "space_travel_required": true
+}

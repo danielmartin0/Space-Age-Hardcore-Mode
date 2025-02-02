@@ -25,18 +25,15 @@
                 "Surfaces-Have-Temperature",
                 "Tiered-Solar-System",
                 "No-Qualitycycling",
-                "Cerys-Moon-of-Fulgora",
-                "PlanetsLib",
                 "pirate_ship",
-                "Planet-Hopper",
-                "Redrawn-Space-Connections"
+                "Planet-Hopper"
             ]
         },
         {
             "id": "repoModName",
             "type": "pickString",
             "description": "Which repo mod to publish?",
-            "options": ["Cerys-Moon-of-Fulgora", "PlanetsLib"]
+            "options": ["Cerys-Moon-of-Fulgora", "PlanetsLib", "Redrawn-Space-Connections"]
         }
     ],
     "tasks": [
