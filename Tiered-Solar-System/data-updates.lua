@@ -1,104 +1,25 @@
-if mods["naufulglebunusilo"] then
-	if data.raw["space-connection"]["fulgora-naufulglebunusilo"] then
-		data.raw["space-connection"]["fulgora-naufulglebunusilo"] = nil
+local defaults = require("defaults")
+
+for name, tier in pairs(defaults.default_modded_planet_tiers) do
+	if data.raw.planet[name] and not data.raw.planet[name].tier then
+		data.raw.planet[name].tier = tier
 	end
 end
 
-data.raw.planet.nauvis.orientation = 0.85
-
-data.raw.planet.vulcanus.orientation = 0.66
-data.raw.planet.fulgora.orientation = 0.66
-data.raw.planet.fulgora.label_orientation = 0.15
-data.raw.planet.gleba.orientation = 0.5
-data.raw.planet.gleba.label_orientation = 0.1
-
-if data.raw["space-connection"]["nauvis-gleba"] then
-	data.raw["space-connection"]["nauvis-gleba"] = nil
-end
-
-data.raw.planet.aquilo.orientation = 0.36
-data.raw.planet.aquilo.label_orientation = 0.375
-data.raw.planet.aquilo.distance = 45 -- from 35
-data.raw["space-location"]["solar-system-edge"].distance = 75 -- from 50
-data.raw["space-location"]["shattered-planet"].distance = 160 -- from 80
-
-if mods["tenebris"] then
-	local tenebris = data.raw["planet"]["tenebris"]
-
-	if tenebris then
-		tenebris.orientation = 0.27
-		tenebris.distance = 52 -- from 30
-		tenebris.label_orientation = 0.5
-		tenebris.draw_orbit = false
-	end
-
-	data.raw["space-connection"]["fulgora-tenebris"] = nil
-end
-
-if mods["maraxsis"] then
-	local maraxsis = data.raw["planet"]["maraxsis"]
-
-	if maraxsis then
-		maraxsis.orientation = 0.25
-		maraxsis.label_orientation = 0.25
-		maraxsis.draw_orbit = false
-	end
-
-	local trench = data.raw["planet"]["maraxsis-trench"]
-
-	if trench then
-		trench.orientation = 0.235
-		trench.label_orientation = 0.95
-		trench.distance = 14.6 -- from 15.6
-		trench.draw_orbit = false
-	end
-
-	data.raw["space-connection"]["fulgora-maraxsis"] = nil
-end
-
-if mods["naufulglebunusilo"] then
-	local naufulglebunusilo = data.raw["planet"]["naufulglebunusilo"]
-
-	if naufulglebunusilo then
-		naufulglebunusilo.orientation = 0.1
-		naufulglebunusilo.draw_orbit = false
+for name, tier in pairs(defaults.default_modded_location_tiers) do
+	if data.raw["space-location"][name] and not data.raw["space-location"][name].tier then
+		data.raw["space-location"][name].tier = tier
 	end
 end
 
-if mods["naufulglebunusilo"] and mods["tenebris"] and mods["maraxsis"] then
-	data.raw["space-connection"]["aquilo-naufulglebunusilo"] = nil
-end
+for _, type in pairs({ "space-location", "planet" }) do
+	for _, loc in pairs(data.raw[type] or {}) do
+		if loc.orbit and loc.orbit.parent and loc.orbit.parent.name then
+			if loc.orbit.parent.name == "star" then
+				loc.tier = loc.tier or defaults.fallback_tier
 
-if mods["erm_zerg"] then
-	local char = data.raw.planet.char
-	if char then
-		char.orientation = 0.26
-		char.distance = 10
-		char.draw_orbit = false
-
-		data.raw["space-connection"]["nauvis-char"] = nil
+				loc.orientation = 1 - (loc.tier * 0.15)
+			end
+		end
 	end
-end
-
-if mods["erm_toss"] then
-	local aiur = data.raw.planet.aiur
-	if aiur then
-		aiur.orientation = 0.6
-		aiur.distance = 30
-		aiur.draw_orbit = false
-
-		data.raw["space-connection"]["nauvis-aiur"] = nil
-	end
-end
-
-if mods["terrapalus"] then
-	local terrapalus = data.raw.planet.terrapalus
-	if terrapalus then
-		terrapalus.distance = 22
-		terrapalus.orientation = 0.5
-	end
-end
-
-if mods["Cerys-Moon-of-Fulgora"] then
-	data.raw.planet.cerys.orientation = 0.668
 end
