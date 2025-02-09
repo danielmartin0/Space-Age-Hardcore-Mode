@@ -1,7 +1,7 @@
 {
     "name": "Tiered-Solar-System",
     "author": "thesixthroc",
-    "version": "2.1.9",
+    "version": "2.1.10",
     "title": "Organized Solar System",
     "description": "Organizes the positions of solar system planets by 'tier', making it easier for modded planets to indicate where they fit in the game progression.\n\nTiers run from 0 (north of the star) anticlockwise to 6 (north-east of the star). Mods with no tier appear vertically below the sun. Please suggest a tier for them on Discord!",
     "contact": "Discord: thesixthroc",

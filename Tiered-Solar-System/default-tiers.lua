@@ -16,21 +16,20 @@ Public.default_modded_planet_tiers = {
 	akularis = 0.5,
 	gerkizia = 0.5,
 	quadromire = 0.5,
-	lignumis = 0.5,
 	mickora = 1,
-	terrapalus = 1,
 	vicrox = 1.4,
 	froodara = 1.8,
 	tchekor = 2,
 	nekohaven = 2.5,
 	zzhora = 2.5,
-	cubium = 3.3,
-	janus = 3.1,
-	ithurice = 3.5,
+	janus = 3,
+	ithurice = 3.3,
+	corrundum = 3.3,
+	terrapalus = 3.5,
 	castra = 4,
 	tapatrion = 4,
-	corrundum = 4,
 	tenebris = 4,
+	cubium = 4.1,
 	hexalith = 5,
 	maraxsis = 5,
 	frozeta = 5.5,
@@ -42,6 +41,17 @@ Public.default_modded_location_tiers = {
 	secretas = 5.65,
 }
 
--- For vanilla tiers, see vanilla.lua or the mod portal homepage.
+Public.vanilla_planet_tiers = {
+	nauvis = 1,
+	vulcanus = 1.8,
+	fulgora = 2.4,
+	gleba = 3.6,
+	aquilo = 5,
+}
+
+Public.vanilla_location_tiers = {
+	["shattered-planet"] = 4.83871,
+	["solar-system-edge"] = 4.83871,
+}
 
 return Public

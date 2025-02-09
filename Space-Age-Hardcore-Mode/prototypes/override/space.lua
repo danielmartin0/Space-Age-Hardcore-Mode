@@ -59,14 +59,14 @@ if settings.startup["rocs-hardcore-spaced-asteroids-early-copper-available"].val
 			data.raw.technology["space-platform"].effects,
 			{ type = "unlock-recipe", recipe = "advanced-metallic-asteroid-crushing" }
 		)
-	end
 
-	if data.raw.technology["advanced-asteroid-processing"] then
-		local effects = data.raw.technology["advanced-asteroid-processing"].effects or {}
-		for i, effect in ipairs(effects) do
-			if effect.type == "unlock-recipe" and effect.recipe == "advanced-metallic-asteroid-crushing" then
-				table.remove(effects, i)
-				break
+		if data.raw.technology["advanced-asteroid-processing"] then
+			local effects = data.raw.technology["advanced-asteroid-processing"].effects or {}
+			for i, effect in ipairs(effects) do
+				if effect.type == "unlock-recipe" and effect.recipe == "advanced-metallic-asteroid-crushing" then
+					table.remove(effects, i)
+					break
+				end
 			end
 		end
 	end
