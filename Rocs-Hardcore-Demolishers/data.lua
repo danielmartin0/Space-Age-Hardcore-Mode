@@ -155,12 +155,13 @@ if settings.startup["rocs-hardcore-demolishers-a-cargo-drops-need-research"].val
 		PlanetsLib.cargo_drops_technology_base("vulcanus", "__space-age__/graphics/technology/vulcanus.png", 256)
 	vulcanus_cargo_tech.prerequisites = { "metallurgic-science-pack" }
 	vulcanus_cargo_tech.unit = {
-		count = 600,
+		count = 2500,
 		time = 60,
 		ingredients = {
 			{ "automation-science-pack", 1 },
 			{ "logistic-science-pack", 1 },
 			{ "chemical-science-pack", 1 },
+			{ "space-science-pack", 1 },
 			{ "metallurgic-science-pack", 1 },
 		},
 	}

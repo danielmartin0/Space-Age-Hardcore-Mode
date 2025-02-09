@@ -1,6 +1,66 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.1.9
+Date: ????
+  Changes:
+---------------------------------------------------------------------------------------------------
+Version: 2.1.8
+Date: 2025-02-07
+  Changes:
+    - Added checkbox setting to ensure that the vanilla planets are always connected.
+---------------------------------------------------------------------------------------------------
+Version: 2.1.7
+Date: 2025-02-07
+  Changes:
+    - Deleted unused file.
+---------------------------------------------------------------------------------------------------
+Version: 2.1.6
+Date: 2025-02-06
+  Changes:
+    - Support for leaving planets in-place in the Organized Solar System by setting tier = -1.
+---------------------------------------------------------------------------------------------------
+Version: 2.1.0
+Date: 2025-02-04
+  Changes:
+    - Fulgora tier increased from 2.2 to 2.4.
+    - Gleba tier decreased from 3.5 to 3.4.
+    - Slightly shifted the positions of all tiers forward such that Aquilo appears in its vanilla location. This means Aquilo is once again 100,000km from the solar system edge.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.7
+Date: 2025-02-04
+  Changes:
+    - Description update.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.6
+Date: 2025-02-03
+  Changes:
+    - Corrected minimum version of RSC to 1.1.2.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.5
+Date: 2025-02-03
+  Changes:
+    - Bumped minimum version of RSC to 1.1.3.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.4
+Date: 2025-02-03
+  Changes:
+    - Support for RSC 1.1.3.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.3
+Date: 2025-02-03
+  Changes:
+---------------------------------------------------------------------------------------------------
+Version: 2.0.2
+Date: 2025-02-02
+  Changes:
+    - Thumbnail updated.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.1
+Date: 2025-02-02
+  Changes:
+    - Gleba tier increased from 3 to 3.5.
+---------------------------------------------------------------------------------------------------
 Version: 2.0.0
-Date: 2024-02-02
+Date: 2025-02-02
   Changes:
     - Mod revamped. The simple property 'tier' on planet prototypes now controls where they appear. The mod has been renamed Tiered Solar System.
 ---------------------------------------------------------------------------------------------------

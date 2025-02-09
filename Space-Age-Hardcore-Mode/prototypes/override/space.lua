@@ -36,34 +36,44 @@ local asteroid_metallic_resources_multiplier = (
 )
 
 if asteroid_metallic_resources_multiplier > 1 then
-	for _, result in pairs(data.raw.recipe["metallic-asteroid-crushing"].results) do
-		if result.name == "iron-ore" then
-			result.amount = math.floor(result.amount * asteroid_metallic_resources_multiplier)
+	if data.raw.recipe["metallic-asteroid-crushing"] then
+		for _, result in pairs(data.raw.recipe["metallic-asteroid-crushing"].results or {}) do
+			if result.name == "iron-ore" then
+				result.amount = math.floor(result.amount * asteroid_metallic_resources_multiplier)
+			end
 		end
 	end
 
-	for _, result in pairs(data.raw.recipe["advanced-metallic-asteroid-crushing"].results) do
-		if result.name == "iron-ore" then
-			result.amount = math.floor(result.amount * asteroid_metallic_resources_multiplier)
+	if data.raw.recipe["advanced-metallic-asteroid-crushing"] then
+		for _, result in pairs(data.raw.recipe["advanced-metallic-asteroid-crushing"].results or {}) do
+			if result.name == "iron-ore" then
+				result.amount = math.floor(result.amount * asteroid_metallic_resources_multiplier)
+			end
 		end
 	end
 end
 
 if settings.startup["rocs-hardcore-spaced-asteroids-early-copper-available"].value then
-	table.insert(
-		data.raw.technology["space-platform"].effects,
-		{ type = "unlock-recipe", recipe = "advanced-metallic-asteroid-crushing" }
-	)
+	if data.raw.technology["space-platform"] then
+		table.insert(
+			data.raw.technology["space-platform"].effects,
+			{ type = "unlock-recipe", recipe = "advanced-metallic-asteroid-crushing" }
+		)
+	end
 
-	local effects = data.raw.technology["advanced-asteroid-processing"].effects
-	for i, effect in ipairs(effects) do
-		if effect.type == "unlock-recipe" and effect.recipe == "advanced-metallic-asteroid-crushing" then
-			table.remove(effects, i)
-			break
+	if data.raw.technology["advanced-asteroid-processing"] then
+		local effects = data.raw.technology["advanced-asteroid-processing"].effects or {}
+		for i, effect in ipairs(effects) do
+			if effect.type == "unlock-recipe" and effect.recipe == "advanced-metallic-asteroid-crushing" then
+				table.remove(effects, i)
+				break
+			end
 		end
 	end
 end
 
 --== Space platform foundation ==--
-data.raw.tile["space-platform-foundation"].weight = data.raw.tile["space-platform-foundation"].weight
-	* (1 + settings.startup["rocs-hardcore-spacea-bonus-platform-foundation-tile-weight-percentage"].value / 100)
+if data.raw.tile["space-platform-foundation"] and data.raw.tile["space-platform-foundation"].weight then
+	data.raw.tile["space-platform-foundation"].weight = data.raw.tile["space-platform-foundation"].weight
+		* (1 + settings.startup["rocs-hardcore-spacea-bonus-platform-foundation-tile-weight-percentage"].value / 100)
+end

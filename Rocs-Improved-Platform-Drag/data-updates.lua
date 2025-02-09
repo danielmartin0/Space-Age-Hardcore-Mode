@@ -4,7 +4,7 @@
 
 --== New formula: ==--
 
-local weight_of_platform_foundation_tiles = 250
+local weight_of_platform_foundation_tiles = 200
 local shape_constant = 0.886 -- Approximately (pi/4)^0.5. This value means that circular platforms are unaffected. A shape_constant of 1 would mean square platforms are unaffected.
 
 local replacement_for_width = "(weight / ("

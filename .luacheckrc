@@ -37,6 +37,8 @@ return {
 		"out_of_map_transition_group_id",
 		"out_of_map_tile_type_names",
 		"default_transition_group_id",
+		"default_circuit_wire_max_distance",
+		"universal_connector_template",
 
 		"PlanetsLib",
 	},

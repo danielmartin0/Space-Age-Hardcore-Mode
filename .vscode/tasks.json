@@ -26,14 +26,20 @@
                 "Tiered-Solar-System",
                 "No-Qualitycycling",
                 "pirate_ship",
-                "Planet-Hopper"
+                "Planet-Hopper",
+                "Rocs-Hardcore-Cerys"
             ]
         },
         {
             "id": "repoModName",
             "type": "pickString",
             "description": "Which repo mod to publish?",
-            "options": ["Cerys-Moon-of-Fulgora", "PlanetsLib", "Redrawn-Space-Connections"]
+            "options": [
+                "Cerys-Moon-of-Fulgora",
+                "PlanetsLib",
+                "Redrawn-Space-Connections",
+                "Tiered-Solar-System"
+            ]
         }
     ],
     "tasks": [
