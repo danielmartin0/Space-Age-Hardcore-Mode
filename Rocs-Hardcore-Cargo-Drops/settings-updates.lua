@@ -17,4 +17,10 @@ data:extend({
 		setting_type = "runtime-global",
 		default_value = false,
 	},
+	{
+		type = "int-setting",
+		name = "rocs-hardcore-initial-cargo-pods",
+		setting_type = "startup",
+		default_value = 0,
+	},
 })

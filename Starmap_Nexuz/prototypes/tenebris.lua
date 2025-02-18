@@ -1,4 +1,4 @@
-if mods["tenebris"] then  
+if mods["tenebris"] or mods["tenebris-prime"] then
     local tenebris = data.raw["planet"]["tenebris"]
     
     if tenebris then
@@ -11,8 +11,8 @@ if mods["tenebris"] then
                         type = "space-location",
                         name = "nexuz",
                     },
-                    distance = tenebris.distance, --170
-                    orientation = tenebris.orientation, --0.0975
+                    distance = 43, --170
+                    orientation = 0.9375, --0.0975
                     sprite = {
                         type = "sprite",
                         filename = "__Starmap_Nexuz__/graphics/icons/orbit_Tenebris.png",
@@ -29,6 +29,11 @@ if mods["tenebris"] then
         local fulgoratotenebris = data.raw["space-connection"]["fulgora-tenebris"]
         if fulgoratotenebris then
             fulgoratotenebris.from = "sye-nexuz-sw"
+        end
+
+        local fulgoratoedge = data.raw["space-connection"]["tenebris-solar-system-edge"]
+        if fulgoratoedge then
+            data.raw["space-connection"]["tenebris-solar-system-edge"] = nil  -- 删除航线
         end
     end
 else

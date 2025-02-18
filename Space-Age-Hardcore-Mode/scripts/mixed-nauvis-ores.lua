@@ -9,10 +9,24 @@ local MixedOreSettings = {
 local STARTING_AREA_RADIUS = 120 + 15
 local ORE_PATCH_SEPARATION_DISTANCE = 70
 
+local ORE_NAMES = { "iron-ore", "copper-ore", "coal", "stone" }
+
 script.on_event(defines.events.on_chunk_generated, function(event)
 	local surface = event.surface
 
 	if not (surface.valid and surface.name == "nauvis") then
+		return
+	end
+
+	if
+		not (
+			surface.map_gen_settings.autoplace_controls
+			and surface.map_gen_settings.autoplace_controls.stone
+			and surface.map_gen_settings.autoplace_controls.coal
+			and surface.map_gen_settings.autoplace_controls["copper-ore"]
+			and surface.map_gen_settings.autoplace_controls["iron-ore"]
+		)
+	then
 		return
 	end
 
@@ -24,9 +38,10 @@ script.on_event(defines.events.on_chunk_generated, function(event)
 	then
 		return
 	end
+
 	local richness = {}
 
-	for _, ore_name in pairs({ "iron-ore", "copper-ore", "coal", "stone" }) do
+	for _, ore_name in pairs(ORE_NAMES) do
 		richness[ore_name] = surface.map_gen_settings.autoplace_controls[ore_name].richness
 	end
 

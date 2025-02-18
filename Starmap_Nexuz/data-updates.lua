@@ -3,7 +3,6 @@ require "prototypes.cube"
 
 
 
-
 require "prototypes.nexuz"
 
 
@@ -29,6 +28,7 @@ PlanetsLib:extend({
 
 
 
+
 require "prototypes.maraxsis"
 require "prototypes.tenebris"
 require "prototypes.naufulglebunusilo"
@@ -37,6 +37,10 @@ require "prototypes.erm_toss"
 require "prototypes.terrapalus"
 require "prototypes.arrakis"
 require "prototypes.Factorio-Tiberium"
+require "prototypes.janus"
+require "prototypes.corrundum"
+
+
 require "prototypes.intercontinental-rocketry-forked"
 
 
@@ -112,8 +116,20 @@ if modify_space_connection then
             }
         })
 
+if mods["EverythingOnNauvis"] then  
+  data:extend {{
+    type = "space-connection",  
+    name = "nauvis-sye-nauvis-ne",  
+    subgroup = "planet-connections",  
+    icon = "__space-age__/graphics/icons/solar-system-edge.png",  
+    from = "nauvis",  
+    to = "sye-nauvis-ne",  
+    order = "h",  
+    length = settings.startup["space-connection-gleba-sye-nauvis-ne-length"].value or 100000,  
+    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.gleba_aquilo)
+  }}
 
-
+else  
   -- 在 data-updates.lua 中定义连接数据
   data:extend {{
     type = "space-connection",  
@@ -126,6 +142,8 @@ if modify_space_connection then
     length = settings.startup["space-connection-gleba-sye-nauvis-ne-length"].value or 40000,  
     asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.gleba_aquilo)
   }}
+end
+
 
   data:extend {{
     type = "space-connection",  

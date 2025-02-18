@@ -2,8 +2,8 @@ if mods["erm_zerg"] then
     local char = data.raw["planet"]["char"]
     
     if char then
-
-
+        char.starmap_icon = "__Starmap_Nexuz__/graphics/icons/zerg.png"  
+        char.starmap_icon_size = 686  
         PlanetsLib:update({
             {
                 type = "planet",
@@ -15,8 +15,8 @@ if mods["erm_zerg"] then
                         type = "space-location",
                         name = "nexuz",
                     },
-                    distance = char.distance, --187
-                    orientation = char.orientation, --0.138
+                    distance = 9.5, --187
+                    orientation = 0.275, --0.138
                     sprite = {
                         type = "sprite",
                         filename = "__Starmap_Nexuz__/graphics/icons/orbit_char.png",

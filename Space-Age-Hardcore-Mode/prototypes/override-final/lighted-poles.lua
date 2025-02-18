@@ -94,8 +94,6 @@ else
 					draw_as_glow = true,
 				}
 
-				log(serpent.block(new_layers))
-
 				pictures.layers = new_layers
 			end
 		end

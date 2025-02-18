@@ -2,7 +2,8 @@ if mods["erm_toss"] then
     local aiur = data.raw["planet"]["aiur"]
     
     if aiur then
-
+        aiur.starmap_icon = "__Starmap_Nexuz__/graphics/icons/toss.png"  
+        aiur.starmap_icon_size = 559  
         PlanetsLib:update({
             {
                 type = "planet",
@@ -14,8 +15,8 @@ if mods["erm_toss"] then
                         type = "space-location",
                         name = "nexuz",
                     },
-                    distance = aiur.distance, --181
-                    orientation = aiur.orientation, --0.155
+                    distance = 21, --181
+                    orientation = 0.35, --0.155
                     sprite = {
                         type = "sprite",
                         filename = "__Starmap_Nexuz__/graphics/icons/orbit_aiur.png",

@@ -13,8 +13,8 @@ if mods["Factorio-Tiberium"] then
                       type = "space-location",
                       name = "nexuz",
                   },
-                  distance = tiber.distance,  --203
-                  orientation = tiber.orientation, --0.147
+                  distance = 32,  --203
+                  orientation = 0.23, --0.147
                   sprite = {
                       type = "sprite",
                       filename = "__Starmap_Nexuz__/graphics/icons/orbit_tiber.png",

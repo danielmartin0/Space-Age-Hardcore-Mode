@@ -11,12 +11,14 @@ if mods["naufulglebunusilo"] then
                         type = "space-location",
                         name = "nexuz",
                     },
-                    distance = 70,  --203
-                    orientation = 0.115, --0.147
+                    distance = 47,  --203
+                    orientation = 0.046, --0.147
                     sprite = {
                         type = "sprite",
                         filename = "__Starmap_Nexuz__/graphics/icons/starmap_startrails_nexuz_Naufulglebunusilo.png",
                         size = 4096,
+                        scale = 1,
+                        shift = {110, -130},
                     },
                 }
             }

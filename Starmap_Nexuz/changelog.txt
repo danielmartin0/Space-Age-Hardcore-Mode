@@ -1,4 +1,23 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 2025-2-10
+  Info:
+    - Add compatibility with Tenebris Prime.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 2025-1-29
+  Info:
+    - Deleted unnecessary files.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2025-1-13
+  Info:
+    - Add necessary dependency: PlanetsLib.
+    - Make StarMap Background an optional dependency.
+    - Add compatibility with Corrundum.
+    - Add compatibility with Janus.
+    - Add compatibility with Everything on Nauvis.
+---------------------------------------------------------------------------------------------------
 Version: 0.9.0
 Date: 2024-12-30
   Info:

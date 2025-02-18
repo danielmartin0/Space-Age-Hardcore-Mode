@@ -12,8 +12,8 @@ if mods["planet-arrakis"] then
                         type = "space-location",
                         name = "nexuz",
                     },
-                    distance = arrakis.distance,  --164
-                    orientation = arrakis.orientation, --0.133
+                    distance = 12.43,  --164
+                    orientation = 0.64, --0.133
                     sprite = {
                         type = "sprite",
                         filename = "__Starmap_Nexuz__/graphics/icons/orbit_Arrakis.png",

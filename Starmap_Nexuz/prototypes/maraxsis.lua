@@ -11,8 +11,8 @@ if mods["maraxsis"] then
                         type = "space-location",
                         name = "nexuz",
                     },
-                    distance = maraxsis.distance,  --165
-                    orientation = maraxsis.orientation, --0.12
+                    distance = 18.75,  --165
+                    orientation = 0.7185, --0.12
                     sprite = {
                         type = "sprite",
                         filename = "__Starmap_Nexuz__/graphics/icons/orbit_Maraxsis.png",
