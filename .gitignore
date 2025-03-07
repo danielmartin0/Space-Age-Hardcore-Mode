@@ -15,7 +15,7 @@
 !/Planet-Hopper/**
 !/Tiered-Solar-System/**
 !/Space-Age-Without-Platforms/**
-# /Cerys-Moon-of-Fulgora/
+/Cerys-Moon-of-Fulgora/
 /PlanetsLib/
 /Flare Stack/
 /solarsystemplusplus/
@@ -25,3 +25,16 @@
 !.styluaignore
 !.vscode/
 !.vscode/**
+dea-dia-system/
+planet-ithurice/
+planet-nekohaven/
+planet-quadromire/
+planet-tapatrion/
+planet-tchekor/
+planet-vicrox/
+planet-zzhora/
+Redrawn-Space-Connections/
+Space-Age-Revamp/
+Space-Age-Without-Platforms/
+SpaceAgeWithoutSpace_0.0.16/
+Useful-Methane/
