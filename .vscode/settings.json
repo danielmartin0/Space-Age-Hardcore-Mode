@@ -3,7 +3,15 @@
     "factorio.versions": [
         {
             "name": "Steam",
-            "factorioPath": "~/Library/Application Support/Steam/steamapps/common/Factorio/factorio.app/Contents/MacOS/factorio",
+            "factorioPath": "~/Library/Application Support/Steam/steamapps/common/Factorio/factorio.app/Contents/MacOS/factorio"
+        },
+        {
+            "name": "2.0.32",
+            "factorioPath": "/Applications/factorio-modding.app/Contents/MacOS/factorio"
+        },
+        {
+            "name": "modding version",
+            "factorioPath": "/Applications/factorio-modding.app/Contents/MacOS/factorio",
             "active": true
         }
     ],

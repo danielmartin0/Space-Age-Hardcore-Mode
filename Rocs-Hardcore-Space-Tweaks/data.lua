@@ -21,7 +21,7 @@ if settings.startup["no-underground-pipes-on-platforms"].value then
 		icon = "__Rocs-Hardcore-Space-Tweaks__/graphics/technology/underground-pipes-on-space-platforms.png",
 		icon_size = 256,
 		prerequisites = {
-			"space-science-pack",
+			"metallurgic-science-pack",
 		},
 		effects = {
 			{
@@ -29,9 +29,17 @@ if settings.startup["no-underground-pipes-on-platforms"].value then
 				effect_description = { "no-undergrounds-on-platforms.tech-description-pipes" },
 			},
 		},
-		research_trigger = {
-			type = "mine-entity",
-			entity = "medium-oxide-asteroid",
+		unit = {
+			count = 2000,
+			ingredients = {
+				{ "automation-science-pack", 1 },
+				{ "logistic-science-pack", 1 },
+				{ "chemical-science-pack", 1 },
+				{ "utility-science-pack", 1 },
+				{ "space-science-pack", 1 },
+				{ "metallurgic-science-pack", 1 },
+			},
+			time = 60,
 		},
 	})
 	data:extend({ tech })

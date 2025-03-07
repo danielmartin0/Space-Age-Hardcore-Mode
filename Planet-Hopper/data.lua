@@ -8,12 +8,28 @@ data:extend({
 		name = "planet-hopper-launcher",
 		enabled = true,
 		ingredients = {
-			{ type = "item", name = "steel-plate", amount = 10 },
-			{ type = "item", name = "electronic-circuit", amount = 10 },
-			{ type = "item", name = "pipe", amount = 4 },
+			{
+				type = "item",
+				name = "steel-plate",
+				amount = 10,
+			},
+			{
+				type = "item",
+				name = "electronic-circuit",
+				amount = 10,
+			},
+			{
+				type = "item",
+				name = "pipe",
+				amount = 4,
+			},
 		},
 		energy_required = 2,
-		results = { { type = "item", name = "planet-hopper-launcher", amount = 1 } },
+		results = { {
+			type = "item",
+			name = "planet-hopper-launcher",
+			amount = 1,
+		} },
 		requester_paste_multiplier = 1,
 	},
 	{
@@ -43,7 +59,11 @@ data:extend({
 		enabled = false,
 		hide_from_player_crafting = true,
 		ingredients = {},
-		results = { { type = "item", name = "rocket-part", amount = 1 } },
+		results = { {
+			type = "item",
+			name = "rocket-part",
+			amount = 1,
+		} },
 		allow_productivity = true,
 	},
 })
@@ -68,11 +88,7 @@ local VECTOR_NAMES = {
 	"rocket_launch_offset",
 	"cargo_attachment_offset",
 }
-local MATRIX_NAMES = {
-	"collision_box",
-	"selection_box",
-	"hole_clipping_box",
-}
+local MATRIX_NAMES = { "collision_box", "selection_box", "hole_clipping_box" }
 
 local SCALE_FACTOR = 4 / 9
 
@@ -86,7 +102,10 @@ local function modify(table)
 			table[k] = v * SCALE_FACTOR
 		elseif find(VECTOR_NAMES, k) then
 			if v.x then
-				table[k] = { x = v.x * SCALE_FACTOR, y = v.y * SCALE_FACTOR }
+				table[k] = {
+					x = v.x * SCALE_FACTOR,
+					y = v.y * SCALE_FACTOR,
+				}
 			else
 				table[k] = { v[1] * SCALE_FACTOR, v[2] * SCALE_FACTOR }
 			end
@@ -134,10 +153,13 @@ local silo_2 = merge(data.raw["rocket-silo"]["rocket-silo"], {
 	rocket_entity = "planet-hopper",
 	alarm_sound = "nil",
 	quick_alarm_sound = "nil",
-	minable = { mining_time = 0.3, result = "planet-hopper-launcher" },
+	minable = {
+		mining_time = 0.3,
+		result = "planet-hopper-launcher",
+	},
 	max_health = 1000,
 	module_slots = 0,
-	energy_usage = "100kW", --energy usage used when crafting the rocket
+	energy_usage = "100kW", -- energy usage used when crafting the rocket
 	active_energy_usage = "1000kW",
 	times_to_blink = 1,
 	light_blinking_speed = data.raw["rocket-silo"]["rocket-silo"].light_blinking_speed * 2,
@@ -154,10 +176,6 @@ local rocket_2 = merge(data.raw["rocket-silo-rocket"]["rocket-silo-rocket"], {
 	cargo_pod_entity = "planet-hopper-pod",
 	inventory_size = 1,
 	shadow_slave_entity = "planet-hopper-shadow",
-	flying_trigger = {
-		type = "script",
-		effect_id = "planet-hopper-clear-rocket-inventory",
-	},
 	rising_speed = data.raw["rocket-silo-rocket"]["rocket-silo-rocket"].rising_speed * 3,
 	engine_starting_speed = data.raw["rocket-silo-rocket"]["rocket-silo-rocket"].engine_starting_speed * 3,
 })
@@ -188,11 +206,65 @@ end
 local cargo_pod_2 = merge(data.raw["cargo-pod"]["cargo-pod"], {
 	name = "planet-hopper-pod",
 	inventory_size = 1,
+	spawned_container = "planet-hopper-container",
 })
 modify(cargo_pod_2)
 apply_shift(cargo_pod_2.procession_graphic_catalogue)
 
-data:extend({ silo_2, rocket_2, cargo_pod_2, rocket_shadow_2 })
+local cargo_pod_container_2 = merge(data.raw["temporary-container"]["cargo-pod-container"], {
+	name = "planet-hopper-container",
+	dying_explosion = "planet-hopper-container-explosion",
+	remains_when_mined = { "planet-hopper-container-explosion" },
+})
+modify(cargo_pod_container_2)
+
+local cargo_pod_container_explosion_2 = merge(data.raw["explosion"]["cargo-pod-container-explosion"], {
+	name = "planet-hopper-container-explosion",
+	created_effect = {
+		type = "direct",
+		action_delivery = {
+			type = "delayed",
+			delayed_trigger = "planet-hopper-container-explosion-delay",
+		},
+	},
+})
+modify(cargo_pod_container_explosion_2)
+
+local cargo_pod_container_explosion_delay_2 =
+	merge(data.raw["delayed-active-trigger"]["cargo-pod-container-explosion-delay"], {
+		name = "planet-hopper-container-explosion-delay",
+		action = {
+			{
+				type = "direct",
+				action_delivery = {
+					type = "instant",
+					source_effects = {
+						{
+							type = "create-entity",
+							entity_name = "planet-hopper-container-remnants",
+						},
+					},
+				},
+			},
+		},
+	})
+modify(cargo_pod_container_explosion_delay_2)
+
+local cargo_pod_container_remnants_2 = merge(data.raw["corpse"]["cargo-pod-container-remnants"], {
+	name = "planet-hopper-container-remnants",
+})
+modify(cargo_pod_container_remnants_2)
+
+data:extend({
+	silo_2,
+	rocket_2,
+	cargo_pod_2,
+	rocket_shadow_2,
+	cargo_pod_container_2,
+	cargo_pod_container_explosion_2,
+	cargo_pod_container_explosion_delay_2,
+	cargo_pod_container_remnants_2,
+})
 
 local function accept_cargo_pod_2(table)
 	for k, v in pairs(table) do

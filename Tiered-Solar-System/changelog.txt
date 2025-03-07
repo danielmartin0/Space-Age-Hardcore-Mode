@@ -1,7 +1,19 @@
 ---------------------------------------------------------------------------------------------------
-Version: 2.1.13
+Version: 2.2.3
 Date: ????
   Changes:
+---------------------------------------------------------------------------------------------------
+Version: 2.2.2
+Date: 2025-03-04
+  Changes:
+    - Fixed that planets without an assigned tier appeared not exactly below the star, but slightly askew.
+---------------------------------------------------------------------------------------------------
+Version: 2.2.0
+Date: 2025-02-24
+  Changes:
+    - Slightly reduced the distances between tiers.
+    - Aquilo is now horizontally aligned with the other endgame locations.
+    - Lowered the tier of Gleba from 3.6 to 3.5.
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.12
 Date: 2025-02-17

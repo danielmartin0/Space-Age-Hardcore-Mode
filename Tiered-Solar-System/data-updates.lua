@@ -31,7 +31,7 @@ for _, type in pairs({ "space-location", "planet" }) do
 				end
 
 				if loc.tier ~= -1 then
-					loc.orientation = 1 - (loc.tier * 0.155)
+					loc.orientation = 1 - (loc.tier * 0.15)
 				end
 			end
 		end

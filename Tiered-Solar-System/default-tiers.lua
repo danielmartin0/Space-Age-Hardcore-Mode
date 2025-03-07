@@ -10,7 +10,7 @@ local Public = {}
 -- Tier 5:  Aquilo and the vanilla endgame
 -- Tier 6:  Post-endgame planets and other oddities
 
-Public.fallback_tier = 3.22581 -- Vertically south of the star
+Public.fallback_tier = 3.33333 -- Vertically south of the star
 
 Public.default_modded_planet_tiers = {
 	akularis = 0.5,
@@ -33,8 +33,8 @@ Public.default_modded_planet_tiers = {
 	tenebris = 4,
 	moshine = 4.1,
 	cubium = 4.1,
-	hexalith = 5,
-	maraxsis = 5,
+	hexalith = 5.1,
+	maraxsis = 5.3,
 	frozeta = 5.5,
 	naufulglebunusilo = 6,
 	arrakis = 6,
@@ -44,7 +44,7 @@ Public.vanilla_planet_tiers = {
 	nauvis = 1,
 	vulcanus = 1.8,
 	fulgora = 2.4,
-	gleba = 3.6,
+	gleba = 3.5,
 	aquilo = 5,
 }
 
@@ -53,8 +53,8 @@ Public.default_modded_location_tiers = {
 }
 
 Public.vanilla_location_tiers = {
-	["shattered-planet"] = 4.83871,
-	["solar-system-edge"] = 4.83871,
+	["shattered-planet"] = 5,
+	["solar-system-edge"] = 5,
 }
 
 return Public
