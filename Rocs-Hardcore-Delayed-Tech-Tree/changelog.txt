@@ -1,0 +1,139 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.3.2
+Date: ????
+  Changes:
+---------------------------------------------------------------------------------------------------
+Version: 1.3.1
+Date: 2025-03-13
+  Changes:
+    - Changed mod name to 'Hardcore Delayed Tech'.
+---------------------------------------------------------------------------------------------------
+Version: 1.3.0
+Date: ????
+  Changes:
+    - Active provider chests have been split off from the Logistic system technology. They are now unlocked by Gleba science, whereas the rest of Logistic system now once again requires Vulcanus, Fulgora and Gleba science.
+    - Requester and buffer chests no longer require carbon fiber in order to craft them.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.5
+Date: 2025-03-12
+  Bugfixes:
+    - Infinite techs are no longer gated behind promethium science packs if there is no lab prototypes whose inputs could handle it.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.4
+Date: 2025-03-11
+  Changes:
+    - Attempted fix for mod compatibility issue in which carbon fiber was included twice in the recipe for logistic chests.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.3
+Date: 2025-03-11
+  Bugfixes:
+    - Logistic system's prerequisite is now Agricultural science pack instead of Carbon fiber. This means that as intended, active provider chests can be constructed before requester and buffer chests.
+  Changes:
+    - Logistic system's research cost dropped to 2000 units (from 5000).
+---------------------------------------------------------------------------------------------------
+Version: 1.2.2
+Date: 2025-03-11
+  Changes:
+    - If the logistic system technology is pushed back, the tank logistics effect is now moved to the Logistic robots technology.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.1
+Date: 2025-03-11
+  Changes:
+    - Description update.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.0
+Date: 2025-03-11
+  Changes:
+    - The setting 'Push back infinite research' is now enabled by default.
+    - The setting 'Push back infinite research' now splits each infinite technology into three, locking the third, so the player can still research the first two levels.
+    - The setting 'Push back infinite research' now also splits technologies that already require cryogenic science packs into three, locking the third, so the player can still research the first two levels.
+    - The setting 'Push back infinite research' now also splits technologies from Cerys into three, locking the third, so the player can still research the first two levels.
+    - Title changed once more to 'Delayed Tech for Hardcore'.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.4
+Date: 2025-03-11
+  Changes:
+    - Renamed the mod from 'Roc's Hardcore Delayed Tech Tree' to 'Hardcore Delayed Tech'.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.3
+Date: 2025-01-26
+  Changes:
+    - Moved night vision equipment to Gleba.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.2
+Date: 2025-01-26
+  Changes:
+    - Night vision equipment now requires Vulcanus tech.
+    - For compatibility, added checks that each technology exists before modifying it.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.1
+Date: 2025-01-21
+  Modding:
+    - The setting 'Push back infinite research' is now compatible with Cerys.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 2025-01-05
+  Changes:
+    - The Logistic system technology now requires Gleba's science packs, rather than those of all three planets. This gives an incentive to complete Gleba before other planets.
+    - Requester chests and buffer chests now require carbon fiber to produce.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.19
+Date: 2025-01-02
+  Locale:
+    - Added Russian localization.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.18
+Date: 2024-11-30
+  Changes:
+    - Information update.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.17
+Date: 2024-11-29
+  Bugfixes:
+    - Appropriate migrations for infinite technologies included.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.16
+Date: 2024-11-29
+  Info:
+    - Tooltip update.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.15
+Date: 2024-11-29
+  Features:
+    - The 'Push back infinite research' setting now converts each infinite research technology into a single technology with a new infinite descendent requiring cryogenic science packs.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.14
+Date: 2024-11-26
+  Changes:
+    - Removed unused option
+---------------------------------------------------------------------------------------------------
+Version: 1.0.13
+Date: 2024-11-26
+  Info:
+    - Infinite tech pushed back past Aquilo so one can't grind infinite resources to get there.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.12
+Date: 25.11.2024
+  Info:
+    - New thumbnail.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.10
+Date: 24.11.2024
+  Info:
+    - Heating tower and lightning rod changes move to their respective 'hardcore' planet mods.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.7
+Date: 23.11.2024
+  Info:
+    - Lightning rods are now behind a technology by default.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 18.11.2024
+  Features:
+    - Repair pack pushed back to require logistic science packs.
+    - Landfill pushed back to require Agriculture.
+    - Logistic system pushed back to require metallurgic, electromagnetic and agricultural science packs.
+    - Cliff explosives pushed back to require metallurgic, military, electromagnetic and agricultural science packs.
+    - Kovarex enrichment pushed back to require agricultural and electromagnetic science packs.
+    - Atomic bomb pushed back to require agricultural and electromagnetic science packs.
+    - Heating tower pushed back to require (only)agricultural science packs.

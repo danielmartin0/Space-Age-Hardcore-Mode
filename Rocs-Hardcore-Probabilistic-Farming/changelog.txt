@@ -1,0 +1,35 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.13
+Date: ????
+  Changes:
+---------------------------------------------------------------------------------------------------
+Version: 1.0.11
+Date: 2025-01-05
+  Info:
+    - Description update.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.10
+Date: 2025-01-02
+  Locale:
+    - Added Russian localization.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.9
+Date: 2024-11-30
+  Changes:
+    - Information update.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.8
+Date: 2024-11-28
+  Modding:
+    - Added settings to configure each feature.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.5
+Date: 20.11.2024
+  Info:
+    - Reverted change to fruit yields, as agricultural towers can't deal with more than 1 stack.
+    - Added random variance to bioflux production.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 19.11.2024
+  Features:
+    - Adds random variance to Jellynut and Yumako farming, making create-on-demand strategies for Gleba less reliable.

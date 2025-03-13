@@ -1,0 +1,11 @@
+{
+    "name": "Rocs-Hardcore-Space-Tweaks",
+    "version": "1.2.3",
+    "factorio_version": "2.0",
+    "title": "Space Undergrounds Require Research",
+    "author": "thesixthroc",
+    "contact": "Discord: thesixthroc",
+    "description": "Building underground belts or undergrounds pipes on space platforms each require a special new technology.",
+    "homepage": "https://discord.gg/VuVhYUBbWE",
+    "dependencies": ["base >= 2.0.0", "space-age >= 2.0.0"]
+}

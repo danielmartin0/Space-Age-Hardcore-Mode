@@ -1,0 +1,107 @@
+---------------------------------------------------------------------------------------------------
+Version: 2.0.8
+Date: ????
+  Changes:
+---------------------------------------------------------------------------------------------------
+Version: 2.0.5
+Date: 2025-03-11
+  Changes:
+    - Description update.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.4
+Date: 2025-03-11
+  Changes:
+    - Name changed to just 'Hardcore Fulgora'.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.3
+Date: 2025-02-03
+  Changes:
+    - Cargo drop tech now requires space science.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.2
+Date: 2025-02-01
+  Changes:
+    - Incompatibility with Burning Cargo Pods removed. You may wish to disable the 'Dropping cargo requires technology' checkbox setting if you use it.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.1
+Date: 2025-01-22
+  Changes:
+    - Setting added to control whether cargo drops require research.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.0
+Date: 2025-01-22
+  Changes:
+    - Added new technology necessary for dropping cargo on Fulgora.
+    - Burning Cargo Pods marked as incompatible.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.13
+Date: 2025-01-02
+  Locale:
+    - Added Russian localization.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.12
+Date: 2024-12-13
+  Changes:
+    - Fulgoran ruin attractors now generate a tiny amount of power.
+    - More ice provided in scrap recycling when the lightning rods tech is disabled.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.11
+Date: 2024-11-30
+  Changes:
+    - Information update.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.10
+Date: 2024-11-30
+  Info:
+    - Description updated.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.9
+Date: 2024-11-29
+  Info:
+    - Description update.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.8
+Date: 2024-11-28
+  Graphics:
+    - Improved technology icon.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.7
+Date: 2024-11-28
+  Changes:
+    - Added configuration settings for each mod feature.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.6
+Date: 2024-11-28
+  Changes:
+    - Version bump.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.5
+Date: 2024-11-27
+  Changes:
+    - Fulgoran lightning attractors are now minable.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.4
+Date: 2024-11-26
+  Changes:
+    - Increased walking speed on oil oceans.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.3
+Date: 2024-11-26
+  Changes:
+    - Description update.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+Date: 25.11.2024
+  Changes:
+    - Fix dependence on removed setting.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 25.11.2024
+  Changes:
+    - New thumbnail.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 18.11.2024
+  Features:
+    - Lightning rods are behind a new technology.
+    - Includes lightning storm mod.

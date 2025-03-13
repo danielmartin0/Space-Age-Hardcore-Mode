@@ -1,0 +1,250 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.4.3
+Date: ????
+  Changes:
+---------------------------------------------------------------------------------------------------
+Version: 1.4.1
+Date: 2025-03-09
+  Changes:
+    - The optional setting to allow construction robots to ride cargo pods for free is now enabled by default.
+---------------------------------------------------------------------------------------------------
+Version: 1.4.0
+Date: 2025-02-01
+  Changes:
+    - Added option to provide a starter cargo pod for Vulcanus, Fulgora and Gleba once per save.
+---------------------------------------------------------------------------------------------------
+Version: 1.3.3
+Date: 2025-02-01
+  Changes:
+    - If the PlanetsLib cargo drop technology is enabled for a planet, the cargo pod item recipe for that planet is now unlocked by that technology.
+    - Removed the 'Enable mod' checkbox setting.
+    - Better compatibility with Any Planet Start.
+  Locale:
+    - Added Russian localization.
+---------------------------------------------------------------------------------------------------
+Version: 1.3.2
+Date: 2024-12-23
+  Bugfixes:
+    - Fixed a crash when changing the minimum drop count setting using the text field.
+---------------------------------------------------------------------------------------------------
+Version: 1.3.1
+Date: 2024-12-18
+  Changes:
+    - Stack size of cargo pods increased to 20, though rocket capacity is still 1.
+  Bugfixes:
+    - Fixed crash in the blueprint sandbox environment.
+---------------------------------------------------------------------------------------------------
+Version: 1.3.0
+Date: 2024-12-18
+  Changes:
+    - Reduced the steel plate, holmium plate and tungsten plate costs of cargo pods.
+    - Expensive Mode no longer increases metallic ore available in space.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.16
+Date: 2024-12-16
+  Info:
+    - Clarify tooltip description for 'Cargo drops destroy player weapons and armor' setting.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.15
+Date: 2024-12-16
+  Bugfixes:
+    - Fixed multiple versions of the space platform GUI appearing.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.14
+Date: 2024-12-15
+  Changes:
+    - Drop configuration GUI now updates when open when other players in your multiplayer session modify the settings.
+  Bugfixes:
+    - Fixed a corner case crash related to the checkbox in the GUI.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.13
+Date: 2024-12-14
+  Changes:
+    - GUI compatibility with previous version of the mod.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.12
+Date: 2024-12-14
+  Changes:
+    - GUI compatibility with previous version of the mod.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.11
+Date: 2024-12-13
+  Graphics:
+    - Graphical improvement for canceled pods.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.10
+Date: 2024-12-13
+  Bugfixes:
+    - Fixed a crash due to the new space platform GUI when opening entities with no name.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.4
+Date: 2024-12-12
+  Changes:
+    - Bugfix when using the checkbox.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.3
+Date: 2024-12-12
+  Changes:
+    - Tooltip added to the minimum drop setting for clarity.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.2
+Date: 2024-12-12
+  Changes:
+    - Fixed a crash when launching rockets from planets.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.1
+Date: 2024-12-12
+  Modding:
+    - Code cleanup.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.0
+Date: 2024-12-12
+  Changes:
+    - Added setting to the space platform hub GUI to control the minimum stack of items allowed in drops.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.15
+Date: 2024-11-30
+  Changes:
+    - Gleban cargo pods no longer spoil.
+    - Information update.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.14
+Date: 2024-11-28
+  Bugfixes:
+    - Gleban cargo pods are now craftable in space as intended.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.13
+Date: 2024-11-28
+  Changes:
+    - Players no longer have a respawn timer after dying in a cargo pod.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.12
+Date: 2024-11-28
+  Bugfixes:
+    - Fixed spoil time of Gleban cargo pod items.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.11
+Date: 2024-11-28
+  Changes:
+    - Added setting to disable the entire mod, for use by Space Age: Hardcore Mode players.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.10
+Date: 2024-11-28
+  Features:
+    - Added compatibility with Expensive Mode.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.9
+Date: 2024-11-27
+  Changes:
+    - Reduced the steel cost of cargo pods by half.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.8
+Date: 2024-11-27
+  Changes:
+    - Reverted Nauvis cargo drop pod recipe back to uranium-238 instead of depleted uranium fuel cells.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.7
+Date: 25.11.2024
+  Changes:
+    - space_travel_required turned on
+---------------------------------------------------------------------------------------------------
+Version: 1.1.6
+Date: 25.11.2024
+  Changes:
+    - Mod name changed once more!
+---------------------------------------------------------------------------------------------------
+Version: 1.1.5
+Date: 24.11.2024
+  Features:
+    - Gleban cargo pods now spoil at the same rate as bioflux and can be restored by adding more bioflux.
+    - Cargo pods can now optionally be made in their special production building of their respective planets.
+  Changes:
+    - Certain localized planet names are now possessive.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.4
+Date: 24.11.2024
+  Changes:
+    - Mod description updated.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.3
+Date: 24.11.2024
+  Changes:
+    - Mod description updated.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.1
+Date: 24.11.2024
+  Changes:
+    - Mod name updated.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 23.11.2024
+  Changes:
+    - Added Nauvis, Vulcanus, Fulgora Gleba and Aquilo cargo pod items to encode the drop costs.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.26
+Date: 23.11.2024
+  Changes:
+    - Hotfixed a case where the platform leaves a space location before one of its cargo pods has finished being canceled.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.25
+Date: 23.11.2024
+  Changes:
+    - Cargo drop corpses now avoid landing in large bodies of liquid.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.24
+Date: 23.11.2024
+  Changes:
+    - Unprotected players' bodies are now left behind at their explosion point.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.23
+Date: 22.11.2024
+  Changes:
+    - Rework: By default, cargo pods simply fail to launch if protective materials aren't present (unless a player is riding the pod).
+---------------------------------------------------------------------------------------------------
+Version: 1.0.13
+Date: 22.11.2024
+  Changes:
+    - Fixed a bug where cargo pods launched up to platforms try to pay the cost.
+    - Turned off the 'return items to hub' setting for now, as it causes automation problems.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.12
+Date: 20.11.2024
+  Changes:
+    - Bioflux is now required to drop onto Gleba.
+  Minor Features:
+    - Audiovisual effects on pod destruction.
+  Optimizations:
+    - No longer calls find_entities_filtered on non-platform surfaces.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.11
+Date: 20.11.2024
+  Bugfixes:
+    - Fixed multiple players dropping in on top of each other.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.5
+Date: 19.11.2024
+  Changes:
+    - 'Super hardcore' mode introduced, where player armor and guns are destroyed when their cargo pods burn up.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.4
+Date: 19.11.2024
+  Changes:
+    - Fixed a bug in 1.0.3 preventing cargo pods from burning up.
+    - Settings introduced to control the number of protective materials required.
+    - Setting introduced to allow cargo pods to carry construction robots for free.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 19.11.2024
+  Changes:
+    - Optional setting to return items to the space platform hub when the cargo pods burn up.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 19.11.2024
+  Changes:
+    - Players in burnt cargo pods end up at {0, 0} as they would do if the pod landed successfully.
+    - Cargo pod destruction procession tick timed for a better visual effect.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 18.11.2024
+  Features:
+    - Dropping cargo pods expends material native to that planet, ensuring the player starts on Vulcanus, Fulgora and Gleba afresh.

@@ -1,0 +1,17 @@
+{
+    "name": "Rocs-Hardcore-Aquilo",
+    "version": "0.1.15",
+    "factorio_version": "2.0",
+    "title": "Hardcore Aquilo",
+    "author": "thesixthroc",
+    "contact": "Discord: https://discord.gg/VuVhYUBbWE",
+    "description": "Tweaks to Aquilo for advanced players. Nuclear reactors no longer function on very cold surfaces.",
+    "homepage": "https://discord.gg/VuVhYUBbWE",
+    "dependencies": [
+        "base >= 2.0.19",
+        "space-age >= 2.0.19",
+        "PlanetsLib >= 1.0.7",
+        "? Better-Melting-Ice"
+    ],
+    "freezing_required": true
+}

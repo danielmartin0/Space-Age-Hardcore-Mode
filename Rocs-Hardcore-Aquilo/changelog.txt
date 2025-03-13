@@ -1,0 +1,73 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.15
+Date: ????
+  Changes:
+---------------------------------------------------------------------------------------------------
+Version: 0.1.13
+Date: 2025-03-11
+  Changes:
+    - Name changed to just 'Hardcore Aquilo'.
+    - Description update.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.12
+Date: 2025-02-20
+  Changes:
+    - Description update.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.11
+Date: 2025-01-05
+  Bugfixes:
+    - Fixed compatibility with PlanetsLib without Cerys installed.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.10
+Date: 2025-01-02
+  Locale:
+    - Added Russian localization.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.9
+Date: 2024-12-31
+  Changes:
+    - Dependency switched from Surfaces Have Temperature to PlanetsLib.
+    - Better Melting Ice dependency marked as optional.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.8
+Date: 2024-12-02
+  Info:
+    - Freezing flag added.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.7
+Date: 2024-12-02
+  Changes:
+    - Thumbnail updated.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.6
+Date: 2024-11-30
+  Changes:
+    - Information update.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.5
+Date: 2024-11-30
+  Info:
+    - Description updated.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.3
+Date: 2024-11-29
+  Info:
+    - Changed thumbnail.
+    - Aquilo nuclear reactor ban reimplemented by means of a surface condition instead of a runtime script.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+Date: 2024-11-29
+  Info:
+    - Description updated.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 2024-11-28
+  Changes:
+    - Added configuration settings for each mod feature.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 18.11.2024
+  Features:
+    - Includes better melting ice mod.
+    - Nuclear reactors can't be built on the planet's surface. Ice underneath buildings can melt.

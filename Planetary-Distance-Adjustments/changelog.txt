@@ -1,0 +1,67 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.3.1
+Date: ????
+  Changes:
+---------------------------------------------------------------------------------------------------
+Version: 1.3.0
+Date: 2025-02-03
+  Changes:
+    - Version bump for clarity.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.3
+Date: 2025-02-03
+  Changes:
+    - This mod now has no effect if Redrawn Space Connections is installed.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.2
+Date: 2025-01-02
+  Changes:
+    - Description update.
+  Locale:
+    - Added Russian localization.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.1
+Date: 2024-12-14
+  Changes:
+    - Effect of curvature on interplanetary distances is slightly reduced to better respect triangle inequalities.
+    - Overall distance scale slightly increased to have the early system better match vanilla distances.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.0
+Date: 2024-12-10
+  Changes:
+    - When 'Organized Solar System' is installed, route lengths are now calculated automatically rather than being hardcoded.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.3
+Date: 2024-12-07
+  Info:
+    - Description and mod setting tooltips updated.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.2
+Date: 2024-12-03
+  Features:
+    - Adjustments for Tiered Solar System 1.0.6.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.1
+Date: 2024-12-03
+  Features:
+    - Description update.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 2024-12-03
+  Features:
+    - Support for modded planets via the 'Tiered Solar System' mod.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.4
+Date: 2024-12-02
+  Info:
+    - Space travel flag added.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 18.11.2024
+  Ease of use:
+    - No longer requires experimental version
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 17.11.2024
+  Features:
+    - Nauvis to Vulcanus 1.15x, Gleba to Fulgora 1.66666667x, Fulgora to Aquilo 1.16666667x

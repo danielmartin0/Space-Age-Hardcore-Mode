@@ -1,0 +1,84 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.2.3
+Date: ????
+  Changes:
+---------------------------------------------------------------------------------------------------
+Version: 1.2.2
+Date: 2025-03-08
+  Changes:
+    - Fixed that underground pipes on space platforms (and consequently the belts technology) was unavailable for research.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.1
+Date: 2025-02-20
+  Changes:
+    - Tweaked the cost of the 'Underground pipes on space platforms' technology.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.0
+Date: ????
+  Changes:
+    - 'Underground pipes on space platforms' technology moved to Vulcanus tech tree.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.6
+Date: 2025-01-02
+  Locale:
+    - Added Russian localization.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.5
+Date: 2024-11-30
+  Changes:
+    - Information update.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.4
+Date: 2024-11-30
+  Bugfixes:
+    - Fixed one of the technology icons.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.3
+Date: 2024-11-30
+  Graphics:
+    - New icons for space platform underground technologies by Tserup.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.2
+Date: 2024-11-28
+  Bugfixes:
+    - Fixed exploit in which undergrounds could be built in the process of super force building entities.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.1
+Date: 2024-11-28
+  Info:
+    - Mod setting names updated.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 24.11.2024
+  Changes:
+    - Added technology to place undergrounds belts on space platforms, and for underground pipes, both needed by default.
+    - Mod renamed.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.4
+Date: 18.11.2024
+  Modding:
+    - All changes apart from preventing undergrounds on platforms have been moved to the main Space Age: Hardcore Mode mod. This mod has been renamed. Apologies for the janky internal name.
+  Features:
+    - Setting for restricting underground pipes.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Date: 18.11.2024
+  Ease of use:
+    - Tweaked asteroid HP buff.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 18.11.2024
+  Ease of use:
+    - Tweaked asteroid HP buff.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 18.11.2024
+  Ease of use:
+    - Removed dependencies on other mods.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 18.11.2024
+  Features:
+    - Setting to prevent building undergrounds on space platforms.
+    - Setting to adjust the weight multiplier of space platform foundations.
+    - Setting to adjust the health multiplier of asteroids.

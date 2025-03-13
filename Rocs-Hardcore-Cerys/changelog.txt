@@ -1,0 +1,46 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.10
+Date: ????
+  Changes:
+---------------------------------------------------------------------------------------------------
+Version: 1.0.9
+Date: 2025-03-11
+  Changes:
+    - Description update.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.8
+Date: 2025-03-11
+  Changes:
+    - Description update.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.7
+Date: 2025-03-11
+  Changes:
+    - Name changed to just 'Hardcore Cerys'.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.6
+Date: 2025-03-01
+  Changes:
+    - Ribbonworld maps on Cerys are now even thinner when this mod is enabled.
+  Bugfixes:
+    - Fixed that on ribbonworlds the Fulgoran reactor could not be defrosted.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.5
+Date: 2025-02-13
+  Changes:
+    - Fixed reactor not defrosting as intended.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.4
+Date: 2025-02-11
+  Changes:
+    - Description update.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Date: 2025-02-11
+  Features:
+    - Although the code in this mod does not change, the version number will be bumped occasionally to reflect hardcore changes in the Cerys mod.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2025-02-08
+  Features:
+    - Initial release.

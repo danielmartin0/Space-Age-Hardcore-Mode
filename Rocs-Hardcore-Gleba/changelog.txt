@@ -1,0 +1,106 @@
+---------------------------------------------------------------------------------------------------
+Version: 2.0.9
+Date: ????
+  Changes:
+---------------------------------------------------------------------------------------------------
+Version: 2.0.7
+Date: 2025-03-11
+  Changes:
+---------------------------------------------------------------------------------------------------
+Version: 2.0.6
+Date: 2025-03-11
+  Changes:
+    - Description update.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.5
+Date: 2025-03-11
+  Changes:
+    - Name changed to just 'Hardcore Gleba'.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.4
+Date: 2025-02-03
+  Changes:
+    - Cargo drop tech now requires space science.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.3
+Date: 2025-02-01
+  Changes:
+    - Incompatibility with Burning Cargo Pods removed. You may wish to disable the 'Dropping cargo requires technology' checkbox setting if you use it.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.2
+Date: 2025-01-22
+  Changes:
+    - Added setting to control whether cargo drops require research.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.1
+Date: 2025-01-22
+  Bugfixes:
+    - Added missing dependency.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.0
+Date: 2025-01-22
+  Changes:
+    - Added new technology necessary for dropping cargo on Gleba.
+    - Burning Cargo Pods marked as incompatible.
+---------------------------------------------------------------------------------------------------
+Version: 0.2.1
+Date: 2025-01-07
+  Changes:
+    - Bugfix for cases where the Planet Discovery Gleba tech had no prerequisites.
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 2025-01-05
+  Changes:
+    - For purposes of producing handheld rocket launcher ammo, coal synthesis is now unlocked at the same time as the recipe to produce carbon from burnt spoilage.
+    - Rocketry is now a prerequisite for discovering Gleba.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.9
+Date: 2025-01-02
+  Locale:
+    - Added Russian localization.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.8
+Date: 2024-12-12
+  Changes:
+    - Default spoil time multiplier is now 70% instead of 50%.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.7
+Date: 2024-11-30
+  Changes:
+    - Information update.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.6
+Date: 2024-11-30
+  Info:
+    - Description updated.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.5
+Date: 2024-11-29
+  Info:
+    - Description update.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.4
+Date: 2024-11-28
+  Modded:
+    - Added compatibility for many mods which modify the items on Gleba.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.3
+Date: 2024-11-28
+  Modding:
+    - Added configuration settings for each mod feature.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+Date: 25.11.2024
+  Changes:
+    - Tweaked thumbnail.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 18.11.2024
+  Features:
+    - Added missing thumbnail.
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 18.11.2024
+  Features:
+    - Gleba items spoil faster.
+    - Heating tower requires agricultural science to research.

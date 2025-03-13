@@ -1,0 +1,145 @@
+---------------------------------------------------------------------------------------------------
+Version: 2.1.6
+Date: ????
+  Changes:
+---------------------------------------------------------------------------------------------------
+Version: 2.1.4
+Date: 2025-03-11
+  Changes:
+    - Description update.
+---------------------------------------------------------------------------------------------------
+Version: 2.1.3
+Date: 2025-03-11
+  Changes:
+    - Description update.
+---------------------------------------------------------------------------------------------------
+Version: 2.1.2
+Date: 2025-03-11
+  Changes:
+    - Name changed to just 'Hardcore Vulcanus'.
+---------------------------------------------------------------------------------------------------
+Version: 2.1.1
+Date: 2025-03-09
+  Changes:
+    - Reduced the temperature of steam produced by acid neutralisation to 165 degrees (matching the temperature of steam produced by boilers).
+---------------------------------------------------------------------------------------------------
+Version: 2.1.0
+Date: 2025-03-08
+  Changes:
+    - Demolishers are no longer tougher by default. This effect is now locked behind a setting.
+    - Folded the setting for higher rock yields into the setting for a condensed map.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.4
+Date: 2025-02-03
+  Changes:
+    - Cargo drop tech now requires space science.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.3
+Date: 2025-02-01
+  Changes:
+    - Incompatibility with Burning Cargo Pods removed. You may wish to disable the 'Dropping cargo requires technology' checkbox setting if you use it.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.2
+Date: 2025-01-22
+  Changes:
+    - Added setting to control whether cargo drops require research.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.1
+Date: 2025-01-22
+  Bugfixes:
+    - Added missing dependency.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.0
+Date: 2025-01-22
+  Changes:
+    - Added new technology necessary for dropping cargo on Vulcanus.
+    - Burning Cargo Pods marked as incompatible.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.2
+Date: 2025-01-02
+  Locale:
+    - Added Russian localization.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.1
+Date: 2024-12-12
+  Modding:
+    - Compatibility with the 'enable mod' setting for Rocs-Hardcore-Cargo-Drops.
+---------------------------------------------------------------------------------------------------
+Version: 1.2.0
+Date: ????
+  Changes:
+    - Ore generation on Vulcanus adjusted to match the reduced scale of the terrain: patches are smaller and more numerous.
+    - Starting resources on Vulcanus reduced, particularly calcite. Intersections amongst starting patches and lava made less likely.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.11
+Date: 2024-11-30
+  Changes:
+    - Information update.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.10
+Date: 2024-11-30
+  Graphics:
+    - New technology icon.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.9
+Date: 2024-11-30
+  Info:
+    - Description updated.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.8
+Date: 2024-11-29
+  Features:
+    - Like Gleba and Fulgora, Vulcanus now has a technology that encourages a small science build before the first rocket: Advanced casting, a new technology that gates advanced foundry recipes.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.7
+Date: 2024-11-28
+  Changes:
+    - Added full configuration options.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.6
+Date: 2024-11-28
+  Changes:
+    - Increased rock ore yields due to their lesser number.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.5
+Date: 25.11.2024
+  Changes:
+    - Now compatible with 2.0.21.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.4
+Date: 25.11.2024
+  Info:
+    - Description update.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.3
+Date: 24.11.2024
+  Info:
+    - Marked behemoth-enemies as an optional dependency.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.2
+Date: 24.11.2024
+  Info:
+    - Fixes to attempt to solve lag on MP.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 20.11.2024
+  Info:
+    - Moved the Vulcanus starting area change into this mod from the modpack.
+    - Nerfed stat boosts by a tad.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 20.11.2024
+  Info:
+    - Removed an unused image
+---------------------------------------------------------------------------------------------------
+Version: 1.0.1
+Date: 20.11.2024
+  Features:
+    - Patrolling speeds are now boosted by a small factor.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 19.11.2024
+  Features:
+    - Setting for segmented unit speed multiplier.
+    - Setting for segmented unit health multiplier.
+    - Setting for smaller demolisher territory radius.

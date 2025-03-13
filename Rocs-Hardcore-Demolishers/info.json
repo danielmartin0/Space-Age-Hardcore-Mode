@@ -1,0 +1,17 @@
+{
+    "name": "Rocs-Hardcore-Demolishers",
+    "version": "2.1.6",
+    "factorio_version": "2.0",
+    "title": "Hardcore Vulcanus",
+    "author": "thesixthroc",
+    "contact": "Discord: https://discord.gg/VuVhYUBbWE",
+    "description": "Tweaks to Vulcanus. Demolishers are more numerous, the starting area is much smaller, and certain casting recipes are locked behind building a small science chain on Vulcanus. Vanilla+.",
+    "homepage": "https://discord.gg/VuVhYUBbWE",
+    "dependencies": [
+        "base >= 2.0.21",
+        "space-age >= 2.0.21",
+        "PlanetsLib >= 1.1.31",
+        "? behemoth-enemies"
+    ],
+    "segmented_units_required": true
+}

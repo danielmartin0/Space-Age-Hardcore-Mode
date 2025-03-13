@@ -1,0 +1,433 @@
+---------------------------------------------------------------------------------------------------
+Version: 2.1.4
+Date: ????
+  Changes:
+---------------------------------------------------------------------------------------------------
+Version: 2.1.2
+Date: 2025-03-13
+  Changes:
+    - Added optional dependency Limit Special Building Surfaces.
+---------------------------------------------------------------------------------------------------
+Version: 2.1.1
+Date: 2025-03-13
+  Changes:
+    - Description update.
+---------------------------------------------------------------------------------------------------
+Version: 2.1.0
+Date: 2025-03-13
+  Changes:
+    - Added Github link.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.26
+Date: 2025-03-11
+  Changes:
+    - Description update.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.25
+Date: 2025-03-11
+  Changes:
+    - Removed hidden space character that put Space Age: Hardcore Mode next to the Space Age mod.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.24
+Date: 2025-03-11
+  Changes:
+    - Lowered the default HP buff of asteroids from +25% to +20%.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.23-2.0.21
+Date: 2025-03-06
+  Changes:
+    - Description updates.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.19
+Date: 2025-02-16
+  Changes:
+    - Removed startup console spam.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.18
+Date: 2025-02-09
+  Changes:
+    - Better compatibility with mods that mess with the autoplace controls of default ores on Nauvis.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.15
+Date: 2025-02-09
+  Changes:
+    - Description update.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.14
+Date: 2025-02-09
+  Changes:
+    - More compatibility with mods that remove the space-platform technology.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.13
+Date: 2025-02-09
+  Changes:
+    - Promethium Science Rebalance added as optional dependency.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.12
+Date: 2025-02-08
+  Changes:
+    - Compatibility patches.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.11
+Date: 2025-02-08
+  Changes:
+    - Optional dependency added: Roc's Hardcore Cerys.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.10
+Date: 2025-02-06
+  Changes:
+    - Fixed crash when loaded with Factorio+
+---------------------------------------------------------------------------------------------------
+Version: 2.0.9
+Date: 2025-02-01
+  Changes:
+    - Dependency minimum versions bumped.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.8
+Date: 2025-02-01
+  Info:
+    - Description update.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.7
+Date: 2025-02-01
+  Changes:
+    - Burning Cargo Pods added as an optional dependency.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.6
+Date: 2025-02-01
+  Changes:
+    - Incompatibility with Burning Cargo Pods removed. You may wish to disable the 'Dropping cargo requires technology' checkbox setting on the Gleba, Fulgora and Vulcanus mods if you use it.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.5
+Date: 2025-01-22
+  Changes:
+    - The setting to disable lighted electric poles is now compatible with Flare Stack.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.4
+Date: 2025-01-22
+  Changes:
+    - Description update.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.3
+Date: 2025-01-22
+  Changes:
+    - Minimum versions enforced on subsidiary planet mods.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.2
+Date: 2025-01-22
+  Changes:
+    - Moved cargo drops technologies to the subsidiary mod for each planet.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.1
+Date: 2025-01-22
+  Changes:
+    - Marked Burning Cargo Pods as incompatible, since the new technologies replace that gameplay.
+---------------------------------------------------------------------------------------------------
+Version: 2.0.0
+Date: 2025-01-22
+  Changes:
+    - Cargo drops on Vulcanus, Fulgora and Gleba are now restricted by needing to research a specific technology on each. Burning Cargo Pods will be deprecated.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.3
+Date: 2025-01-21
+  Graphics:
+    - If Lighted Electric Poles are enabled in the mod settings, Hardcore Mod now adds a distinguishing icon to their entity sprite.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.2
+Date: 2025-01-19
+  Changes:
+    - Planet Hopper added as an optional dependency.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.1
+Date: 2025-01-07
+  Changes:
+    - Flat physical resistance of medium asteroids reduced from 10 to 7.
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 2025-01-04
+  Changes:
+    - Removed darker nights on Nauvis. Instead, Diurnal Dynamics is now a mandatory dependency.
+    - Simpler Platform Drag is now an optional dependency.
+    - Distant Misfires, Fire Lights, Explosive Biters and Toxic Biters added as optional dependencies.
+    - Organized Solar System removed as an optional dependency. It's still compatible.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.66
+Date: 2025-01-04
+  Bugfixes:
+    - Removed ineffectual spoilage time multiplier setting from Hardcore Mode (it was moved to Hardcore Gleba).
+---------------------------------------------------------------------------------------------------
+Version: 1.0.65
+Date: 2025-01-02
+  Locale:
+    - Added Russian localization.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.64
+Date: 2024-12-18
+  Modding:
+    - Reinstated Organized Solar System mod as an optional dependency, as it's in the spirit.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.63
+Date: 2024-12-18
+  Modding:
+    - No Quality-cycling mod added as an optional dependency.
+    - Organized Solar System mod removed as an optional dependency.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.62
+Date: 2024-12-14
+  Bugfixes:
+    - Disabling landmine tech during gameplay now unresearches the technology.
+  Changes:
+    - Reduced default asteroid physical resistance bonus from 12 to 10.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.61
+Date: 2024-12-12
+  Changes:
+    - Removed tree challenge mod as an optional dependency.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.60
+Date: 2024-12-07
+  Changes:
+    - The setting to disable landmines is now disabled by default.
+    - Added a setting to disable lighted electric poles.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.59
+Date: 2024-12-07
+  Changes:
+    - Added Call Plumber mod as an optional dependency.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.58
+Date: 2024-12-02
+  Changes:
+    - Increased physical resistance of medium asteroids.
+    - Decreased health bonus to all asteroids.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.57
+Date: 2024-12-02
+  Changes:
+    - Biter nighttime damage bonus reduced.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.56
+Date: 2024-12-02
+  Changes:
+    - Nights on Nauvis are now significantly darker in this mod. Light Overhaul removed as an optional dependency.
+    - 'Lighted Electric Poles+' mod added as a mandatory dependency.
+    - Small tweak to mixed ore generation.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.55
+Date: 2024-12-01
+  Bugfixes:
+    - Fixed mixed ore generation making more stone than intended.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.54
+Date: 2024-11-30
+  Changes:
+    - Information update.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.53
+Date: 2024-11-30
+  Modding:
+    - Armored Biters removed as an optional dependency.
+    - Tree Challenge and Light Overhaul added as optional dependencies.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.52
+Date: 2024-11-29
+  Info:
+    - Dependencies trimmed such that dependency dependencies are no longer listed at top-level.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.51
+Date: 2024-11-29
+  Bugfixes:
+    - Fixed info GUI showing in singleplayer on first load.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.50
+Date: 2024-11-29
+  Changes:
+    - Space platform foundation tile weight increase reinstated.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.49
+Date: 2024-11-29
+  Changes:
+    - Modpack info GUI now only shows in multiplayer.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.48
+Date: 2024-11-29
+  Bugfixes:
+    - Fixed asteroid crushing iron ore result prototype buff applying multiple times.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.47
+Date: 2024-11-29
+  Changes:
+    - 'Better Platform Drag' changed to an optional dependency.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.46
+Date: 2024-11-29
+  Info:
+    - Added setting to remove the modpack GUI.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.45
+Date: 2024-11-28
+  Changes:
+    - Improved smoothness of mixed ore patch generation.
+    - Asteroid crushing now yields more iron and copper when asteroid HP is increased.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.44
+Date: 2024-11-28
+  Changes:
+    - Efficiency module effectiveness nerf adjusted back from 30% to 25%.
+    - Adjusted info window to only show on new saves.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.43
+Date: 2024-11-28
+  Changes:
+    - Removed space platform foundation tile weight multiplier.
+    - Renamed certain settings for clarity.
+    - Added settings to each mandatory dependency so their effect can be removed.
+  Bugfixes:
+    - Fixed spider unit health being affected by the unit health multiplier.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.42
+Date: 2024-11-28
+  Info:
+    - Updated modpack info window.
+    - Shotgun buff reinstated.
+    - Asteroid physical resistance increased slightly.
+    - Fixed Gleba spoilage times being faster than intended.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.41
+Date: 2024-11-27
+  Changes:
+    - The ArmouredBiters mod is now optional.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.40
+Date: 2024-11-26
+  Changes:
+    - Fix missing locale.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.39
+Date: 2024-11-26
+  Changes:
+    - Bugfixes, repeatedly bump version for caching bug.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.38
+Date: 2024-11-26
+  Changes:
+    - Bugfixes, bump version for caching bug.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.34
+Date: 2024-11-26
+  Changes:
+    - Fix shotgun setting.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.32
+Date: 2024-11-26
+  Changes:
+    - Fix shotgun setting.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.31
+Date: 2024-11-26
+  Changes:
+    - Shotguns buffed.
+    - Reduced change to space platform foundation tile weight.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.30
+Date: 2024-11-26
+  Changes:
+    - Biters deal more damage at night.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.29
+Date: 2024-11-26
+  Bugfixes:
+    - Removed recycling time modifier.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.28
+Date: 2024-11-26
+  Features:
+    - Added settings for half-mixed and fully mixed ores on Nauvis.
+    - Physical damage resistance added to medium asteroids.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.27
+Date: 2024-11-25
+  Changes:
+    - Efficiency module nerf increased to 30%.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.26
+Date: 2024-11-25
+  Changes:
+    - New thumbnail.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.25
+Date: 25.11.2024
+  Modding:
+    - Rearranged dependencies.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.24
+Date: 23.11.2024
+  Info:
+    - Removed fission block from Aquilo, it will be added to a separate mod.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.22
+Date: 23.11.2024
+  Info:
+    - Moved small uranium-238 scrap recycling change out of this pack (they will go to a separate mod soon).
+---------------------------------------------------------------------------------------------------
+Version: 1.0.21
+Date: 23.11.2024
+  Info:
+    - Moved Vulcanus starting area tweak to Roc's Hardcore Vulcanus.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.20
+Date: 23.11.2024
+  Info:
+    - Edited description and Discord link.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.18
+Date: 23.11.2024
+  Info:
+    - Behemoth enemies and armoured biters mods made mandatory.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.16
+Date: 23.11.2024
+  Info:
+    - Optional setting for mixed ores on Nauvis.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.9
+Date: 23.11.2024
+  Info:
+    - Additional underground belt costs reverted.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.8
+Date: 23.11.2024
+  Info:
+    - Vulcanus starting area reduced.
+    - Landfill recipe change reverted.
+    - Nauvis now has mixed ore patches.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.5
+Date: 20.11.2024
+  Info:
+    - By default, the HP buff to worms and spider units has been removed.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Date: 20.11.2024
+  Features:
+    - Added Behemoth Enemies mod.
+---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 20.11.2024
+  Features:
+    - Added Better Melting Ice mod (optional).
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 19.11.2024
+  Features:
+    - Settings for more expensive utility science, undergrounds and landfill.
+    - Setting to reduce efficiency module effectiveness.
+    - Setting to disable landmines.
+    - Setting for locomotive fuel spend multiplier.
+    - Setting for Gleba spoilage time multiplier.
+    - Setting for item recycling time multiplier.
+    - Setting for unit health multiplier.
+    - Setting for spider unit health multiplier.
+    - Setting for worm turret health multiplier.
+    - Setting for space platform foundation tile weight multiplier.
+    - Setting for asteroid health multiplier.

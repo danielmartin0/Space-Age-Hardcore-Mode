@@ -1,0 +1,11 @@
+{
+    "name": "Rocs-Hardcore-Cerys",
+    "author": "thesixthroc",
+    "version": "1.0.10",
+    "title": "Hardcore Cerys",
+    "description": "Tweaks to Cerys. Radiative towers have reduced range and consume fuel faster, solar wind is dangerous to the player, repairing the reactor takes twice the resources, asteroids have higher HP, and other tweaks.",
+    "contact": "Discord: thesixthroc",
+    "factorio_version": "2.0",
+    "dependencies": ["base >= 2.0.0", "space-age >= 2.0.0", "Cerys-Moon-of-Fulgora >= 1.3.8"],
+    "freezing_required": true
+}
