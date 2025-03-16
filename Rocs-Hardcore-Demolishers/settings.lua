@@ -10,7 +10,7 @@ data:extend({
 		type = "bool-setting",
 		name = "rocs-hardcore-demolishers-stronger-demolishers",
 		setting_type = "startup",
-		default_value = false,
+		default_value = true,
 		order = "b",
 	},
 	{
