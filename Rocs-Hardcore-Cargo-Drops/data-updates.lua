@@ -1,6 +1,14 @@
+local util = require("util")
+
 for _, planet in pairs({ "nauvis", "fulgora", "vulcanus", "gleba", "aquilo" }) do
 	if data.raw.technology["planetslib-" .. planet .. "-cargo-drops"] then
-		table.insert(data.raw.technology["planetslib-" .. planet .. "-cargo-drops"].effects, {
+		local effects = data.raw.technology["planetslib-" .. planet .. "-cargo-drops"].effects
+		for i = #effects, 1, -1 do
+			if effects[i].type == "nothing" then
+				table.remove(effects, i)
+			end
+		end
+		table.insert(effects, {
 			type = "unlock-recipe",
 			recipe = "cargo-pod-" .. planet,
 		})

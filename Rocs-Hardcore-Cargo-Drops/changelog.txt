@@ -1,7 +1,22 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.5.1
+Version: 1.5.4
 Date: ????
   Changes:
+---------------------------------------------------------------------------------------------------
+Version: 1.5.3
+Date: 2025-03-16
+  Changes:
+    - Modded planets no longer require Nauvian cargo pods in order to perform cargo drops.
+---------------------------------------------------------------------------------------------------
+Version: 1.5.2
+Date: 2025-03-16
+  Changes:
+    - Installing Burning Cargo Pods now removes the 'type = "nothing"' effect from the cargo drop technologies. This means that the only limit on cargo drops will be the cargo pod items themselves, which are unlocked by the technology.
+---------------------------------------------------------------------------------------------------
+Version: 1.5.1
+Date: 2025-03-16
+  Changes:
+    - Reverted the change in 1.5.0. Players are able to disable the cargo drop technologies for individual Hardcore planets in the mod settings.
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.0
 Date: 2025-03-16

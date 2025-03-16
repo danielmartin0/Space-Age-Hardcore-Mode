@@ -10,7 +10,6 @@ Public.LOCATION_REQUIRED_ITEMS = {
 	fulgora = "cargo-pod-fulgora",
 	gleba = "cargo-pod-gleba",
 	aquilo = "cargo-pod-aquilo",
-	default = "cargo-pod-nauvis",
 }
 script.on_nth_tick(10, function()
 	Public.check_cargo_pods()
@@ -180,7 +179,11 @@ function Public.attempt_pod_payment(pod, platform, pod_has_contents)
 	end
 
 	local planet_name = platform.space_location.name
-	local required_item = Public.LOCATION_REQUIRED_ITEMS[planet_name] or Public.LOCATION_REQUIRED_ITEMS.default
+	local required_item = Public.LOCATION_REQUIRED_ITEMS[planet_name]
+
+	if not required_item then
+		return { paid = true }
+	end
 
 	if settings.global["rocs-hardcore-cargo-pods-can-carry-construction-robots"].value then
 		local pod_contents = pod.get_inventory(defines.inventory.cargo_unit).get_contents()
@@ -281,7 +284,7 @@ function Public.destroy_pod_on_platform(pod, platform, cargo_pod_in_cargo_pod, d
 			end
 		elseif platform.space_location and platform.space_location.valid and platform.space_location.name then
 			local planet_name = platform.space_location.name
-			local required_item = Public.LOCATION_REQUIRED_ITEMS[planet_name] or Public.LOCATION_REQUIRED_ITEMS.default
+			local required_item = Public.LOCATION_REQUIRED_ITEMS[planet_name] or "unknown"
 
 			for _, player in pairs(game.connected_players) do
 				if
