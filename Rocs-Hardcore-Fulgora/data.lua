@@ -37,7 +37,7 @@ if settings.startup["rocs-hardcore-fulgora-make-ruins-placeable"].value then
 	data:extend({ fulgoran_ruin_attractor })
 end
 
-if settings.startup["rocs-hardcore-fulgora-a-cargo-drops-need-research"].value then
+if settings.startup["rocs-hardcore-fulgora-cargo-drops-need-research"].value then
 	local fulgora_cargo_tech =
 		PlanetsLib.cargo_drops_technology_base("fulgora", "__space-age__/graphics/technology/fulgora.png", 256)
 	fulgora_cargo_tech.prerequisites = { "electromagnetic-science-pack" }

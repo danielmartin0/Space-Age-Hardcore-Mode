@@ -1,7 +1,7 @@
 data:extend({
 	{
 		type = "bool-setting",
-		name = "rocs-hardcore-gleba-a-cargo-drops-need-research",
+		name = "rocs-hardcore-gleba-cargo-drops-need-research",
 		setting_type = "startup",
 		default_value = true,
 	},

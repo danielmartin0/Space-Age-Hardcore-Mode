@@ -1,12 +1,12 @@
 {
     "name": "Rocs-Hardcore-Cargo-Drops",
-    "version": "1.4.3",
+    "version": "1.5.1",
     "factorio_version": "2.0",
     "title": "Burning Cargo Pods",
     "author": "thesixthroc",
     "contact": "Discord: https://discord.gg/VuVhYUBbWE",
     "description": "Start on each planet afresh! Dropping cargo safely from space platforms requires pods made out of materials native to the planet in question, forcing rockets before drops. This also adds a cost to orbital logistics.",
     "homepage": "https://discord.gg/VuVhYUBbWE",
-    "dependencies": ["base >= 2.0.0", "space-age >= 2.0.0"],
+    "dependencies": ["base >= 2.0.0", "space-age >= 2.0.0", "(?) Rocs-Hardcore-Demolishers >= 2.1.7", "(?) Rocs-Hardcore-Fulgora >= 2.0.8", "(?) Rocs-Hardcore-Gleba >= 2.0.9"],
     "space_travel_required": true
 }

@@ -1,4 +1,4 @@
-if settings.startup["rocs-hardcore-gleba-a-cargo-drops-need-research"].value then
+if settings.startup["rocs-hardcore-gleba-cargo-drops-need-research"].value then
 	local gleba_cargo_tech =
 		PlanetsLib.cargo_drops_technology_base("gleba", "__space-age__/graphics/technology/gleba.png", 256)
 	gleba_cargo_tech.prerequisites = { "agricultural-science-pack" }

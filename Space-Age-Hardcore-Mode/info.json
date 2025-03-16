@@ -1,6 +1,6 @@
 {
     "name": "Space-Age-Hardcore-Mode",
-    "version": "2.1.4",
+    "version": "2.1.5",
     "factorio_version": "2.0",
     "title": "Space Age: Hardcore Mode",
     "author": "thesixthroc",
@@ -35,6 +35,8 @@
         "? Rocs-Hardcore-Cargo-Drops",
         "? Promethium_Science_Rebalance",
         "? limit-special-building-surfaces",
+        "? BiolabsNeedNutrients",
+        "? hot-metals",
         "(?) Flare Stack"
     ]
 }

@@ -127,27 +127,6 @@ if settings.startup["rocs-hardcore-advanced-casting-recipe"].value then
 
 		data:extend({ recipe })
 	end
-
-	if mods["Rocs-Hardcore-Cargo-Drops"] then
-		local recipe = util.table.deepcopy(data.raw.recipe["cargo-pod-vulcanus"])
-		recipe.category = "metallurgy"
-		recipe.enabled = false
-		recipe.localised_name = {
-			"",
-			{ "item-name." .. recipe.name },
-			{ "rocs-hardcore-vulcanus.metallurgy-recipe-suffix" },
-		}
-		recipe.localised_description = { "item-description." .. recipe.name }
-		recipe.hide_from_player_crafting = true
-		recipe.allow_as_intermediate = false
-		recipe.name = "cargo-pod-vulcanus-metallurgy"
-		data:extend({ recipe })
-
-		table.insert(data.raw.technology["advanced-casting"].effects, {
-			type = "unlock-recipe",
-			recipe = "cargo-pod-vulcanus-metallurgy",
-		})
-	end
 end
 
 if settings.startup["rocs-hardcore-demolishers-cargo-drops-need-research"].value then
