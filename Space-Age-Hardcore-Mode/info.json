@@ -1,11 +1,11 @@
 {
     "name": "Space-Age-Hardcore-Mode",
-    "version": "2.1.7",
+    "version": "2.1.9",
     "factorio_version": "2.0",
     "title": "Space Age: Hardcore Mode",
     "author": "thesixthroc",
     "contact": "https://discord.gg/VuVhYUBbWE",
-    "description": "Hardcore Mode is a collection of mods & tweaks that tighten the gameplay of Space Age by removing shortcuts and adding interesting challenge.\n\nPlayers need to build from scratch on Vulcanus, Fulgora and Gleba, and certain initial items are locked behind building a small on-planet science chain.\n\nEach tweak in the core modpack can be configured or disabled in the settings. Optional dependencies contain additional Vanilla+ content.",
+    "description": "Hardcore Mode is a collection of tweaks & small mods that tighten the gameplay of Space Age by removing shortcuts and adding interesting challenge.\n\nPlayers need to build from scratch on Vulcanus, Fulgora and Gleba, and certain initial items are locked behind building a small on-planet science chain.\n\nEach tweak in the core modpack can be configured or disabled in the settings. Optional dependencies contain additional Vanilla+ content.",
     "homepage": "https://github.com/danielmartin0/Space-Age-Hardcore-Mode",
     "space_travel_required": true,
     "dependencies": [
@@ -37,6 +37,7 @@
         "? limit-special-building-surfaces",
         "? BiolabsNeedNutrients",
         "? hot-metals",
+        "? No-Qualitycycling",
         "(?) Flare Stack"
     ]
 }
