@@ -1,7 +1,27 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.3.2
+Version: 1.3.7
 Date: ????
   Changes:
+---------------------------------------------------------------------------------------------------
+Version: 1.3.6
+Date: 2025-05-18
+  Changes:
+    - Tank logistics is now pushed back to Gleba, like with logistic chests. This avoids an exploit in which tanks could be used as makeshift requester chests.
+---------------------------------------------------------------------------------------------------
+Version: 1.3.5
+Date: 2025-04-25
+  Changes:
+    - Name changed to Hard Tech Tree.
+---------------------------------------------------------------------------------------------------
+Version: 1.3.4
+Date: 2025-04-25
+  Changes:
+    - "-1" is no longer appended to existing infinite technologies with a single level, improving mod compatibility.
+---------------------------------------------------------------------------------------------------
+Version: 1.3.3
+Date: 2025-04-22
+  Changes:
+    - Mod renamed.
 ---------------------------------------------------------------------------------------------------
 Version: 1.3.1
 Date: 2025-03-13

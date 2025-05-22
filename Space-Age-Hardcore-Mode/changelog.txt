@@ -1,7 +1,52 @@
 ---------------------------------------------------------------------------------------------------
-Version: 2.1.9
+Version: 2.1.19
 Date: ????
   Changes:
+---------------------------------------------------------------------------------------------------
+Version: 2.1.18
+Date: 2025-05-22
+  Changes:
+    - Added new dependency LandmineExplosionsDoHurt.
+---------------------------------------------------------------------------------------------------
+Version: 2.1.17
+Date: 2025-05-13
+  Changes:
+    - Updated title to 'Beta'.
+---------------------------------------------------------------------------------------------------
+Version: 2.1.16
+Date: 2025-05-08
+  Changes:
+    - Changed the mod title and description to reflect the current status of being under development. This modpack is a thin layer right now but we're looking to make more significant changes to Space Age gameplay.
+---------------------------------------------------------------------------------------------------
+Version: 2.1.15
+Date: 2025-04-25
+  Changes:
+    - Removed the biter damage buff at night.
+---------------------------------------------------------------------------------------------------
+Version: 2.1.13
+Date: 2025-04-02
+  Changes:
+    - Removed optional dependency No Quality Recycling because High Precision Manufacturing is preferable.
+---------------------------------------------------------------------------------------------------
+Version: 2.1.12
+Date: 2025-03-31
+  Changes:
+    - Added optional dependency Inverted Quality.
+---------------------------------------------------------------------------------------------------
+Version: 2.1.11
+Date: 2025-03-28
+  Changes:
+    - Added optional dependency High Precision Manufacturing.
+---------------------------------------------------------------------------------------------------
+Version: 2.1.10
+Date: 2025-03-23
+  Changes:
+    - Removed optional dependency Limit Special Building Surfaces as it generally has poor mod compatibility.
+---------------------------------------------------------------------------------------------------
+Version: 2.1.9
+Date: 2025-03-22
+  Changes:
+    - Expensive Mode removed as an optional dependency. For extended games I endorse using marathon settings instead.
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.8
 Date: 2025-03-20

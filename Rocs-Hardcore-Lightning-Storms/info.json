@@ -1,11 +1,12 @@
 {
     "name": "Rocs-Hardcore-Lightning-Storms",
-    "version": "1.0.12",
+    "version": "1.0.13",
     "factorio_version": "2.0",
     "title": "Tougher Lightning Storms",
     "author": "thesixthroc",
     "contact": "factorio@danielgmartin.com",
     "description": "Makes Fulgoran lightning storms random in length, more damaging, and able to hit locomotives. The latter effect demands creative solutions, but it can be disabled by a setting.",
     "homepage": "https://discord.gg/VuVhYUBbWE",
+    "space_travel_required": true,
     "dependencies": ["base >= 2.0.19", "space-age >= 2.0.19"]
 }

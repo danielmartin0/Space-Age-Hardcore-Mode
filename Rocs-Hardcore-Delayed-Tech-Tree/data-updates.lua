@@ -74,25 +74,26 @@ then
 		{ "metallurgic-science-pack", 1 },
 	}
 
-	if data.raw.technology["logistic-robotics"] then
-		local has_vehicle_logistics = false
+	-- Disabled moving tank logistics as it allows you to use tanks as blue chests:
+	-- if data.raw.technology["logistic-robotics"] then
+	-- 	local has_vehicle_logistics = false
 
-		for i = #data.raw.technology["logistic-system"].effects, 1, -1 do
-			local effect = data.raw.technology["logistic-system"].effects[i]
-			if effect.type == "vehicle-logistics" and effect.modifier == true then
-				has_vehicle_logistics = true
-				table.remove(data.raw.technology["logistic-system"].effects, i)
-			end
-		end
+	-- 	for i = #data.raw.technology["logistic-system"].effects, 1, -1 do
+	-- 		local effect = data.raw.technology["logistic-system"].effects[i]
+	-- 		if effect.type == "vehicle-logistics" and effect.modifier == true then
+	-- 			has_vehicle_logistics = true
+	-- 			table.remove(data.raw.technology["logistic-system"].effects, i)
+	-- 		end
+	-- 	end
 
-		if has_vehicle_logistics then
-			data.raw.technology["logistic-robotics"].effects = data.raw.technology["logistic-robotics"].effects or {}
-			table.insert(data.raw.technology["logistic-robotics"].effects, {
-				type = "vehicle-logistics",
-				modifier = true,
-			})
-		end
-	end
+	-- 	if has_vehicle_logistics then
+	-- 		data.raw.technology["logistic-robotics"].effects = data.raw.technology["logistic-robotics"].effects or {}
+	-- 		table.insert(data.raw.technology["logistic-robotics"].effects, {
+	-- 			type = "vehicle-logistics",
+	-- 			modifier = true,
+	-- 		})
+	-- 	end
+	-- end
 end
 
 if settings.startup["rocs-hardcore-push-back-cliff-explosives"].value then
@@ -246,20 +247,20 @@ if settings.startup["rocs-hardcore-z-infinite-tech-needs-cryogenic"].value then
 			third_tech.name = base_name .. (current_num + 2)
 			third_tech.prerequisites = { second_tech.name, "infinite-research" }
 		else
-			local tech_revised = util.table.deepcopy(tech)
-			tech_revised.name = tech.name .. "-1"
+			-- local tech_revised = util.table.deepcopy(tech)
+			-- tech_revised.name = tech.name .. "-1"
 
 			second_tech.name = tech.name .. "-2"
 			second_tech.max_level = nil
 			second_tech.max_level = nil
-			second_tech.prerequisites = { tech_revised.name }
+			second_tech.prerequisites = { tech.name }
 
 			third_tech.name = tech.name .. "-3"
 			third_tech.prerequisites = { second_tech.name, "infinite-research" }
 
-			data.raw.technology[tech_name] = nil
-			data:extend({ tech_revised })
-			tech = data.raw.technology[tech_revised.name]
+			-- data.raw.technology[tech_name] = nil
+			-- data:extend({ tech_revised })
+			-- tech = data.raw.technology[tech_revised.name]
 		end
 
 		tech.upgrade = nil

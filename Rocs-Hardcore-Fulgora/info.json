@@ -1,12 +1,13 @@
 {
     "name": "Rocs-Hardcore-Fulgora",
-    "version": "2.0.9",
+    "version": "2.0.13",
     "factorio_version": "2.0",
-    "title": "Hardcore Fulgora",
+    "title": "Hard Fulgora",
     "author": "thesixthroc",
     "contact": "Discord: https://discord.gg/VuVhYUBbWE",
     "description": "Tweaks to Fulgora. Lightning storms are stronger, and lightning rods are locked behind a new technology to incentivize building a small science chain on Fulgora.\n\nThis is an early version of this mod. Vanilla+.",
     "homepage": "https://discord.gg/VuVhYUBbWE",
+    "space_travel_required": true,
     "dependencies": [
         "base >= 2.0.19",
         "space-age >= 2.0.19",

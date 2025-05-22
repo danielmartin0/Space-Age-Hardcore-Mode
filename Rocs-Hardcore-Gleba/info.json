@@ -1,8 +1,8 @@
 {
     "name": "Rocs-Hardcore-Gleba",
-    "version": "2.0.10",
+    "version": "2.0.15",
     "factorio_version": "2.0",
-    "title": "Hardcore Gleba",
+    "title": "Hard Gleba",
     "author": "thesixthroc",
     "contact": "Discord: https://discord.gg/VuVhYUBbWE",
     "description": "Tweaks to Gleba. Gleba items spoil twice as fast, and researching the heating tower now requires agricultural science packs to incentivize building a small science chain on Gleba. Vanilla+.",
@@ -11,7 +11,8 @@
         "base >= 2.0.19",
         "space-age >= 2.0.19",
         "Rocs-Hardcore-Probabilistic-Farming",
-        "PlanetsLib >= 1.1.31"
+        "PlanetsLib >= 1.1.31",
+        "Gleba-Science-Needs-Nutrients"
     ],
     "spoiling_required": true
 }

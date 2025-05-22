@@ -1,4 +1,4 @@
-local categories_to_check = { "tool", "capsule", "item" }
+local categories_to_check = { "capsule", "item" }
 
 if settings.startup["rocs-hardcore-gleba-spoil-ticks-multiplier"].value then
 	local multiplier = settings.startup["rocs-hardcore-gleba-spoil-ticks-multiplier"].value
