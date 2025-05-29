@@ -25,9 +25,6 @@ Public.default_modded_planet_tiers = {
 	janus = 3,
 	ithurice = 3.3,
 	corrundum = 3.3,
-	terrapalus = 3.5,
-	["slp-solar-system-sun"] = 3.8,
-	["slp-solar-system-sun2"] = 3.8,
 	castra = 4,
 	tapatrion = 4,
 	tenebris = 4,
@@ -49,6 +46,8 @@ Public.vanilla_planet_tiers = {
 }
 
 Public.default_modded_location_tiers = {
+	["slp-solar-system-sun"] = 0.2,
+	["slp-solar-system-sun2"] = 0.2,
 	secretas = 5.65,
 }
 

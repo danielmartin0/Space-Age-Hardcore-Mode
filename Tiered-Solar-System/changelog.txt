@@ -1,7 +1,23 @@
 ---------------------------------------------------------------------------------------------------
-Version: 2.2.3
+Version: 2.3.1
 Date: ????
   Changes:
+---------------------------------------------------------------------------------------------------
+Version: 2.3.0
+Date: 2025-03-29
+  Changes:
+    - Cosmic Social Distancing default distance increased to 5000km.
+    - Terra Palus is now made to orbit Gleba.
+---------------------------------------------------------------------------------------------------
+Version: 2.2.4
+Date: 2025-03-29
+  Changes:
+    - Changed label orientations to match the orientation.
+---------------------------------------------------------------------------------------------------
+Version: 2.2.3
+Date: 2025-03-09
+  Changes:
+    - SLP Dyson Sphere sun orbital locations are moved to tier=0.2, and redrawn_connections_exclude is applied to the innermost location.
 ---------------------------------------------------------------------------------------------------
 Version: 2.2.2
 Date: 2025-03-04

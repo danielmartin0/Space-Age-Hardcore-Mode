@@ -28,12 +28,40 @@ for _, type in pairs({ "space-location", "planet" }) do
 			if loc.orbit.parent.name == "star" then
 				if loc.tier == nil then
 					loc.tier = tiers.fallback_tier
+					loc.label_orientation = loc.orientation
 				end
 
 				if loc.tier ~= -1 then
 					loc.orientation = 1 - (loc.tier * 0.15)
+					loc.label_orientation = loc.orientation
 				end
 			end
 		end
+	end
+end
+
+if data.raw["space-location"]["slp-solar-system-sun2"] then
+	data.raw["space-location"]["slp-solar-system-sun2"].redrawn_connections_exclude = true
+end
+
+if data.raw.planet["terrapalus"] then
+	local planet = data.raw.planet["terrapalus"]
+	if
+		not (planet.orbit and planet.orbit.parent and planet.orbit.parent.name and planet.orbit.parent.name == "gleba")
+	then
+		PlanetsLib:update({
+			{
+				type = "planet",
+				name = "terrapalus",
+				orbit = {
+					parent = {
+						type = "planet",
+						name = "gleba",
+					},
+					distance = 3.5,
+					orientation = 0.46,
+				},
+			},
+		})
 	end
 end

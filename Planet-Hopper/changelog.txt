@@ -1,8 +1,92 @@
 ---------------------------------------------------------------------------------------------------
-Version: 2.0.3
+Version: 3.0.5
 Date: ????
   Changes:
-    - Pushed a compatibility fix to ensure fixed_recipe is set correctly.
+---------------------------------------------------------------------------------------------------
+Version: 3.0.4
+Date: 2025-05-26
+  Bugfixes:
+    - Fixed that players could carry items in their inventory whilst hopping.
+---------------------------------------------------------------------------------------------------
+Version: 3.0.0
+Date: 2025-05-12
+  Changes:
+    - Planet Hoppers no longer require an overhead space platform in order to travel directly between planets.
+---------------------------------------------------------------------------------------------------
+Version: 2.3.6
+Date: 2025-05-05
+  Changes:
+    - Hidden planets no longer show in the destination override list.
+---------------------------------------------------------------------------------------------------
+Version: 2.3.5
+Date: 2025-03-21
+  Changes:
+    - Compatibility with No Space Platforms: Planet Hopper no longer shows the destination override if this mod is enabled.
+---------------------------------------------------------------------------------------------------
+Version: 2.3.4
+Date: 2025-03-20
+  Changes:
+    - License switch.
+---------------------------------------------------------------------------------------------------
+Version: 2.3.3
+Date: 2025-03-18
+  Changes:
+    - Description updated.
+---------------------------------------------------------------------------------------------------
+Version: 2.3.2
+Date: 2025-03-17
+  Changes:
+    - Remove enabled=false from automatic rocket parts recipe.
+---------------------------------------------------------------------------------------------------
+Version: 2.3.1
+Date: 2025-03-17
+  Changes:
+    - Compatibility with mods that remove fixed_recipe recipes from player machines.
+---------------------------------------------------------------------------------------------------
+Version: 2.3.0
+Date: 2025-03-16
+  Graphics:
+    - Improved graphics. (Thanks cackling.fiend!)
+---------------------------------------------------------------------------------------------------
+Version: 2.2.0
+Date: 2025-03-16
+  Changes:
+    - Changed the setting to allow traveling directly to planets to be enabled by default.
+---------------------------------------------------------------------------------------------------
+Version: 2.1.6
+Date: 2025-03-13
+  Bugfixes:
+    - Fixed a crash when hopping directly to a planet surface that did not yet exist.
+---------------------------------------------------------------------------------------------------
+Version: 2.1.5
+Date: 2025-03-11
+  Changes:
+    - Fixed a second bug in which the GUI failed to open.
+---------------------------------------------------------------------------------------------------
+Version: 2.1.4
+Date: 2025-03-11
+  Changes:
+    - Fixed the new GUI failing to open.
+---------------------------------------------------------------------------------------------------
+Version: 2.1.3
+Date: 2025-03-11
+  Changes:
+    - Fixed mod title.
+---------------------------------------------------------------------------------------------------
+Version: 2.1.2
+Date: 2025-03-11
+  Bugfixes:
+    - Fixed another crash.
+---------------------------------------------------------------------------------------------------
+Version: 2.1.1
+Date: 2025-03-11
+  Bugfixes:
+    - Fixed crashes on indexing 'silos'.
+---------------------------------------------------------------------------------------------------
+Version: 2.1.0
+Date: 2025-03-08
+  Changes:
+    - Direct travel from planet to planet is now disabled by default, until enabled in the mod settings.
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.2
 Date: 2025-02-24

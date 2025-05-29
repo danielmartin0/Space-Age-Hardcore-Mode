@@ -2,21 +2,59 @@
     "stylua.targetReleaseVersion": "latest",
     "factorio.versions": [
         {
-            "name": "Steam",
-            "factorioPath": "~/Library/Application Support/Steam/steamapps/common/Factorio/factorio.app/Contents/MacOS/factorio"
-        },
-        {
-            "name": "2.0.32",
-            "factorioPath": "/Applications/factorio-modding.app/Contents/MacOS/factorio"
-        },
-        {
-            "name": "modding version",
+            "name": "factorio-modding",
             "factorioPath": "/Applications/factorio-modding.app/Contents/MacOS/factorio",
             "active": true
+        },
+        {
+            "name": "Steam",
+            "factorioPath": "~/Library/Application Support/Steam/steamapps/common/Factorio/factorio.app/Contents/MacOS/factorio"
         }
     ],
     "Lua.workspace.userThirdParty": [
         "/Users/danielmartin/Library/Application Support/Cursor/User/workspaceStorage/2b56437b267afa26c57402da52c4eb9d/justarandomgeek.factoriomod-debug/sumneko-3rd"
     ],
-    "Lua.workspace.checkThirdParty": "ApplyInMemory"
+    "Lua.workspace.checkThirdParty": "ApplyInMemory",
+    "Lua.diagnostics.globals": [
+        "script",
+        "storage",
+        "game",
+        "data",
+        "defines",
+        "prototypes",
+        "settings",
+        "log",
+        "math",
+        "mods",
+        "serpent",
+        "helpers",
+        "commands",
+        "rendering",
+        "feature_flags",
+        "remote",
+        "util",
+
+        "PlanetsLib",
+
+        "apply_heat_pipe_glow",
+        "pipecoverspictures",
+        "reactor_circuit_wire_max_distance",
+        "assembling_machine_circuit_wire_max_distance",
+        "circuit_connector_definitions",
+        "sound_variations",
+        "volume_multiplier",
+        "silo_cargo_hatch",
+        "tile_variations_template",
+        "tile_variations_template_with_transitions",
+        "assembler3pipepictures",
+        "water_tile_type_names",
+        "water_transition_group_id",
+        "lava_tile_type_names",
+        "lava_transition_group_id",
+        "out_of_map_transition_group_id",
+        "out_of_map_tile_type_names",
+        "default_transition_group_id",
+        "default_circuit_wire_max_distance",
+        "universal_connector_template"
+    ]
 }

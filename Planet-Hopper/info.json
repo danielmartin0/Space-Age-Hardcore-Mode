@@ -1,12 +1,12 @@
 {
     "name": "Planet-Hopper",
-    "version": "2.0.3",
+    "version": "3.0.5",
     "factorio_version": "2.0",
-    "title": "Planet Hoppers",
+    "title": "Planet Hoppers [v3!]",
     "author": "thesixthroc",
     "contact": "Discord: https://discord.gg/VuVhYUBbWE",
-    "description": "Planet hoppers are miniature rockets that can travel directly between planets and are easy to construct, but can carry only players. NEW in 2.0: You can now choose to travel directly between planets, avoiding space platforms entirely.",
+    "description": "Planet hoppers are miniature rockets that ferry players directly between planets.",
     "homepage": "https://discord.gg/VuVhYUBbWE",
-    "dependencies": ["base >= 2.0.34", "space-age >= 2.0.34"],
+    "dependencies": ["base >= 2.0.52", "space-age >= 2.0.52"],
     "space_travel_required": true
 }

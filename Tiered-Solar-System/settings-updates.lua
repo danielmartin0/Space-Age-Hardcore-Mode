@@ -1,8 +1,1 @@
-data:extend({
-	{
-		type = "bool-setting",
-		name = "Tiered-Solar-System-ensure-vanilla-planets-connected",
-		setting_type = "startup",
-		default_value = false,
-	},
-})
+data.raw["double-setting"]["Cosmic-Social-Distancing-min-distance-km"].default_value = 5000

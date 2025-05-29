@@ -1,7 +1,7 @@
 {
     "name": "Tiered-Solar-System",
     "author": "thesixthroc",
-    "version": "2.2.3",
+    "version": "2.3.1",
     "title": "Organized Solar System",
     "description": "Automatically organizes the positions of vanilla and modded solar system planets to better reflect the Space Age gameplay progression.\n\nThe radial distances of planets are unchanged. Their angles are specified by a number called the 'tier', which can be overridden by the mod author. Tiers run from 0 (north of the star) anticlockwise to 6 (north-east of the star). Mods with no tier appear vertically below the sun. Please suggest a tier for them on Discord!",
     "contact": "Discord: thesixthroc",
@@ -9,7 +9,7 @@
     "dependencies": [
         "base >= 2.0.0",
         "space-age >= 2.0.0",
-        "Redrawn-Space-Connections >= 1.2.0",
+        "Redrawn-Space-Connections >= 1.3.6",
         "Cosmic-Social-Distancing"
     ],
     "space_travel_required": true

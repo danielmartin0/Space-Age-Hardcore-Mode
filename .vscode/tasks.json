@@ -20,7 +20,6 @@
                 "Expensive-Mode",
                 "Better-Melting-Ice",
                 "Planetary-Distance-Adjustments",
-                "Rocs-Rusting-Iron",
                 "Fulgora-Nuclear-Overhaul",
                 "Surfaces-Have-Temperature",
                 "No-Qualitycycling",
@@ -28,8 +27,13 @@
                 "Planet-Hopper",
                 "Rocs-Hardcore-Cerys",
                 "Customized-Start",
+                "The-Foundry-Playtests",
                 "No-Iron-Chests",
-                "Cosmic-Social-Distancing"
+                "Cosmic-Social-Distancing",
+                "Mined-Inserters-Dont-Leave-Items",
+                "Dectorio-Fork",
+                "Gleba-Science-Needs-Nutrients",
+                "Cerys-Start"
             ]
         },
         {
@@ -41,7 +45,11 @@
                 "PlanetsLib",
                 "Redrawn-Space-Connections",
                 "Tiered-Solar-System",
-                "Space-Age-Without-Platforms"
+                "Space-Age-Without-Platforms",
+                "Rocs-Rusting-Iron",
+                "Clones",
+                "Inverted-Quality",
+                "Small-Space-Age"
             ]
         }
     ],

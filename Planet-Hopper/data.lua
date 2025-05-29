@@ -51,13 +51,13 @@ data:extend({
 		name = "planet-hopper-launcher",
 	},
 	{
+
 		type = "recipe",
 		name = "planet-hopper-automatic-rocket-parts",
 		category = "planet-hopper-launcher",
-		hidden = true,
 		energy_required = 3,
-		enabled = false,
 		hide_from_player_crafting = true,
+		hidden_in_factoriopedia = true,
 		ingredients = {},
 		results = { {
 			type = "item",
@@ -120,7 +120,7 @@ local function modify(table)
 	end
 
 	if has_filename then
-		table.tint = { 0.6, 0.85, 0.6, 1 }
+		table.tint = { 0.71, 0.89, 0.71, 1 }
 	end
 end
 
@@ -147,7 +147,7 @@ local silo_2 = merge(data.raw["rocket-silo"]["rocket-silo"], {
 	fixed_recipe = "planet-hopper-automatic-rocket-parts",
 	launch_wait_time = 1,
 	rocket_rising_delay = 1,
-	to_be_inserted_to_rocket_inventory_size = 1,
+	to_be_inserted_to_rocket_inventory_size = 0,
 	rocket_parts_required = 1,
 	logistic_trash_inventory_size = 0,
 	rocket_entity = "planet-hopper",
@@ -170,6 +170,20 @@ local silo_2 = merge(data.raw["rocket-silo"]["rocket-silo"], {
 	surface_conditions = "nil",
 })
 modify(silo_2)
+local lighter_tint = { 0.87, 1, 0.87, 1 }
+silo_2.base_day_sprite.filename = "__Planet-Hopper__/graphics/entity/planet-hopper-launcher/06-rocket-silo.png"
+silo_2.base_day_sprite.tint = lighter_tint
+silo_2.arm_01_back_animation.filename =
+	"__Planet-Hopper__/graphics/entity/planet-hopper-launcher/08-rocket-silo-arms-back.png"
+silo_2.arm_01_back_animation.tint = lighter_tint
+silo_2.arm_02_right_animation.filename =
+	"__Planet-Hopper__/graphics/entity/planet-hopper-launcher/08-rocket-silo-arms-right.png"
+silo_2.arm_02_right_animation.tint = lighter_tint
+silo_2.arm_03_front_animation.filename =
+	"__Planet-Hopper__/graphics/entity/planet-hopper-launcher/13-rocket-silo-arms-front.png"
+silo_2.arm_03_front_animation.tint = lighter_tint
+silo_2.base_front_sprite.filename = "__Planet-Hopper__/graphics/entity/planet-hopper-launcher/14-rocket-silo-front.png"
+silo_2.base_front_sprite.tint = lighter_tint
 
 local rocket_2 = merge(data.raw["rocket-silo-rocket"]["rocket-silo-rocket"], {
 	name = "planet-hopper",
