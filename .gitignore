@@ -29,3 +29,14 @@
 !/Tiered-Solar-System/**
 !/Space-Age-Without-Platforms/**
 !/pirate_ship/**
+
+# Ignore submodules
+/Cerys-Moon-of-Fulgora/
+/PlanetsLib/
+/Flare Stack/
+/solarsystemplusplus/
+/Small-Space-Age/
+/Communion/
+/Space-Age-Revamp/
+/Space-Age-Without-Platforms/
+/Redrawn-Space-Connections/
