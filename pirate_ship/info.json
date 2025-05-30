@@ -1,6 +1,6 @@
 {
     "name": "pirate_ship",
-    "version": "1.8.16",
+    "version": "1.8.17",
     "title": "Pirate Ship",
     "author": "thesixthroc",
     "dependencies": ["base >= 2.0.0", "! space-age", "! quality"],
