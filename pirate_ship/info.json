@@ -1,0 +1,11 @@
+{
+    "name": "pirate_ship",
+    "version": "1.8.16",
+    "title": "Pirate Ship",
+    "author": "thesixthroc",
+    "dependencies": ["base >= 2.0.0", "! space-age", "! quality"],
+    "description": "Set sail with a crew of teammates. Collect resources and fuel the ship in order to survive as many leagues as possible. Each crew has a captain, who performs actions such as deciding when the boat leaves. Doubloons can be spent at various markets throughout the game. Game progression is slower for smaller crews. Mysteries await!\n\nWin condition: Travel 1000 leagues.\nLose condition: The ship runs out of fuel, or a cannon is destroyed.",
+    "factorio_version": "2.0",
+    "homepage": "https://mods.factorio.com/mod/pirate_ship",
+    "contact": "Discord: thesixthroc"
+}

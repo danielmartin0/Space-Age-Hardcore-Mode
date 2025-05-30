@@ -1,6 +1,9 @@
 # Ignore everything by default
 *
 
+# Allow all directories (so we can whitelist specific ones)
+!*/
+
 # Whitelist config files and VSCode settings
 !.gitignore
 !.luacheckrc
@@ -25,7 +28,4 @@
 !/Planet-Hopper/**
 !/Tiered-Solar-System/**
 !/Space-Age-Without-Platforms/**
-/Cerys-Moon-of-Fulgora/
-/PlanetsLib/
-/Flare Stack/
-/solarsystemplusplus/
+!/pirate_ship/**
