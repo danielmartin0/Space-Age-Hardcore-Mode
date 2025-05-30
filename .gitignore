@@ -1,5 +1,15 @@
+# Ignore everything by default
 *
-!*/
+
+# Whitelist config files and VSCode settings
+!.gitignore
+!.luacheckrc
+!.prettierrc
+!.styluaignore
+!.vscode/
+!.vscode/**
+
+# Whitelist specific mods
 !/Space-Age-Hardcore-Mode/**
 !/Rocs-Hardcore-Cargo-Drops/**
 !/Rocs-Hardcore-Delayed-Tech-Tree/**
@@ -19,22 +29,3 @@
 /PlanetsLib/
 /Flare Stack/
 /solarsystemplusplus/
-!.gitignore
-!.luacheckrc
-!.prettierrc
-!.styluaignore
-!.vscode/
-!.vscode/**
-dea-dia-system/
-planet-ithurice/
-planet-nekohaven/
-planet-quadromire/
-planet-tapatrion/
-planet-tchekor/
-planet-vicrox/
-planet-zzhora/
-Redrawn-Space-Connections/
-Space-Age-Revamp/
-Space-Age-Without-Platforms/
-SpaceAgeWithoutSpace_0.0.16/
-Useful-Methane/
