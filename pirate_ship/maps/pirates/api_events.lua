@@ -1657,6 +1657,11 @@ local function event_on_research_finished(event)
 	-- figure out which crew this is about:
 	local research = event.research
 	local force = research.force
+
+	if force.name == Common.lobby_force_name then
+		return
+	end
+
 	local crew_id = Common.get_id_from_force_name(force.name)
 	Memory.set_working_id(crew_id)
 	local memory = Memory.get_crew_memory()
