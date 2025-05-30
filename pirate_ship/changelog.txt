@@ -1,8 +1,10 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.8.16
 Date: ????
-  Changes:
-    - Adjusted some autoplace settings code.
+  Bugfixes:
+    - It is no longer impossible to use the centrifuges on newly generated uranium islands.
+    - The Compilatron quest no longer appears on the cave island since the Compilatron entity was removed in 2.0.
+    - Tweaked some autoplace settings code.
 ---------------------------------------------------------------------------------------------------
 Version: 1.8.15
 Date: 2025-05-06
