@@ -1,6 +1,6 @@
 {
     "name": "Space-Age-Hardcore-Mode",
-    "version": "2.1.19",
+    "version": "2.1.20",
     "factorio_version": "2.0",
     "title": "Space Age: Hard Mode [Beta]",
     "author": "thesixthroc",
@@ -23,6 +23,7 @@
         "Planetary-Distance-Adjustments",
         "PlanetsLib >= 1.5.0",
         "LandmineExplosionsDoHurt",
+        "quality-asteroids",
         "? Planet-Hopper",
         "? Rocs-Hardcore-Cerys",
         "? distant-misfires",

@@ -1,7 +1,22 @@
 ---------------------------------------------------------------------------------------------------
-Version: 2.1.13
+Version: 2.1.16
 Date: ????
   Changes:
+---------------------------------------------------------------------------------------------------
+Version: 2.1.15
+Date: 2025-05-29
+  Info:
+    - Information update.
+---------------------------------------------------------------------------------------------------
+Version: 2.1.14
+Date: 2025-05-29
+  Changes:
+    - The dependency NoLavaInPipes is no longer mandatory.
+---------------------------------------------------------------------------------------------------
+Version: 2.1.13
+Date: 2025-05-23
+  Changes:
+    - From this version onwards, the first time a save is loaded, any lava pumps are replaced with regular offshore pumps. This makes existing factories prior to 2.1.12 forwards-compatible.
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.12
 Date: 2025-05-22

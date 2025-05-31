@@ -1,10 +1,5 @@
 --== Asteroids ==--
 for _, entity in pairs(data.raw.asteroid) do
-	if entity.max_health then
-		entity.max_health = entity.max_health
-			* (1 + settings.startup["rocs-hardcore-spaceb-bonus-asteroid-health-percentage"].value / 100)
-	end
-
 	if
 		entity.name == "medium-metallic-asteroid"
 		or entity.name == "medium-carbonic-asteroid"
