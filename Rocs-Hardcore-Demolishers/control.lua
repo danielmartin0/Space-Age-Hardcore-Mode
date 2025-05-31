@@ -20,18 +20,16 @@ local function replace_with_normal_pump(entity)
 	surface.create_entity(info)
 end
 
-script.on_configuration_changed(function()
-	if storage.migrated_pumps then
-		return
-	end
+script.on_event(defines.events.on_script_trigger_effect, function(event)
+	local effect_id = event.effect_id
 
-	storage.migrated_pumps = true
+	if effect_id == "hard-mode-replace-lava-pump" then
+		local entity = event.target_entity
 
-	if game.surfaces["vulcanus"] == nil then
-		return
-	end
+		if not (entity and entity.valid) then
+			return
+		end
 
-	for _, e in pairs(game.surfaces["vulcanus"].find_entities_filtered({ name = "lava-pump" })) do
-		replace_with_normal_pump(e)
+		replace_with_normal_pump(entity)
 	end
 end)

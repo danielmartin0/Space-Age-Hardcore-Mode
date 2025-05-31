@@ -11,21 +11,21 @@ data:extend({
 		name = "rocs-hardcore-demolishers-stronger-demolishers",
 		setting_type = "startup",
 		default_value = true,
-		order = "b",
+		order = "c",
 	},
 	{
 		type = "bool-setting",
 		name = "rocs-hardcore-advanced-casting-recipe",
 		setting_type = "startup",
 		default_value = true,
-		order = "c",
+		order = "d",
 	},
 	{
 		type = "bool-setting",
 		name = "rocs-hardcore-smaller-demolisher-territory-radius",
 		setting_type = "startup",
 		default_value = true,
-		order = "d",
+		order = "e",
 	},
 	{
 		type = "bool-setting",
@@ -40,5 +40,12 @@ data:extend({
 		setting_type = "startup",
 		default_value = true,
 		order = "g",
+	},
+	{
+		type = "bool-setting",
+		name = "rocs-hardcore-demolishers-disable-no-lava-in-pipes",
+		setting_type = "startup",
+		default_value = false,
+		order = "w",
 	},
 })

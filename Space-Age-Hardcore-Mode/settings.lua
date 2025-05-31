@@ -89,12 +89,4 @@ data:extend({
 		setting_type = "startup",
 		default_value = true,
 	},
-	{
-		type = "double-setting",
-		name = "rocs-hardcore-bonus-unit-health-percentage",
-		setting_type = "startup",
-		default_value = 20,
-		minimum_value = 0,
-		maximum_value = 10000,
-	},
 })

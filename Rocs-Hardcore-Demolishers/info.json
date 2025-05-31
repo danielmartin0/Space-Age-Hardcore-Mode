@@ -1,6 +1,6 @@
 {
     "name": "Rocs-Hardcore-Demolishers",
-    "version": "2.1.16",
+    "version": "2.2.1",
     "factorio_version": "2.0",
     "title": "Hard Vulcanus",
     "author": "thesixthroc",
@@ -11,7 +11,7 @@
         "base >= 2.0.21",
         "space-age >= 2.0.21",
         "PlanetsLib >= 1.1.31",
-        "? NoLavaInPipes",
+        "NoLavaInPipes",
         "? behemoth-enemies"
     ],
     "segmented_units_required": true

@@ -1,9 +1,34 @@
 ---------------------------------------------------------------------------------------------------
-Version: 2.1.20
+Version: 2.2.4
 Date: ????
   Changes:
-    - Removed the built-in buff to asteroid health.
+---------------------------------------------------------------------------------------------------
+Version: 2.2.2
+Date: 2025-05-31
+  Changes:
+    - New dependency: Promethium Decay. This is less meme-heavy implementation of Promethium Science Rebalance, which has been removed as an optional dependency.
+    - No Lava In Pipes is now back to being a mandatory dependency, but a checkbox setting has been added (to Hard Vulcanus) to disable it.
+---------------------------------------------------------------------------------------------------
+Version: 2.2.0
+Date: 2025-05-31
+  Changes:
+    - Like with asteroids, the new dependency 'Quality for Biters!' increases the difficulty of enemies; the 20% health buff has been removed.
+    - Hard Aquilo change: the Fluoroketone recipe now requires light oil instead of solid fuel.
+    - Hard Aquilo change: the starting area is smaller.
+    - License switched to MIT.
+---------------------------------------------------------------------------------------------------
+Version: 2.1.21
+Date: 2025-05-31
+  Changes:
+    - Fixed a crash.
+    - Removed the buff to asteroid resource yields.
+---------------------------------------------------------------------------------------------------
+Version: 2.1.20
+Date: 2025-05-31
+  Changes:
     - Added quality-asteroids as a dependency.
+    - Removed the built-in buff to asteroid health.
+    - Dropped the new physical resistance of medium asteroids from 7 to 5.
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.19
 Date: 2025-05-29

@@ -77,7 +77,12 @@ if settings.startup["rocs-hardcore-vulcanus-condensed-map"].value then
 end
 
 if settings.startup["rocs-hardcore-vulcanus-cooler-steam"].value then
-	if data.raw.recipe["acid-neutralisation"] and data.raw.recipe["acid-neutralisation"].results and data.raw.recipe["acid-neutralisation"].results[1] and data.raw.recipe["acid-neutralisation"].results[1].name == "steam" then
+	if
+		data.raw.recipe["acid-neutralisation"]
+		and data.raw.recipe["acid-neutralisation"].results
+		and data.raw.recipe["acid-neutralisation"].results[1]
+		and data.raw.recipe["acid-neutralisation"].results[1].name == "steam"
+	then
 		data.raw.recipe["acid-neutralisation"].results[1].temperature = 165
 	end
 end
@@ -102,7 +107,7 @@ if settings.startup["rocs-hardcore-advanced-casting-recipe"].value then
 			{ "item-name." .. data.raw.item["cargo-pod-vulcanus"].name },
 			{ "rocs-hardcore-vulcanus.non-metallurgy-recipe-suffix" },
 		}
-		
+
 		local recipe = util.table.deepcopy(data.raw.recipe["cargo-pod-vulcanus"])
 		recipe.category = "metallurgy"
 		recipe.enabled = false
@@ -151,4 +156,17 @@ if settings.startup["rocs-hardcore-advanced-casting-recipe"].value then
 	if turbo_tech then
 		table.insert(turbo_tech.prerequisites, "advanced-casting")
 	end
+end
+
+if settings.startup["rocs-hardcore-demolishers-disable-no-lava-in-pipes"].value then
+	data.raw["offshore-pump"]["lava-pump"].created_effect = {
+		type = "direct",
+		action_delivery = {
+			type = "instant",
+			source_effects = {
+				type = "script",
+				effect_id = "hard-mode-replace-lava-pump",
+			},
+		},
+	}
 end

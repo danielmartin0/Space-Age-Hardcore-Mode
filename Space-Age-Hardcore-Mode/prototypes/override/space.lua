@@ -26,28 +26,6 @@ for _, entity in pairs(data.raw.asteroid) do
 	end
 end
 
-local asteroid_metallic_resources_multiplier = (
-	1 + 0.5 * settings.startup["rocs-hardcore-spaceb-bonus-asteroid-health-percentage"].value / 100
-)
-
-if asteroid_metallic_resources_multiplier > 1 then
-	if data.raw.recipe["metallic-asteroid-crushing"] then
-		for _, result in pairs(data.raw.recipe["metallic-asteroid-crushing"].results or {}) do
-			if result.name == "iron-ore" then
-				result.amount = math.floor(result.amount * asteroid_metallic_resources_multiplier)
-			end
-		end
-	end
-
-	if data.raw.recipe["advanced-metallic-asteroid-crushing"] then
-		for _, result in pairs(data.raw.recipe["advanced-metallic-asteroid-crushing"].results or {}) do
-			if result.name == "iron-ore" then
-				result.amount = math.floor(result.amount * asteroid_metallic_resources_multiplier)
-			end
-		end
-	end
-end
-
 if settings.startup["rocs-hardcore-spaced-asteroids-early-copper-available"].value then
 	if data.raw.technology["space-platform"] then
 		table.insert(
