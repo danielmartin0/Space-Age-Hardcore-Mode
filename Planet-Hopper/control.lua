@@ -8,6 +8,11 @@ local function get_destination_choices(force, planet_name_to_exclude)
 	for name, planet in pairs(game.planets) do
 		if
 			force.is_space_location_unlocked(name)
+			-- or (
+			-- 	planet.surface
+			-- 	and not name == "nauvis"
+			-- 	and settings.global["planet-hopper-can-launch-to-planets-with-surface"].value
+			-- )
 			and name ~= planet_name_to_exclude
 			and not planet.prototype.hidden
 		then
@@ -52,6 +57,12 @@ script.on_event(defines.events.on_gui_opened, function(event)
 	end
 
 	local relative = player.gui.relative
+
+	local old_gui_key = "Planet-Hopper-override"
+	if relative[old_gui_key] then
+		relative[old_gui_key].destroy()
+	end
+
 	if relative[GUI_KEY] then
 		relative[GUI_KEY].destroy()
 	end
@@ -117,7 +128,7 @@ script.on_event(defines.events.on_gui_opened, function(event)
 			name = "planet-hopper-launch-button",
 			caption = { "hopper.launch" },
 			enabled = #options > 0,
-			tooltip = { "hopper.launch-tooltip" },
+			tooltip = #options > 0 and { "hopper.launch-tooltip" } or { "hopper.launch-no-destinations-tooltip" },
 		})
 	end
 end)

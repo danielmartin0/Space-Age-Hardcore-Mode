@@ -1,7 +1,28 @@
 ---------------------------------------------------------------------------------------------------
-Version: 3.0.5
+Version: 3.1.1
 Date: ????
   Changes:
+---------------------------------------------------------------------------------------------------
+Version: 3.1.0
+Date: 2025-06-09
+  Changes:
+    - Adjusted the requirements for launching to a given planet to match the requirements for space platforms travel: that the planet in question is unlocked. (Previously, the LuaSurface existing sufficed, except for Nauvis. We might bring this functionality back in the future if there is demand.)
+    - Added a new tooltip to the launch button for the case that there are no destinations to choose from.
+---------------------------------------------------------------------------------------------------
+Version: 3.0.7
+Date: 2025-06-09
+  Changes:
+    - Tweaked the mod's name.
+---------------------------------------------------------------------------------------------------
+Version: 3.0.6
+Date: 2025-06-05
+  Changes:
+    - Made Nauvis an exception for the rule that players can travel to surfaces that exist even if they are not unlocked.
+---------------------------------------------------------------------------------------------------
+Version: 3.0.5
+Date: 2025-05-31
+  Changes:
+    - Rocket silos opened in Planet Hoppers v2 or Planet Hoppers v1 no longer show the old GUI alongside the new one.
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.4
 Date: 2025-05-26

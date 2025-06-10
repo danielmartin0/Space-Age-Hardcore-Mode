@@ -33,9 +33,7 @@
         "feature_flags",
         "remote",
         "util",
-
         "PlanetsLib",
-
         "apply_heat_pipe_glow",
         "pipecoverspictures",
         "reactor_circuit_wire_max_distance",
@@ -55,6 +53,7 @@
         "out_of_map_tile_type_names",
         "default_transition_group_id",
         "default_circuit_wire_max_distance",
-        "universal_connector_template"
+        "universal_connector_template",
+        "vulcanus_tile_offset"
     ]
 }
