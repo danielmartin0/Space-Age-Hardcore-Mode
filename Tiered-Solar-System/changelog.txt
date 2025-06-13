@@ -1,7 +1,19 @@
 ---------------------------------------------------------------------------------------------------
-Version: 2.3.1
+Version: 3.0.2
 Date: ????
   Changes:
+---------------------------------------------------------------------------------------------------
+Version: 3.0.1
+Date: 2025-06-12
+  Changes:
+    - The tier=-1 opt-on on space location prototypes is now once again respected. This corrects the position of Dea Dia System.
+---------------------------------------------------------------------------------------------------
+Version: 3.0.0
+Date: 2025-06-11
+  Changes:
+    - Tiers that cross the orientation=0 axis north of the star are now usually removed. (This undoes a recent change within Redrawn Space Connections.)
+    - Planets with no tier are now excluded from the Cosmic Social Distancing algorithm such that they truly appear vertically beneath the star.
+    - The specification of tiers has been moved to PlanetsLib.
 ---------------------------------------------------------------------------------------------------
 Version: 2.3.0
 Date: 2025-03-29

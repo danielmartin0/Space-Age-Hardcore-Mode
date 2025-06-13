@@ -1,7 +1,23 @@
 ---------------------------------------------------------------------------------------------------
-Version: 3.1.1
+Version: 4.0.1
 Date: ????
   Changes:
+---------------------------------------------------------------------------------------------------
+Version: 4.0.0
+Date: 2025-06-13
+  Changes:
+    - A small step towards realism: Planet hoppers are now burner entities (powered by fuel) and its rockets cost 20 steel to build.
+    - Crafting a Planet hopper silo is now more expensive.
+  Bugfixes:
+    - The launch button is now disabled if the rocket is not ready for launch.
+    - Fixed the behavior of the silo GUI when planets become unlocked/locked while the GUI is open.
+  Compatibility:
+    - Destination planets can now request Planet Hopper to abort the launch.
+---------------------------------------------------------------------------------------------------
+Version: 3.1.1
+Date: 2025-06-12
+  Bugfixes:
+    - Fixed that players would not land in cargo landing pads on the target surface unless it was connected to at least one cargo bay.
 ---------------------------------------------------------------------------------------------------
 Version: 3.1.0
 Date: 2025-06-09

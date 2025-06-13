@@ -1,17 +1,3 @@
-local tiers = require("default-tiers")
-
-for name, tier in pairs(tiers.vanilla_planet_tiers) do
-	if data.raw.planet[name] then
-		data.raw.planet[name].tier = tier
-	end
-end
-
-for name, tier in pairs(tiers.vanilla_location_tiers) do
-	if data.raw["space-location"][name] then
-		data.raw["space-location"][name].tier = tier
-	end
-end
-
 if settings.startup["Tiered-Solar-System-ensure-vanilla-planets-connected"].value then
 	log("Tiered-Solar-System: Ensuring vanilla planets are connected")
 	if data.raw["space-connection"]["gleba-fulgora"] then
