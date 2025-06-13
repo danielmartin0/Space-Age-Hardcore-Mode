@@ -182,6 +182,7 @@ local silo_2 = merge(data.raw["rocket-silo"]["rocket-silo"], {
 	energy_usage = "10MW",
 	active_energy_usage = "1kW",
 	surface_conditions = "nil",
+	drawing_box_vertical_extension = 0.5,
 })
 modify(silo_2)
 local lighter_tint = { 0.87, 1, 0.87, 1 }

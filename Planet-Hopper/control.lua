@@ -124,7 +124,9 @@ local function update_gui_state(player, entity, planet)
 			current_option_index = current_option_index + 1
 		end
 
-		enabled = #choices > 0 and entity.rocket_silo_status == defines.rocket_silo_status.rocket_ready
+		enabled = #choices > 0
+			and entity.rocket_silo_status == defines.rocket_silo_status.rocket_ready
+			and listbox.selected_index > 0
 	else
 		listbox.clear_items()
 	end
@@ -134,7 +136,7 @@ local function update_gui_state(player, entity, planet)
 		tooltip = { "hopper.launch-only-from-planet-tooltip" }
 	elseif #choices == 0 then
 		tooltip = { "hopper.launch-no-destinations-tooltip" }
-	elseif not enabled then
+	elseif entity.rocket_silo_status ~= defines.rocket_silo_status.rocket_ready then
 		tooltip = { "hopper.launch-not-ready-tooltip" }
 	else
 		tooltip = { "hopper.launch-tooltip" }
