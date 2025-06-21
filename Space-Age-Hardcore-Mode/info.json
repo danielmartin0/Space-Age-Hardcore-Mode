@@ -1,8 +1,8 @@
 {
     "name": "Space-Age-Hardcore-Mode",
-    "version": "2.2.5",
+    "version": "2.2.10",
     "factorio_version": "2.0",
-    "title": "Space Age Hard Mode",
+    "title": "Space Age Hard Mode (Beta)",
     "author": "thesixthroc",
     "contact": "https://discord.gg/am7JUX83x4",
     "description": "Hard Mode is a modpack/overhaul that tightens the gameplay of Space Age, removing shortcuts and adding interesting challenge.\n\nEach planet has significant variations (except Nauvis for now). Players build from scratch on Vulcanus, Fulgora and Gleba, and certain initial items are locked behind a small on-planet science chain.\n\nWe're looking for additional tweaks, please suggest them in Discord.",
@@ -24,7 +24,7 @@
         "PlanetsLib >= 1.5.0",
         "LandmineExplosionsDoHurt",
         "quality-asteroids",
-        "BiterShield2",
+        "no-more-asteroid-quality",
         "promethium-decay",
         "NoLavaInPipes",
         "? Planet-Hopper",
@@ -43,6 +43,7 @@
         "? scrap-industry",
         "? HighPrecisionManufacturing",
         "? Inverted-Quality",
+        "? BiterShield2",
         "(?) Flare Stack"
     ]
 }

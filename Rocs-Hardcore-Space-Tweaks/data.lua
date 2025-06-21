@@ -1,21 +1,8 @@
-local util = require("util")
-
-local function merge(old, new)
-	old = util.table.deepcopy(old)
-
-	for k, v in pairs(new) do
-		if v == "nil" then
-			old[k] = nil
-		else
-			old[k] = v
-		end
-	end
-
-	return old
-end
+local lib = require("lib")
+local merge = lib.merge
 
 if settings.startup["no-underground-pipes-on-platforms"].value then
-	local tech = merge(data.raw.technology["logistics"], {
+	local tech = merge(data.raw.technology["logistics"] or {}, {
 		name = "underground-pipes-on-space-platforms",
 		icon = "__Rocs-Hardcore-Space-Tweaks__/graphics/technology/underground-pipes-on-space-platforms.png",
 		icon_size = 256,

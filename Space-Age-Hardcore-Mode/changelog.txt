@@ -1,7 +1,34 @@
 ---------------------------------------------------------------------------------------------------
-Version: 2.2.4
+Version: 2.2.10
 Date: ????
   Changes:
+---------------------------------------------------------------------------------------------------
+Version: 2.2.9
+Date: 2025-06-12
+  Bugfixes:
+    - Fixed a crash.
+---------------------------------------------------------------------------------------------------
+Version: 2.2.8
+Date: 2025-06-09
+  Changes:
+    - Inserted 'Beta' into the mod title in-game.
+---------------------------------------------------------------------------------------------------
+Version: 2.2.7
+Date: 2025-06-04
+  Changes:
+    - The Quality for Biters! mod is now optional since legendary spitter range causes issues with existing bases.
+---------------------------------------------------------------------------------------------------
+Version: 2.2.6
+Date: 2025-06-03
+  Changes:
+    - Hard Space is now its own mod, so space-related features have been moved out of the top-level modpack.
+    - Space routes are now 50% longer.
+    - Asteroid reprocessing recipes no longer accept quality modules.
+---------------------------------------------------------------------------------------------------
+Version: 2.2.5
+Date: 2025-06-02
+  Changes:
+    - Support for modded utility science pack recipes.
 ---------------------------------------------------------------------------------------------------
 Version: 2.2.2
 Date: 2025-05-31

@@ -1,12 +1,20 @@
 {
     "name": "Rocs-Hardcore-Space-Tweaks",
-    "version": "1.2.4",
+    "version": "2.0.2",
     "factorio_version": "2.0",
-    "title": "Space Undergrounds Require Research",
+    "title": "Hard Space",
     "author": "thesixthroc",
     "contact": "Discord: thesixthroc",
-    "description": "Building underground belts or undergrounds pipes on space platforms each require a special new technology.",
+    "description": "Tweaks to Space. Building undergrounds belts and pipes on platforms each require a special new technology. Asteroids spawn with quality. Promethium chunks decay after 5 minutes. Medium asteroids have some physical damage resistance. Asteroid reprocessing recipes no longer accept quality modules.",
     "homepage": "https://discord.gg/VuVhYUBbWE",
     "space_travel_required": true,
-    "dependencies": ["base >= 2.0.0", "space-age >= 2.0.0"]
+    "dependencies": [
+        "base >= 2.0.0",
+        "space-age >= 2.0.0",
+        "quality-asteroids",
+        "no-more-asteroid-quality",
+        "promethium-decay",
+        "? Planetary-Distance-Adjustments",
+        "(?) Redrawn-Space-Connections"
+    ]
 }

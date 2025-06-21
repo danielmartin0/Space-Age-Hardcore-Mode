@@ -27,7 +27,9 @@ script.on_event(defines.events.on_player_joined_game, function(event)
 end)
 
 script.on_event(defines.events.on_runtime_mod_setting_changed, function(event)
-	Gui.update_top_bar(game.players[event.player_index])
+	if event.player_index and game.players[event.player_index] then
+		Gui.update_top_bar(game.players[event.player_index])
+	end
 end)
 
 script.on_event(defines.events.on_force_created, function(event)

@@ -1,12 +1,26 @@
 --== More expensive recipes ==--
 
 if settings.startup["rocs-hardcore-expensive-utility-science"].value then
-	local recipe = data.raw.recipe["utility-science-pack"]
-	if recipe and recipe.ingredients then
-		for _, ingredient in pairs(recipe.ingredients) do
-			ingredient.amount = ingredient.amount * 3
+	for _, recipe in pairs(data.raw.recipe) do
+		local has_utility_science = false
+
+		for _, result in pairs(recipe.results or {}) do
+			if result.name == "utility-science-pack" then
+				has_utility_science = true
+				break
+			end
 		end
-		recipe.energy_required = recipe.energy_required * 1.5
+
+		if has_utility_science then
+			if recipe.ingredients then
+				for _, ingredient in pairs(recipe.ingredients) do
+					ingredient.amount = ingredient.amount * 3
+				end
+			end
+			if recipe.energy_required then
+				recipe.energy_required = recipe.energy_required * 1.5
+			end
+		end
 	end
 end
 

@@ -13,14 +13,6 @@ data:extend({
 	},
 	{
 		type = "double-setting",
-		name = "rocs-hardcore-biter-nighttime-bonus-damage-percent",
-		setting_type = "runtime-global",
-		default_value = 15,
-		minimum_value = 0,
-		maximum_value = 100,
-	},
-	{
-		type = "double-setting",
 		name = "rocs-hardcore-efficiency-module-effectiveness-multiplier",
 		setting_type = "startup",
 		default_value = 0.75,
@@ -66,27 +58,5 @@ data:extend({
 		default_value = 40,
 		minimum_value = 0,
 		maximum_value = 10000,
-	},
-	{
-		type = "double-setting",
-		name = "rocs-hardcore-spacea-bonus-platform-foundation-tile-weight-percentage",
-		setting_type = "startup",
-		default_value = 10,
-		minimum_value = 0,
-		maximum_value = 10000,
-	},
-	{
-		type = "int-setting",
-		name = "rocs-hardcore-spacec-medium-asteroid-extra-physical-resistance",
-		setting_type = "startup",
-		default_value = 5,
-		minimum_value = 0,
-		maximum_value = 10000,
-	},
-	{
-		type = "bool-setting",
-		name = "rocs-hardcore-spaced-asteroids-early-copper-available",
-		setting_type = "startup",
-		default_value = true,
 	},
 })

@@ -1,11 +1,11 @@
 {
     "name": "Rocs-Hardcore-Aquilo",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "factorio_version": "2.0",
     "title": "Hard Aquilo",
     "author": "thesixthroc",
     "contact": "Discord: https://discord.gg/VuVhYUBbWE",
-    "description": "Tweaks to Aquilo. The starting island is smaller. Nuclear reactors no longer function on very cold surfaces. Crafting Fluoroketone now requires light oil.",
+    "description": "Tweaks to Aquilo. The starting island is smaller. Nuclear reactors no longer function on very cold surfaces. Crafting Fluoroketone now requires light oil. Vanilla+.",
     "homepage": "https://discord.gg/VuVhYUBbWE",
     "dependencies": [
         "base >= 2.0.19",

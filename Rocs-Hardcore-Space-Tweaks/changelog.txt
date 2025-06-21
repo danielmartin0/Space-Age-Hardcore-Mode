@@ -1,7 +1,10 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.2.4
-Date: ????
+Version: 2.0.2
+Date: 2025-06-04
   Changes:
+    - Renamed mod from 'Space Undergrounds Require Research' to the wider mod, 'Hard Space'. Existing space-related features in the top-level modpack have been moved to this mod.
+    - Added new dependency No More Asteroid Quality.
+    - Space routes are now 50% longer.
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.3
 Date: 2025-04-03

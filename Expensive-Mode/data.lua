@@ -299,10 +299,10 @@ if mods["space-age"] then
 		{ type = "fluid", name = "water", amount = 100 },
 	}
 
-	data.raw.recipe["burnt-spoilage"].ingredients = {
-		{ type = "item", name = "spoilage", amount = 12 }, -- from 6
-	}
-	data.raw.recipe["burnt-spoilage"].energy_required = 18 -- from 12
+	-- data.raw.recipe["burnt-spoilage"].ingredients = {
+	-- 	{ type = "item", name = "spoilage", amount = 12 }, -- from 6
+	-- }
+	-- data.raw.recipe["burnt-spoilage"].energy_required = 18 -- from 12
 
 	data.raw.recipe["carbon-fiber"].ingredients = {
 		{ type = "item", name = "carbon", amount = 1 },
